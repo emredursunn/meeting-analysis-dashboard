@@ -1,0 +1,92 @@
+📊 Grafik Adı: Konu Bazlı Kişi-Duygu Dağılımı (Stacked Bar Chart)
+🔹 Amaç:
+
+Toplantı başlıklarına (konulara) göre her katılımcının duygu dağılımını göstermek. Hangi konularda kimlerin hangi duyguları öne çıkıyor detaylı olarak analiz edilir. Özellikle stres, öfke gibi duyguların konularla ilişkisi analiz edilebilir.
+🔹 Grafik Türü:
+
+    Grouped Stacked Bar Chart
+
+    Her konu için bir grup bar olacak.
+
+    Her bar bir kişiyi temsil edecek.
+
+    Barlar stacked (yığılmış) olacak ve içindeki renkli segmentler duyguları gösterecek.
+
+    ECharts kullanılarak yapılacak.
+
+🔹 Veri Formatı (Verdiğin yapı ile uyumlu):
+
+[
+  {
+    "topic": "Intro & Task Distribution",
+    "persons": {
+      "Guney Ozturk": {
+        "Neutral": 40,
+        "Happiness": 20,
+        "Stress": 15
+      },
+      ...
+    }
+  },
+  ...
+]
+
+Sadece her kişinin ilk 3 dominant duygusu gösterilecek.
+🔹 Görsel Özellikler:
+
+    Başlık: Konuya Göre Kişi Duygu Dağılımı
+
+    X Ekseni: Konu başlıkları (Intro, Technical Details, Client Concerns)
+
+    Y Ekseni: Duygu yoğunluğu değeri (0–100)
+
+    Bar Yapısı:
+
+        Aynı konudaki her kişi için bir bar (gruplu)
+
+        Her bar: Üst üste 3 renkli segment (ilk 3 dominant duygu)
+
+    Renkler: Her duyguya özel sabit bir renk (örneğin):
+
+        Neutral → Gri
+
+        Happiness → Sarı
+
+        Stress → Kırmızı
+
+        Anger → Koyu kırmızı
+
+        Fear → Mavi
+
+        Sadness → Mor
+
+        Surprise → Turkuaz
+
+    Tooltip: Hover'da kişi, duygu ve değer gösterilir.
+
+    Legend: Sağda duygu isimleri ve renkleri
+
+    Filtre Paneli (Legend gibi çalışacak):
+
+        Sağda, duygu bazlı çoklu seçim yapılabilir
+
+        Seçilen duygulara göre sadece o duyguların verileri görünür hale gelir
+
+        Örn: Sadece "Stress" seçilirse, sadece barlarda stress gösterilir
+
+🔹 Kullanıcı Etkileşimi:
+
+    Tooltip (hover)
+
+    Legend üzerinden filtreleme
+
+    Responsive yapı
+
+    Gerekirse konuya göre yatay scroll olabilir
+
+🔹 Kullanım Yeri:
+
+    Dashboard’un "Konu Bazlı Duygu Analizi" bölümünde.
+
+    Bu grafikle birlikte "Bu konuda kim ne hissetti?" gibi yorumlar çıkarılabilir.
+

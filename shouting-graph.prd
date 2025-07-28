@@ -1,0 +1,67 @@
+📊 Grafik Adı: Bağırma Analizi Zaman Serisi Grafiği
+🔹 Amaç:
+
+Toplantı boyunca belirli zaman aralıklarında (örneğin 20 saniyelik bölümler) kaç defa bağırma tespit edildiğini görselleştirerek, hangi zaman dilimlerinde stresli ya da gergin anların yoğunlaştığını analiz etmek.
+🔹 Grafik Türü:
+
+    Line Chart (Çizgi Grafiği)
+
+    ECharts ile çizilecek.
+
+    Tek bir çizgi olacak (örnek görseldeki gibi çoklu değil).
+
+🔹 Dummy Veri Formatı (Verdiğin):
+
+{
+  "0-20": 0,
+  "20-40": 0,
+  "40-60": 0,
+  "60-80": 0,
+  "80-100": 1,
+  "100-120": 0,
+  "120-140": 0,
+  "140-160": 0,
+  "160-180": 0,
+  "180-200": 0,
+  "200-220": 0,
+  "220-240": 1,
+  "240-260": 1,
+  "260-280": 0,
+  "280-300": 0,
+  "300-320": 0
+}
+
+🔹 Görsel Özellikler:
+
+    Başlık: Bağırma Yoğunluğu (Zaman Serisi)
+
+    X Ekseni: Zaman dilimleri (örneğin: "0-20", "20-40" saniyeler arası)
+
+    Y Ekseni: Bağırma sayısı (sayı cinsinden)
+
+    Grid çizgileri hafif opaklıkta olacak.
+
+    Tooltip ile üzerine gelindiğinde:
+
+        Zaman dilimi
+
+        Bağırma sayısı gösterilecek.
+
+    Renk: Turuncu ya da kırmızı tonlarında bir çizgi (stres vurgusu için)
+
+    Noktalar çizgi üzerinde küçük daireler olarak gösterilebilir (opsiyonel).
+
+🔹 Kullanıcı Etkileşimi:
+
+    Hover tooltip
+
+    Responsive tasarım
+
+    Belki zoom özelliği (istersen eklenebilir)
+
+🔹 Kullanım Yeri:
+
+    Dashboard sayfasında ilk sırada veya önemli bir blokta yer almalı.
+
+    Yanına mini bir açıklama ya da info ikonuyla "Toplantı sırasında kaç kez bağırma tespit edildiğini gösterir" bilgisi konabilir.
+

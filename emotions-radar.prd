@@ -1,0 +1,68 @@
+📊 Grafik Adı: Kişi Bazlı Duygu Karşılaştırma (Radar Grafik)
+🔹 Amaç:
+
+Bu grafik, toplantı boyunca her bir katılımcının duygusal dağılımını (mutluluk, stres, üzüntü vb.) takım ortalaması ile karşılaştırmalı şekilde göstermek için kullanılacak. Duygu farkındalığı ve bireysel stres seviyelerinin anlaşılmasına yardımcı olur.
+🔹 Grafik Türü:
+
+    Radar Chart (Ağ Grafiği)
+
+    ECharts ile çizilecek.
+
+    Birden fazla alan gösterimi olacak (katılımcılar + team_avg).
+
+🔹 Veri Formatı:
+
+Gönderdiğin gibi bir yapı:
+
+{
+  "team_avg": {
+     "Fear": 5.00,
+    "Anger": 6.50,
+    "Sadness": 9.50,
+    "Happiness": 14.00,
+    "Surprise": 6.00,
+    "Neutral": 44.00,
+    "Stress": 15.00
+  },
+  "Katılımcı Adı": {
+    "Fear": ...,
+    "Anger": ...,
+    ...
+  }
+}
+
+🔹 Görsel Özellikler:
+
+    Başlık: Duygu Dağılımı Karşılaştırması (Radar)
+
+    Her eksen: Duygular (Mutlu, Üzgün, Stresli, Kızgın, Normal, Şaşırmış)
+
+    Her çizgi: Bir kişiyi temsil eder.
+
+    Renkler:
+
+        Her kişi için farklı renk (otomatik ayarlanabilir)
+
+        team_avg kalın ve gri/renksiz veya vurgulu olmalı (referans çizgisi gibi)
+
+    Legend: Katılımcı isimleri + “Takım Ortalaması”
+
+    Tooltip: Hover ile her eksendeki değer gösterilir.
+
+    Şeffaf dolgu rengi (opacity düşük) kullanılabilir.
+
+    Responsive tasarım
+
+🔹 Kullanıcı Etkileşimi:
+
+    Hover tooltip
+
+    İsteğe bağlı olarak katılımcı filtreleme (grafikten kişi çıkarma/gösterme)
+
+    Responsive yapı
+
+🔹 Kullanım Yeri:
+
+    Dashboard içinde bireysel analiz bölümünde yer alabilir.
+
+    Katılımcıların isimleri dinamik olarak sayfada yukarıdan seçilebilecekse o alanla entegre olabilir.
