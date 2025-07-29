@@ -1,0 +1,83 @@
+Grafik Adı: Katılımcı Katkı Zaman Çizelgesi (Audio / Video / Sunum Aktiviteleri)
+🔹 Amaç:
+
+Bu grafik, her katılımcının bir toplantı boyunca ne kadar süreyle:
+
+    Ses (audio) aktardığını,
+
+    Görüntü (video) aktardığını,
+
+    Sunum (presentation) paylaştığını
+    göstermek için kullanılır.
+
+🔹 Grafik Türü:
+
+    Gantt benzeri zaman çizelgesi (Overlapping Timeline)
+
+    ECharts custom series veya bar serisi + timeline ekseni ile uygulanabilir.
+
+    Her katılımcı için ayrı bir yatay çubuk alanı olacak.
+
+    Bu alanda 3 ayrı şerit/segment gösterilecek:
+
+        Audio (mavi)
+
+        Video (mor)
+
+        Sunum (turuncu)
+
+🔹 Veri Formatı (verdiğin yapı):
+
+[
+  {
+    actor: "rick.baker@ago.com",
+    duration: 4335, // sn
+    audio_statistics: 2182,
+    video_send_statistics: 1381,
+    presentation_send_statistics: 0
+  },
+  ...
+]
+
+Her süre milisaniye cinsinden değil, saniye cinsinden olacak şekilde işlenmeli.
+🔹 Görsel Özellikler:
+
+    Başlık: Toplantı Katılımcı Aktivite Çizelgesi
+
+    X Ekseni: Zaman (toplantı süresi bazında 0'dan başlayarak maksimuma kadar)
+
+    Y Ekseni: Katılımcı isimleri (ya da e-mail)
+
+    Her katılımcı için:
+
+        Audio segment → mavi bar
+
+        Video segment → mor bar
+
+        Presentation segment → turuncu bar
+
+    Tooltip ile:
+
+        Katılımcı adı
+
+        Ses süresi (sn)
+
+        Video süresi (sn)
+
+        Sunum süresi (sn)
+
+🔹 Kullanıcı Etkileşimi:
+
+    Hover ile detay gösterimi
+
+    Legend (aç/kapat: Audio, Video, Presentation)
+
+    Responsive yapı
+
+    Scroll destekli olabilir (katılımcı sayısı yüksekse)
+
+🔹 Kullanım Yeri:
+
+    Dashboard’da “Katılımcı Katkı Görselleştirmesi” veya “İletişim Aktivitesi” başlığı altında.
+
+    Yöneticiler kim ne kadar aktifti, kim sadece dinledi, kim sadece konuştu gibi yorumlar çıkarabilir.
