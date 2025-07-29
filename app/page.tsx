@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import ShoutingChart from './components/ShoutingChart';
 import EmotionTopicBarChart from './components/EmotionTopicBarChart';
 import EmotionsRadarChart from './components/EmotionsRadarChart';
+import CorrelationHeatmap from './components/CorrelationHeatmap';
 
 // --- ANA DASHBOARD BİLEŞENİ ---
 const App = () => {
@@ -33,6 +34,9 @@ const App = () => {
         </div>
         <div className="bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
           <EmotionTopicBarChart />
+        </div>
+        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+          <CorrelationHeatmap />
         </div>
       </main>
       
