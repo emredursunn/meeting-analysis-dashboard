@@ -1,0 +1,72 @@
+ Grafik Adı: Kişiler Arası Konuşma Yoğunluğu & Monolog Oranı (Korelasyon Isı Haritası)
+🔹 Amaç:
+
+Bu grafik, toplantıdaki katılımcıların birbirleriyle olan konuşma yoğunluğunu ve bireysel konuşma (monologue) oranlarını görselleştirmek için tasarlanacak. Kullanıcı, kimin kiminle daha fazla iletişim kurduğunu, kimin daha fazla kendi başına konuştuğunu (monolog) kolayca görebilecek.
+🔹 Grafik Türü:
+
+    Half Heatmap / Lower-Triangle Matrix Heatmap
+
+        ECharts heatmap serisi kullanılabilir veya özel grid yapısı ile kare matris çizilebilir.
+
+    Satır ve sütun isimleri: Katılımcı isimleri
+
+    Hücre değeri: Konuşma oranı (0-100)
+
+    Diagonal hücreler (kendiyle kesişim): monologue_rate
+
+🔹 Veri Formatı (Senin gönderdiğin şekliyle):
+
+{
+  "Emre": {
+    "pairwise_talk": {
+      "Güney Ozturk": 48,
+      ...
+    },
+    "monologue_rate": 22
+  },
+  ...
+}
+
+🔹 Görsel Özellikler:
+
+    Başlık: Katılımcılar Arası Konuşma Yoğunluğu ve Monolog Oranları
+
+    Hücreler:
+
+        Renk skalası 0’dan 100’e (örneğin açık sarı → kırmızı)
+
+        Düşük değerler açık renk, yüksek değerler koyu renk
+
+    Tooltip: Hücreye hover yapıldığında şu bilgi gösterilir:
+
+        "Emre → Güney Ozturk: %48 iletişim"
+
+        veya diagonal hücrede: "Emre → Monolog Oranı: %22"
+
+    Her hücre üzerine sayısal değer yazılabilir (opsiyonel)
+
+    Opsiyonel olarak eksen sabitlenebilir (sticky axis)
+
+    Sadece alt üçgen gösterilecek (örnek: satır Emre, sütun Güney varsa göster, tersi gösterilmez)
+
+🔹 Kullanıcı Etkileşimi:
+
+    Hover tooltip
+
+    Responsive yapı
+
+    (Opsiyonel) Katılımcı seçimi ile subset analiz (örneğin sadece belirli kişilerin ısıları)
+
+🔹 Kullanım Yeri:
+
+    Dashboard’da “İletişim Haritası” veya “Konuşma Analizi” bölümünde yer almalı.
+
+    Özellikle moderatörler veya takım liderleri, kimlerin baskın konuştuğunu ve kimlerin izole kaldığını hızlıca analiz edebilir.
+
+🔹 Notlar:
+
+    Veride hem karşılıklı hem de self-referans (monologue) veri var → bu grafik yarı heatmap için ideal.
+
+    Yukarı üçgen opsiyonel olarak devre dışı bırakılır.
+
+    İsteğe bağlı olarak diagonal hücrelerde farklı arka plan rengi (örneğin gri tonu) kullanılabilir, bu hücreler "monologue rate" özelinde görsel olarak ayrıştırılır.
