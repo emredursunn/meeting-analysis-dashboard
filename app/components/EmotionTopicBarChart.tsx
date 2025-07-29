@@ -1,6 +1,6 @@
 import ReactECharts from 'echarts-for-react';
 
-const topicEmotionData = {
+const topicEmotionData: any = {
   "topics": [
     {
       "topic": "Intro & Task Distribution", "start_sec": 3, "end_sec": 49,
@@ -36,7 +36,7 @@ const topicEmotionData = {
  */
 const EmotionTopicBarChart = () => {
   // -------------------- COLOR PALETTE -------------------- //
-  const emotionColors = {
+  const emotionColors: any = {
     Neutral: "#A0AEC0", // gray
     Happiness: "#FBBF24", // amber
     Stress: "#EF4444", // red
@@ -46,13 +46,13 @@ const EmotionTopicBarChart = () => {
     Surprise: "#14B8A6", // teal
   };
 
-  const topics = topicEmotionData.topics.map((t) => t.topic);
-  const persons = [
-    ...new Set(topicEmotionData.topics.flatMap((t) => Object.keys(t.persons))),
-  ];
-  const allEmotions = Object.keys(emotionColors);
+  const topics: any = topicEmotionData.topics.map((t: any) => t.topic);
+  const persons: any = Array.from(
+    new Set(topicEmotionData.topics.flatMap((t: any) => Object.keys(t.persons)))
+  );
+  const allEmotions: any = Object.keys(emotionColors);
 
-  const personColors = {
+  const personColors: any = {
     "Guney Ozturk": "#F87171",
     "Muhammed Sefa Sozer": "#60A5FA",
     "Selin Uzeyiroglu": "#2DD4BF",
@@ -60,25 +60,23 @@ const EmotionTopicBarChart = () => {
   };
 
   // -------------------- SERIES -------------------- //
-  const series = [];
-  persons.forEach((person) => {
-    allEmotions.forEach((emotion) => {
+  const series: any = [];
+  persons.forEach((person: any) => {
+    allEmotions.forEach((emotion: any) => {
       series.push({
-        // tüm duygular için SERI ADI AYNI → legend off/on hepsini etkiler
         name: person,
-        id: `${person}-${emotion}`, // benzersiz id
+        id: `${person}-${emotion}`,
         type: "bar",
         stack: person,
         itemStyle: { color: emotionColors[emotion] },
         emphasis: { focus: "series" },
-        data: topics.map((topicName) => {
-          const topicData = topicEmotionData.topics.find((t) => t.topic === topicName);
+        data: topics.map((topicName: any) => {
+          const topicData = topicEmotionData.topics.find((t: any) => t.topic === topicName);
           return topicData?.persons[person]?.[emotion] || 0;
         }),
       });
     });
 
-    // Sadece isim etiketi için şeffaf bar (legend ile aynı ad → gizlenir)
     series.push({
       name: person,
       id: `${person}-label`,
@@ -101,7 +99,7 @@ const EmotionTopicBarChart = () => {
   });
 
   // -------------------- OPTION -------------------- //
-  const option = {
+  const option: any = {
     backgroundColor: "transparent",
     title: {
       text: "Konuya Göre Kişi • Duygu Dağılımı",
@@ -111,10 +109,10 @@ const EmotionTopicBarChart = () => {
     tooltip: {
       trigger: "item",
       axisPointer: { type: "shadow" },
-      formatter: (param) => {
-        const person = param.seriesName; // artık doğrudan kişi
+      formatter: (param: any) => {
+        const person = param.seriesName;
         const topicName = param.name;
-        const topicData = topicEmotionData.topics.find((t) => t.topic === topicName);
+        const topicData = topicEmotionData.topics.find((t: any) => t.topic === topicName);
         if (!topicData || !topicData.persons[person]) return "";
 
         const personEmotions = topicData.persons[person];
@@ -122,13 +120,13 @@ const EmotionTopicBarChart = () => {
         html += `<div style='font-size:13px;font-weight:600;margin-bottom:6px;border-top:1px solid #333;padding-top:6px;'>${person}</div>`;
 
         Object.entries(personEmotions)
-          .filter(([, v]) => v > 0)
-          .sort(([, a], [, b]) => b - a)
+          .filter(([, v]) => v as any > 0)
+          .sort(([, a], [, b]) => (b as any) - (a as any))
           .forEach(([emo, v]) => {
             html += `<div style=\"display:flex;align-items:center;margin-bottom:4px;\">
               <span style=\"display:inline-block;width:10px;height:10px;background:${emotionColors[emo]};border-radius:2px;margin-right:6px;\"></span>
               <span style=\"flex:1;\">${emo}</span>
-              <span style=\"font-weight:600;\">${v.toFixed(1)}</span>
+              <span style=\"font-weight:600;\">${(v as any).toFixed(1)}</span>
             </div>`;
           });
         return html;
@@ -143,7 +141,7 @@ const EmotionTopicBarChart = () => {
       itemHeight: 15,
       textStyle: { color: "#E5E7EB", fontSize: 12 },
       pageIconColor: "#E5E7EB",
-      data: persons.map((p) => ({ name: p, icon: "circle", itemStyle: { color: personColors[p] || "#999" } })),
+      data: persons.map((p: any) => ({ name: p, icon: "circle", itemStyle: { color: personColors[p] || "#999" } })),
     },
     grid: {
       left: "4%",
@@ -189,7 +187,7 @@ const EmotionTopicBarChart = () => {
           borderBottomLeftRadius: 8,
         }}
       >
-        {allEmotions.map((emo) => (
+        {allEmotions.map((emo : any) => (
           <div key={emo} style={{ display: "flex", alignItems: "center", marginBottom: 5 }}>
             <span
               style={{
