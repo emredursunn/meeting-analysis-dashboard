@@ -19,7 +19,7 @@ interface ParticipantData {
 }
 
 const rawData: Record<string, ParticipantData> = {
-  Norman: {
+  "Norman": {
     pairwise_talk: {
       "Agent Walker": 48,
       "Chuck Bartowski": 15,
@@ -31,7 +31,7 @@ const rawData: Record<string, ParticipantData> = {
   },
   "Agent Walker": {
     pairwise_talk: {
-      Norman: 50,
+      "Norman": 50,
       "Chuck Bartowski": 20,
       "John Casey": 10,
       "Orion": 10,
@@ -41,7 +41,7 @@ const rawData: Record<string, ParticipantData> = {
   },
   "Chuck Bartowski": {
     pairwise_talk: {
-      Norman: 20,
+      "Norman": 20,
       "Agent Walker": 15,
       "John Casey": 5,
       "Orion": 5,
@@ -51,7 +51,7 @@ const rawData: Record<string, ParticipantData> = {
   },
   "John Casey": {
     pairwise_talk: {
-      Norman: 12,
+      "Norman": 12,
       "Agent Walker": 10,
       "Chuck Bartowski": 8,
       "Orion": 5,
@@ -61,7 +61,7 @@ const rawData: Record<string, ParticipantData> = {
   },
   "Orion": {
     pairwise_talk: {
-      Norman: 14,
+      "Norman": 14,
       "Agent Walker": 10,
       "Chuck Bartowski": 6,
       "John Casey": 5,

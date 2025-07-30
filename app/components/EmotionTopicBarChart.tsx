@@ -7,14 +7,14 @@ const topicEmotionData: any = {
       "persons": {
         "Agent Walker": { "Neutral": 40.0, "Happiness": 20.0, "Stress": 15.0},
         "John Casey": { "Neutral": 35.0, "Sadness": 10.0, "Anger": 5.0 },
-        "Cuch Bartowski": { "Neutral": 45.0, "Stress": 15.0, "Sadness": 8.0 }
+        "Chuck Bartowski": { "Neutral": 45.0, "Stress": 15.0, "Sadness": 8.0 }
       }
     },
     {
       "topic": "Technical Details", "start_sec": 49, "end_sec": 114,
       "persons": {
         "Agent Walker": { "Fear": 30.0, "Happiness": 10.0, "Stress": 25.0},
-        "Cuch Bartowski": { "Neutral": 35.0, "Happiness": 15.0, "Fear": 5.0 },
+        "Chuck Bartowski": { "Neutral": 35.0, "Happiness": 15.0, "Fear": 5.0 },
         "John Casey": {"Sadness": 15.0, "Stress": 30.0, "Anger": 10.0 }
       }
     },
@@ -22,7 +22,7 @@ const topicEmotionData: any = {
       "topic": "Client Concerns & Deadlines", "start_sec": 114, "end_sec": 178,
       "persons": {
         "Agent Walker": { "Fear": 15.0, "Surprise": 5.0, "Stress": 25.0 },
-        "Cuch Bartowski": { "Fear": 30.0, "Surprise": 25.0, "Stress": 15.0 },
+        "Chuck Bartowski": { "Fear": 30.0, "Surprise": 25.0, "Stress": 15.0 },
         "Muhammed Sefa Sozer": { "Anger": 55.0, "Fear": 10.0, "Surprise": 15.0, }
       }
     }
