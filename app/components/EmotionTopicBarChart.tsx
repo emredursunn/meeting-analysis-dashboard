@@ -23,7 +23,7 @@ const topicEmotionData: any = {
       "persons": {
         "Agent Walker": { "Fear": 15.0, "Surprise": 5.0, "Stress": 25.0 },
         "Chuck Bartowski": { "Fear": 30.0, "Surprise": 25.0, "Stress": 15.0 },
-        "Muhammed Sefa Sozer": { "Anger": 55.0, "Fear": 10.0, "Surprise": 15.0, }
+        "John Casey": { "Anger": 55.0, "Fear": 10.0, "Surprise": 15.0, }
       }
     }
   ]
@@ -53,10 +53,10 @@ const EmotionTopicBarChart = () => {
   const allEmotions: any = Object.keys(emotionColors);
 
   const personColors: any = {
-    "Guney Ozturk": "#F87171",
-    "Muhammed Sefa Sozer": "#60A5FA",
-    "Selin Uzeyiroglu": "#2DD4BF",
-    "Hilmi Tunahan Ahlatci": "#C084FC",
+    "Agent Walker": "#F87171",
+    "Chuck Bartowski": "#60A5FA",
+    "John Casey": "#2DD4BF",
+    "Orion": "#C084FC",
   };
 
   // -------------------- SERIES -------------------- //
