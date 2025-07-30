@@ -1,11 +1,11 @@
 import ReactECharts from 'echarts-for-react';
 
 const radarData : any = {
-  "team_avg": { "Happiness": 15.00, "Sadness": 20.00, "Stress": 17.00, "Anger": 8.00, "Neutral": 22.00, "Surprise": 18.00 },
-  "Muhammed Sefa Sozer": { "Happiness": 15.59, "Sadness": 9.04, "Stress": 21.00, "Anger": 6.06, "Neutral": 42.30, "Surprise": 6.01 },
-  "Selin Uzeyiroglu": { "Happiness": 18.20, "Sadness": 12.10, "Stress": 19.50, "Anger": 8.40, "Neutral": 35.80, "Surprise": 6.00 },
-  "Hilmi Tunahan Ahlatci": { "Happiness": 20.80, "Sadness": 9.50, "Stress": 23.00, "Anger": 4.30, "Neutral": 36.40, "Surprise": 6.00 },
-  "Guney Ozturk": { "Happiness": 16.10, "Sadness": 10.80, "Stress": 28.00, "Anger": 6.00, "Neutral": 33.10, "Surprise": 6.00 }
+  "Norman": { "Happiness": 15.00, "Sadness": 20.00, "Stress": 17.00, "Anger": 8.00, "Neutral": 22.00, "Surprise": 18.00 },
+  "Orion": { "Happiness": 15.59, "Sadness": 9.04, "Stress": 21.00, "Anger": 6.06, "Neutral": 42.30, "Surprise": 6.01 },
+  "Agent Walker": { "Happiness": 18.20, "Sadness": 12.10, "Stress": 19.50, "Anger": 8.40, "Neutral": 35.80, "Surprise": 6.00 },
+  "John Casey": { "Happiness": 20.80, "Sadness": 9.50, "Stress": 23.00, "Anger": 4.30, "Neutral": 36.40, "Surprise": 6.00 },
+  "Chuck Bartowski": { "Happiness": 16.10, "Sadness": 10.80, "Stress": 28.00, "Anger": 6.00, "Neutral": 33.10, "Surprise": 6.00 }
 };
 
 /**

@@ -19,52 +19,52 @@ interface ParticipantData {
 }
 
 const rawData: Record<string, ParticipantData> = {
-  Emre: {
+  Norman: {
     pairwise_talk: {
-      "Güney Ozturk": 48,
-      "Burhan Ok": 15,
-      "Muhammed Sefa Sözer": 10,
-      "Selin Üzeyiroğlu": 12,
+      "Agent Walker": 48,
+      "Chuck Bartowski": 15,
+      "John Casey": 10,
+      "Orion": 12,
       others: 15,
     },
     monologue_rate: 22,
   },
-  "Güney Ozturk": {
+  "Agent Walker": {
     pairwise_talk: {
-      Emre: 50,
-      "Burhan Ok": 20,
-      "Muhammed Sefa Sözer": 10,
-      "Selin Üzeyiroğlu": 10,
+      Norman: 50,
+      "Chuck Bartowski": 20,
+      "John Casey": 10,
+      "Orion": 10,
       others: 10,
     },
     monologue_rate: 30,
   },
-  "Burhan Ok": {
+  "Chuck Bartowski": {
     pairwise_talk: {
-      Emre: 20,
-      "Güney Ozturk": 15,
-      "Muhammed Sefa Sözer": 5,
-      "Selin Üzeyiroğlu": 5,
+      Norman: 20,
+      "Agent Walker": 15,
+      "John Casey": 5,
+      "Orion": 5,
       others: 5,
     },
     monologue_rate: 35,
   },
-  "Muhammed Sefa Sözer": {
+  "John Casey": {
     pairwise_talk: {
-      Emre: 12,
-      "Güney Ozturk": 10,
-      "Burhan Ok": 8,
-      "Selin Üzeyiroğlu": 5,
+      Norman: 12,
+      "Agent Walker": 10,
+      "Chuck Bartowski": 8,
+      "Orion": 5,
       others: 5,
     },
     monologue_rate: 28,
   },
-  "Selin Üzeyiroğlu": {
+  "Orion": {
     pairwise_talk: {
-      Emre: 14,
-      "Güney Ozturk": 10,
-      "Burhan Ok": 6,
-      "Muhammed Sefa Sözer": 5,
+      Norman: 14,
+      "Agent Walker": 10,
+      "Chuck Bartowski": 6,
+      "John Casey": 5,
       others: 5,
     },
     monologue_rate: 25,

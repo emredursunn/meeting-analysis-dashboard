@@ -167,7 +167,6 @@ export const emotionTimeline = [
     "text": "Gidin.",
     "strong_emotions": {
       "Happiness": 0.32546544368378816,
-      "Sadness": 0.21169108839239925,
       "Fear": 0.2584711220115423,
       "Anger": 0.2100514588644728,
     }
@@ -198,7 +197,7 @@ export const emotionTimeline = [
     "text": "Hilmi ne yap\u0131yorsun sen ya?",
     "strong_emotions": {
       "Sadness": 0.4842788858804852,
-      "Fear": 0.2112400306854397,
+      "Disgust": 0.2112400306854397,
       "Anger": 0.8643424614332617
     }
   }
