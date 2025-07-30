@@ -36,6 +36,8 @@ const ShoutingChart = () => {
       type: 'value',
       axisLine: { lineStyle: { color: '#888' } },
       splitLine: { lineStyle: { color: '#333' } },
+      minInterval: 1, // Y ekseninde sadece tam sayı göster
+      
     },
     series: [
       {

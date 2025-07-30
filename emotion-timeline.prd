@@ -1,0 +1,78 @@
+Grafik Adı: Zamana Göre Konuşma Sırasındaki Duygular (Stacked Area Chart)
+🔹 Amaç:
+
+Bu grafik, konuşma sırasında geçen zaman aralıklarında hangi duyguların baskın (strong) olduğunu görselleştirmek amacıyla hazırlanır. Her zaman aralığında en güçlü 3 duygu gösterilir. Kullanıcı bu sayede zaman içinde duygusal iniş-çıkışları ve konuşma içeriğiyle bağını analiz edebilir.
+🔹 Grafik Türü:
+
+    Stacked Area Chart (Yığılmış Alan Grafiği)
+
+    ECharts line serisi areaStyle ile
+
+    Üç duyguya kadar katmanlı görünüm (her zaman aralığı için)
+
+🔹 Veri Yapısı (base_scores kullanılmayacak):
+
+[
+  {
+    "start": 1.58,
+    "end": 2.09,
+    "text": "Canım buray.",
+    "strong_emotions": {
+      "Happiness": 0.4794,
+      "Anger": 0.3291,
+      "Calmness": 0.3590
+    }
+  },
+  ...
+]
+
+🔹 Görsel Özellikler:
+
+    Başlık: Konuşma Sırasında Oluşan Duygular (Zaman Serisi)
+
+    X Ekseni: Zaman (saniye cinsinden start ve end ortalaması veya start)
+
+    Y Ekseni: Duygu yoğunluğu (0.0 – 1.0 arası)
+
+    Renkler:
+
+        Her duygu için sabit bir renk
+
+        Opak ve katmanlı alan görünümü
+
+    Tooltip:
+
+        Hover ile o zaman dilimindeki:
+
+            Duygular ve skorları
+
+            text içeriği de tooltip'te gösterilir
+
+    Legend: Duygular (Happiness, Anger, Calmness, Fear, etc.)
+
+    Responsive yapı
+
+🔹 Duygu Çevirileri (Kullanılacak İngilizce Etiketler):
+Duygu (JSON key)	Gösterim (Legend/Tooltip)
+Happiness	Happiness
+Sadness	Sadness
+Fear	Fear
+Anger	Anger
+Disgust	Disgust
+Calmness	Calmness
+🔹 Kullanıcı Etkileşimi:
+
+    Hover tooltip (duygular + text)
+
+    Legend ile duygu filtreleme
+
+    Responsive
+
+    (Opsiyonel) Zoom/pan ile zaman ekseninde gezinme
+
+🔹 Kullanım Yeri:
+
+    Dashboard’da “Duygusal Zaman Çözümlemesi” bölümünde
+
+    Özellikle konuşma analizi ve ton/dil etkisi çıkarımı için çok değerlidir
+

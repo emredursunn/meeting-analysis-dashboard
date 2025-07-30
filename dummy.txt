@@ -147,3 +147,59 @@ emotion-person-bar graph dummy data
     }
   ]
 }
+
+
+emotion-transcript data
+export const emotionTimeline = [
+  {
+    "start": 1.58,
+    "end": 2.09,
+    "text": "Can\u0131m buray.",
+    "strong_emotions": {
+      "Happiness": 0.47944517063442615,
+      "Anger": 0.3291296540759504,
+      "Calmness": 0.35897625265643
+    }
+  },
+  {
+    "start": 3.41,
+    "end": 3.49,
+    "text": "Gidin.",
+    "strong_emotions": {
+      "Happiness": 0.32546544368378816,
+      "Sadness": 0.21169108839239925,
+      "Fear": 0.2584711220115423,
+      "Anger": 0.2100514588644728,
+    }
+  },
+  {
+    "start": 5.13,
+    "end": 6.4,
+    "text": "O\u011flum bu kadar da ba\u011f\u0131r\u0131lmaz ya.",
+    "strong_emotions": {
+      "Happiness": 0.2727973090484738,
+      "Calmness": 0.7027271468192339,
+      "Fear": 0.2327978298068047
+    }
+  },
+  {
+    "start": 7.56,
+    "end": 7.88,
+    "text": "Emiri.",
+    "strong_emotions": {
+      "Happiness": 0.3014392246492207,
+      "Fear": 0.34243450630456207,
+      "Calmness": 0.3313961551524699
+    }
+  },
+  {
+    "start": 9.76,
+    "end": 10.91,
+    "text": "Hilmi ne yap\u0131yorsun sen ya?",
+    "strong_emotions": {
+      "Sadness": 0.4842788858804852,
+      "Fear": 0.2112400306854397,
+      "Anger": 0.8643424614332617
+    }
+  }
+];

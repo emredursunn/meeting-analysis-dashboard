@@ -228,7 +228,7 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
   // -------------------- CONST -------------------- //
   const COLORS = {
     audio: "#3B82F6", // blue-600
-    video: "#8B5CF6", // violet-500
+    video: "#79ac3fff", // violet-500
     presentation: "#F59E0B", // amber-500
   } as const;
 
