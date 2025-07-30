@@ -109,8 +109,6 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
     maxValues[emo] = Math.max(...timeline.map((t:any) => t.strong_emotions[emo] || 0));
   });
 
-  const emotionsByMaxValue = emotions.sort((a, b) => maxValues[a] - maxValues[b]); // Küçükten büyüğe
-
   const series = emotions.map((emo) => {
     return {
       name: emo,
