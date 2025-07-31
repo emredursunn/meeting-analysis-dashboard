@@ -3,31 +3,173 @@ import ReactECharts from 'echarts-for-react';
 const topicEmotionData: any = {
   "topics": [
     {
-      "topic": "Intro & Task Distribution", "start_sec": 3, "end_sec": 49,
+      "topic": "Intro & Task Distribution",
+      "start_sec": 3,
+      "end_sec": 49,
       "persons": {
-        "Agent Walker": { "Neutral": 40.0, "Happiness": 20.0, "Stress": 15.0},
-        "John Casey": { "Neutral": 35.0, "Sadness": 10.0, "Anger": 5.0 },
-        "Chuck Bartowski": { "Neutral": 45.0, "Stress": 15.0, "Sadness": 8.0 }
+        "Agent Walker": {
+          "Neutral": 69.52,
+          "Happiness": 23.36,
+          "Stress": 0.0,
+          "Sadness": 0.18,
+          "Anger": 0.0,
+          "Surprise": 6.22
+        },
+        "John Casey": {
+          "Neutral": 67.16,
+          "Happiness": 25.76,
+          "Stress": 0.0,
+          "Sadness": 2.81,
+          "Anger": 0.0,
+          "Surprise": 4.27
+        },
+        "Chuck Bartowski": {
+          "Neutral": 24.23,
+          "Happiness": 32.67,
+          "Stress": 21.0,
+          "Sadness": 18.61,
+          "Anger": 3.5,
+          "Surprise": 0.0
+        },
+        "Ellie": {
+          "Neutral": 81.7,
+          "Happiness": 12.24,
+          "Stress": 0.0,
+          "Sadness": 4.21,
+          "Anger": 0.0,
+          "Surprise": 1.51
+        },
+        "Carina": {
+          "Neutral": 70.42,
+          "Happiness": 21.83,
+          "Stress": 0.0,
+          "Sadness": 5.08,
+          "Anger": 0.0,
+          "Surprise": 2.07
+        },
+        "Jeffrey": {
+          "Neutral": 37.48,
+          "Happiness": 18.07,
+          "Stress": 24.5,
+          "Sadness": 7.0,
+          "Anger": 10.5,
+          "Surprise": 2.45
+        }
       }
     },
     {
-      "topic": "Technical Details", "start_sec": 49, "end_sec": 114,
+      "topic": "Technical Details",
+      "start_sec": 49,
+      "end_sec": 225,
       "persons": {
-        "Agent Walker": { "Fear": 30.0, "Happiness": 10.0, "Stress": 25.0},
-        "Chuck Bartowski": { "Neutral": 35.0, "Happiness": 15.0, "Fear": 5.0 },
-        "John Casey": {"Sadness": 15.0, "Stress": 30.0, "Anger": 10.0 }
+        "Agent Walker": {
+          "Neutral": 69.52,
+          "Happiness": 23.36,
+          "Stress": 0.0,
+          "Sadness": 0.18,
+          "Anger": 0.0,
+          "Surprise": 6.22
+        },
+        "John Casey": {
+          "Neutral": 67.16,
+          "Happiness": 25.76,
+          "Stress": 0.0,
+          "Sadness": 2.81,
+          "Anger": 0.0,
+          "Surprise": 4.27
+        },
+        "Chuck Bartowski": {
+          "Neutral": 20.73,
+          "Happiness": 22.17,
+          "Stress": 28.0,
+          "Sadness": 25.61,
+          "Anger": 3.5,
+          "Surprise": 0.0
+        },
+        "Ellie": {
+          "Neutral": 81.7,
+          "Happiness": 12.24,
+          "Stress": 0.0,
+          "Sadness": 4.21,
+          "Anger": 0.0,
+          "Surprise": 1.51
+        },
+        "Carina": {
+          "Neutral": 70.42,
+          "Happiness": 21.83,
+          "Stress": 0.0,
+          "Sadness": 5.08,
+          "Anger": 0.0,
+          "Surprise": 2.07
+        },
+        "Jeffrey": {
+          "Neutral": 30.48,
+          "Happiness": 7.57,
+          "Stress": 42.0,
+          "Sadness": 10.5,
+          "Anger": 7.0,
+          "Surprise": 2.45
+        }
       }
     },
     {
-      "topic": "Client Concerns & Deadlines", "start_sec": 114, "end_sec": 178,
+      "topic": "Client Concerns & Deadlines",
+      "start_sec": 225,
+      "end_sec": 368,
       "persons": {
-        "Agent Walker": { "Fear": 15.0, "Surprise": 5.0, "Stress": 25.0 },
-        "Chuck Bartowski": { "Fear": 30.0, "Surprise": 25.0, "Stress": 15.0 },
-        "John Casey": { "Anger": 55.0, "Fear": 10.0, "Surprise": 15.0, }
+        "Agent Walker": {
+          "Neutral": 69.52,
+          "Happiness": 23.36,
+          "Stress": 0.0,
+          "Sadness": 0.18,
+          "Anger": 0.0,
+          "Surprise": 6.22
+        },
+        "John Casey": {
+          "Neutral": 67.16,
+          "Happiness": 25.76,
+          "Stress": 0.0,
+          "Sadness": 2.81,
+          "Anger": 0.0,
+          "Surprise": 4.27
+        },
+        "Chuck Bartowski": {
+          "Neutral": 20.73,
+          "Happiness": 25.67,
+          "Stress": 21.0,
+          "Sadness": 29.11,
+          "Anger": 3.5,
+          "Surprise": 0.0
+        },
+        "Ellie": {
+          "Neutral": 81.7,
+          "Happiness": 12.24,
+          "Stress": 0.0,
+          "Sadness": 4.21,
+          "Anger": 0.0,
+          "Surprise": 1.51
+        },
+        "Carina": {
+          "Neutral": 70.42,
+          "Happiness": 21.83,
+          "Stress": 0.0,
+          "Sadness": 5.08,
+          "Anger": 0.0,
+          "Surprise": 2.07
+        },
+        "Jeffrey": {
+          "Neutral": 30.48,
+          "Happiness": 11.07,
+          "Stress": 31.5,
+          "Sadness": 10.5,
+          "Anger": 14.0,
+          "Surprise": 2.45
+        }
       }
     }
   ]
 };
+
 
 /**
  * EmotionTopicBarChart
@@ -53,10 +195,13 @@ const EmotionTopicBarChart = () => {
   const allEmotions: any = Object.keys(emotionColors);
 
   const personColors: any = {
-    "Agent Walker": "#F87171",
-    "Chuck Bartowski": "#60A5FA",
-    "John Casey": "#2DD4BF",
-    "Orion": "#C084FC",
+    "Agent Walker": "#0c6904ff",
+    "Chuck Bartowski": "#0c6904ff",
+    "John Casey": "#0c6904ff",
+    "Orion": "#0c6904ff",
+    "Ellie": "#0c6904ff",
+    "Carina": "#0c6904ff",
+    "Jeffrey": "#0c6904ff",
   };
 
   // -------------------- SERIES -------------------- //
@@ -90,8 +235,8 @@ const EmotionTopicBarChart = () => {
         formatter: () => person.split(" ")[0],
         position: "top",
         color: "#E5E7EB",
-        fontSize: 12,
-        distance: 6,
+        fontSize: 10,
+        distance:6,
         textBorderColor: "#0A0A0A",
         textBorderWidth: 2,
       },

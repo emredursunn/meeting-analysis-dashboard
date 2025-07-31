@@ -21,53 +21,42 @@ interface ParticipantData {
 const rawData: Record<string, ParticipantData> = {
   "Norman": {
     pairwise_talk: {
-      "Agent Walker": 48,
+      "Agent Walker": 70,
       "Chuck Bartowski": 15,
-      "John Casey": 10,
-      "Orion": 12,
-      others: 15,
-    },
-    monologue_rate: 22,
-  },
-  "Agent Walker": {
-    pairwise_talk: {
-      "Norman": 50,
-      "Chuck Bartowski": 20,
-      "John Casey": 10,
-      "Orion": 10,
-      others: 10,
+      "John Casey": 15,
     },
     monologue_rate: 30,
   },
+  "Agent Walker": {
+    pairwise_talk: {
+      "Norman": 70,
+      "Chuck Bartowski": 15,
+      "John Casey": 15,
+    },
+    monologue_rate: 20,
+  },
   "Chuck Bartowski": {
     pairwise_talk: {
-      "Norman": 20,
+      "Norman": 15,
       "Agent Walker": 15,
-      "John Casey": 5,
-      "Orion": 5,
-      others: 5,
+      "John Casey": 50,
     },
-    monologue_rate: 35,
+    monologue_rate: 30,
   },
   "John Casey": {
     pairwise_talk: {
-      "Norman": 12,
-      "Agent Walker": 10,
-      "Chuck Bartowski": 8,
-      "Orion": 5,
-      others: 5,
+      "Norman": 15,
+      "Agent Walker": 15,
+      "Chuck Bartowski": 50,
     },
-    monologue_rate: 28,
+    monologue_rate: 30,
   },
   "Orion": {
     pairwise_talk: {
-      "Norman": 14,
-      "Agent Walker": 10,
-      "Chuck Bartowski": 6,
-      "John Casey": 5,
-      others: 5,
+      "Norman": 10,
+      "Agent Walker": 5,
     },
-    monologue_rate: 25,
+    monologue_rate: 85,
   },
 };
 
