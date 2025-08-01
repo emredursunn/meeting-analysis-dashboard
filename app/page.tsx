@@ -7,6 +7,9 @@ import EmotionsRadarChart from "./components/EmotionsRadarChart";
 import CorrelationHeatmap from "./components/CorrelationHeatmap";
 import ParticipantActivityTimeline from "./components/ParticipantActivityTimeline";
 import EmotionTimelineAreaChart from "./components/EmotionTimelineAreaChart";
+import MeetingSummary from "./components/MeetingSummary";
+import TasksList from "./components/TasksList";
+import TopicsNotes from "./components/TopicsNotes";
 
 // --- ANA DASHBOARD BILEŞENİ ---
 const App = () => {
@@ -28,6 +31,21 @@ const App = () => {
 
       {/* Main Grid */}
       <main className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* Özet */}
+        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+          <MeetingSummary />
+        </div>
+
+        {/* Görevler */}
+        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+          <TasksList />
+        </div>
+
+        {/* Konular ve Notlar */}
+        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+          <TopicsNotes />
+        </div>
+
         {/* 1. Satır: Shouting Chart (tam genişlik) */}
         <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
           <ShoutingChart />
