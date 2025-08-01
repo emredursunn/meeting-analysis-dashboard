@@ -20,9 +20,9 @@ const App = () => {
   if (!isClient) return null;
 
   return (
-    <div className="bg-[#0a0a0a] text-[#ededed] min-h-screen flex font-sans">
+    <div className="bg-[#0a0a0a] text-[#ededed] min-h-screen font-sans">
       <Sidebar />
-      <div className="flex-1 p-4 sm:p-8 overflow-y-auto">
+      <div className="ml-96 p-4 sm:p-8 overflow-y-auto">
         {/* Header */}
         <header className="text-center mb-10">
           <h1 className="text-4xl font-bold tracking-tight">Toplantı Analiz Raporu</h1>
@@ -30,7 +30,7 @@ const App = () => {
         </header>
 
         {/* Main Grid */}
-        <main className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <main className="grid grid-cols-1 gap-8">
           {/* 1. Satır: Shouting Chart (tam genişlik) */}
           <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
             <ShoutingChart />
@@ -46,15 +46,16 @@ const App = () => {
           <EmotionTimelineAreaChart />
         </div>
 
-        {/* 4. Satır: Radar + Topic Bar */}
+        {/* 4. Satır: Radar Chart */}
         <div className="bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
           <EmotionsRadarChart />
         </div>
+        {/* 5. Satır: Topic Bar */}
         <div className="bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
           <EmotionTopicBarChart />
         </div>
 
-        {/* 5. Satır: Correlation Heatmap (tam genişlik) */}
+        {/* 6. Satır: Correlation Heatmap (tam genişlik) */}
         <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
           <CorrelationHeatmap />
         </div>

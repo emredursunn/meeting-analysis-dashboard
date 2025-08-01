@@ -4,7 +4,7 @@ import { tasks, mood, nextSteps } from "../data/meeting";
 const TasksList = () => (
   <div>
     <h2 className="text-2xl font-semibold mb-4">Görevler</h2>
-    <table className="w-full text-sm text-left text-gray-300 mb-6">
+    <table className="w-full text-sm text-left text-gray-300 mb-6 table-fixed">
       <thead className="text-xs uppercase text-gray-400 border-b border-gray-600">
         <tr>
           <th scope="col" className="py-2 px-3">Kişi</th>
@@ -16,7 +16,7 @@ const TasksList = () => (
         {tasks.map((t) => (
           <tr key={t.person} className="border-b border-gray-700">
             <td className="py-2 px-3 font-medium whitespace-nowrap">{t.person}</td>
-            <td className="py-2 px-3">{t.task}</td>
+            <td className="py-2 px-3 break-words">{t.task}</td>
             <td className="py-2 px-3 whitespace-nowrap">{t.due}</td>
           </tr>
         ))}
