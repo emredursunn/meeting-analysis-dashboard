@@ -7,9 +7,7 @@ import EmotionsRadarChart from "./components/EmotionsRadarChart";
 import CorrelationHeatmap from "./components/CorrelationHeatmap";
 import ParticipantActivityTimeline from "./components/ParticipantActivityTimeline";
 import EmotionTimelineAreaChart from "./components/EmotionTimelineAreaChart";
-import MeetingSummary from "./components/MeetingSummary";
-import TasksList from "./components/TasksList";
-import TopicsNotes from "./components/TopicsNotes";
+import Sidebar from "./components/Sidebar";
 
 // --- ANA DASHBOARD BILEŞENİ ---
 const App = () => {
@@ -22,34 +20,21 @@ const App = () => {
   if (!isClient) return null;
 
   return (
-    <div className="bg-[#0a0a0a] text-[#ededed] min-h-screen p-4 sm:p-8 font-sans">
-      {/* Header */}
-      <header className="text-center mb-10">
-        <h1 className="text-4xl font-bold tracking-tight">Toplantı Analiz Raporu</h1>
-        <p className="text-lg text-gray-400 mt-2">Toplantı metriklerinin görselleştirilmiş analizi</p>
-      </header>
+    <div className="bg-[#0a0a0a] text-[#ededed] min-h-screen flex font-sans">
+      <Sidebar />
+      <div className="flex-1 p-4 sm:p-8 overflow-y-auto">
+        {/* Header */}
+        <header className="text-center mb-10">
+          <h1 className="text-4xl font-bold tracking-tight">Toplantı Analiz Raporu</h1>
+          <p className="text-lg text-gray-400 mt-2">Toplantı metriklerinin görselleştirilmiş analizi</p>
+        </header>
 
-      {/* Main Grid */}
-      <main className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Özet */}
-        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
-          <MeetingSummary />
-        </div>
-
-        {/* Görevler */}
-        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
-          <TasksList />
-        </div>
-
-        {/* Konular ve Notlar */}
-        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
-          <TopicsNotes />
-        </div>
-
-        {/* 1. Satır: Shouting Chart (tam genişlik) */}
-        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
-          <ShoutingChart />
-        </div>
+        {/* Main Grid */}
+        <main className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* 1. Satır: Shouting Chart (tam genişlik) */}
+          <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+            <ShoutingChart />
+          </div>
 
         {/* 2. Satır: Participant Activity Timeline (tam genişlik) */}
         <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
@@ -79,6 +64,7 @@ const App = () => {
       <footer className="text-center mt-12 text-gray-500">
         <p>&copy; {new Date().getFullYear()} Meeting Analysis Bot. Tüm hakları saklıdır.</p>
       </footer>
+    </div>
     </div>
   );
 };
