@@ -234,10 +234,10 @@ const EmotionTopicBarChart = () => {
         show: true,
         formatter: () => person.split(" ")[0],
         position: "top",
-        color: "#E5E7EB",
+        color: "#374151",
         fontSize: 10,
         distance:6,
-        textBorderColor: "#0A0A0A",
+        textBorderColor: "#ffffff",
         textBorderWidth: 2,
       },
     });
@@ -249,7 +249,7 @@ const EmotionTopicBarChart = () => {
     title: {
       text: "Konuya Göre Kişi • Duygu Dağılımı",
       left: "center",
-      textStyle: { color: "#E5E7EB" },
+      textStyle: { color: "#1f2937" },
     },
     tooltip: {
       trigger: "item",
@@ -284,8 +284,8 @@ const EmotionTopicBarChart = () => {
       left: "center",
       itemWidth: 15,
       itemHeight: 15,
-      textStyle: { color: "#E5E7EB", fontSize: 12 },
-      pageIconColor: "#E5E7EB",
+      textStyle: { color: "#374151", fontSize: 12 },
+      pageIconColor: "#374151",
       data: persons.map((p: any) => ({ name: p, icon: "circle", itemStyle: { color: personColors[p] || "#999" } })),
     },
     grid: {
@@ -299,7 +299,7 @@ const EmotionTopicBarChart = () => {
       type: "category",
       data: topics,
       axisLabel: {
-        color: "#E5E7EB",
+        color: "#374151",
         fontWeight: "bold",
         fontSize: 12,
         interval: 0,
@@ -307,9 +307,9 @@ const EmotionTopicBarChart = () => {
     },
     yAxis: {
       type: "value",
-      axisLabel: { color: "#E5E7EB" },
-      axisLine: { lineStyle: { color: "#6B7280" } },
-      splitLine: { lineStyle: { color: "#374151" } },
+      axisLabel: { color: "#374151" },
+      axisLine: { lineStyle: { color: "#d1d5db" } },
+      splitLine: { lineStyle: { color: "#e5e7eb" } },
     },
     series,
   };

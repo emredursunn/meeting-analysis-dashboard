@@ -4,8 +4,8 @@ import { tasks, mood, nextSteps } from "../data/meeting";
 const TasksList = () => (
   <div>
     <h2 className="text-2xl font-semibold mb-4">Görevler</h2>
-    <table className="w-full text-sm text-left text-gray-300 mb-6 table-fixed">
-      <thead className="text-xs uppercase text-gray-400 border-b border-gray-600">
+    <table className="w-full text-sm text-left text-gray-700 mb-6 table-fixed">
+      <thead className="text-xs uppercase text-gray-500 border-b border-gray-200">
         <tr>
           <th scope="col" className="py-2 px-3">Kişi</th>
           <th scope="col" className="py-2 px-3">Görev</th>
@@ -14,7 +14,7 @@ const TasksList = () => (
       </thead>
       <tbody>
         {tasks.map((t) => (
-          <tr key={t.person} className="border-b border-gray-700">
+          <tr key={t.person} className="border-b border-gray-200">
             <td className="py-2 px-3 font-medium whitespace-nowrap">{t.person}</td>
             <td className="py-2 px-3 break-words">{t.task}</td>
             <td className="py-2 px-3 whitespace-nowrap">{t.due}</td>
@@ -24,15 +24,15 @@ const TasksList = () => (
     </table>
 
     <h3 className="text-xl font-semibold mt-4 mb-2">Duygu Durumu</h3>
-    <ul className="list-disc list-inside text-sm text-gray-300">
+    <ul className="list-disc list-inside text-sm text-gray-700">
       <li><b>Pozitif:</b> {mood.positive}</li>
       <li><b>Negatif:</b> {mood.negative}</li>
       <li><b>Belirsiz:</b> {mood.uncertain}</li>
     </ul>
 
     <h3 className="text-xl font-semibold mt-6 mb-2">Sonraki Adımlar</h3>
-    <p className="text-sm text-gray-300 mb-2"><b>En önemli iş:</b> {nextSteps.important}</p>
-    <ul className="list-disc list-inside text-sm text-gray-300">
+    <p className="text-sm text-gray-700 mb-2"><b>En önemli iş:</b> {nextSteps.important}</p>
+    <ul className="list-disc list-inside text-sm text-gray-700">
       {nextSteps.followUp.map((f) => (
         <li key={f}>{f}</li>
       ))}

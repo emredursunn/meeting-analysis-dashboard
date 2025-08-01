@@ -6,7 +6,7 @@ import TopicsNotes from "./TopicsNotes";
 const meetings = ["Toplantı 1", "Toplantı 2", "Toplantı 3"];
 
 const Sidebar = () => (
-  <aside className="bg-[#171717] w-96 fixed top-0 bottom-0 left-0 flex flex-col shadow-lg">
+  <aside className="bg-white w-[30rem] fixed top-0 bottom-0 left-0 flex flex-col shadow-lg border-r border-gray-200">
     <div className="p-6 overflow-y-auto flex-1 space-y-6">
       <div>
         <h2 className="text-xl font-semibold mb-3">Toplantılar</h2>
@@ -22,9 +22,10 @@ const Sidebar = () => (
       <TasksList />
       <TopicsNotes />
     </div>
-    <div className="p-6 border-t border-gray-700 text-sm">
-      <p className="mb-2">Kullanıcı: Demo User</p>
-      <button className="w-full py-2 bg-red-600 rounded">Logout</button>
+    <div className="p-6 border-t border-gray-200 text-sm flex items-center space-x-3">
+      <img src="/favicon.ico" alt="User" className="w-8 h-8 rounded-full" />
+      <span className="flex-1">Demo User</span>
+      <button className="py-1 px-3 bg-red-500 text-white rounded">Çıkış Yap</button>
     </div>
   </aside>
 );

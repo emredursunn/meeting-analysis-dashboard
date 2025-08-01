@@ -20,43 +20,43 @@ const App = () => {
   if (!isClient) return null;
 
   return (
-    <div className="bg-[#0a0a0a] text-[#ededed] min-h-screen font-sans">
+    <div className="bg-white text-[#171717] min-h-screen font-sans">
       <Sidebar />
-      <div className="ml-96 p-4 sm:p-8 overflow-y-auto">
+      <div className="ml-[30rem] p-4 sm:p-8 overflow-y-auto">
         {/* Header */}
         <header className="text-center mb-10">
           <h1 className="text-4xl font-bold tracking-tight">Toplantı Analiz Raporu</h1>
-          <p className="text-lg text-gray-400 mt-2">Toplantı metriklerinin görselleştirilmiş analizi</p>
+          <p className="text-lg text-gray-600 mt-2">Toplantı metriklerinin görselleştirilmiş analizi</p>
         </header>
 
         {/* Main Grid */}
         <main className="grid grid-cols-1 gap-8">
           {/* 1. Satır: Shouting Chart (tam genişlik) */}
-          <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+          <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-300">
             <ShoutingChart />
           </div>
 
         {/* 2. Satır: Participant Activity Timeline (tam genişlik) */}
-        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+        <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-300">
           <ParticipantActivityTimeline />
         </div>
 
         {/* 3. Satır: Emotion Timeline Area Chart (tam genişlik) */}
-        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+        <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-300">
           <EmotionTimelineAreaChart />
         </div>
 
         {/* 4. Satır: Radar Chart */}
-        <div className="bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+        <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-300">
           <EmotionsRadarChart />
         </div>
         {/* 5. Satır: Topic Bar */}
-        <div className="bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+        <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-300">
           <EmotionTopicBarChart />
         </div>
 
         {/* 6. Satır: Correlation Heatmap (tam genişlik) */}
-        <div className="lg:col-span-2 bg-[#171717] p-6 rounded-xl shadow-lg border border-gray-700">
+        <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-300">
           <CorrelationHeatmap />
         </div>
       </main>

@@ -89,7 +89,7 @@ const ShoutingChart = () => {
     title: {
       text: 'Bağırma Yoğunluğu (Zaman Serisi)',
       left: 'center',
-      textStyle: { color: '#ededed' }
+      textStyle: { color: '#1f2937' }
     },
     tooltip: {
       trigger: 'axis',
@@ -105,12 +105,12 @@ const ShoutingChart = () => {
       type: 'category',
       boundaryGap: false,
       data: Object.keys(shoutingData),
-      axisLine: { lineStyle: { color: '#888' } },
+      axisLine: { lineStyle: { color: '#d1d5db' } },
     },
     yAxis: {
       type: 'value',
-      axisLine: { lineStyle: { color: '#888' } },
-      splitLine: { lineStyle: { color: '#333' } },
+      axisLine: { lineStyle: { color: '#d1d5db' } },
+      splitLine: { lineStyle: { color: '#e5e7eb' } },
       minInterval: 1, // Y ekseninde sadece tam sayı göster
       
     },
