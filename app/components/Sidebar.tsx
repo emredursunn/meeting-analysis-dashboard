@@ -54,14 +54,6 @@ const Sidebar = () => {
               </li>
             ))}
           </ul>
-          <div className="mt-4">
-            <h3 className="text-sm font-semibold mb-1">Son Toplantılar</h3>
-            <ul className="text-xs text-gray-600 space-y-1">
-              {meetings.slice(0, 3).map((m) => (
-                <li key={`recent-${m}`}>{m}</li>
-              ))}
-            </ul>
-          </div>
         </div>
         <MeetingSummary />
         <TasksList />
@@ -69,7 +61,7 @@ const Sidebar = () => {
       </div>
       <div className="p-6 border-t border-gray-200 text-sm flex items-center space-x-3">
         <img src="/favicon.ico" alt="User" className="w-8 h-8 rounded-full" />
-        <span className="flex-1">Demo User</span>
+        <span className="flex-1">John Doe</span>
         <button onClick={handleLogout} className="py-1 px-3 bg-red-500 text-white rounded">
           Çıkış Yap
         </button>

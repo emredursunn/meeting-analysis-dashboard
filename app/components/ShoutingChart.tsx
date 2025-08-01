@@ -87,13 +87,13 @@ const shoutingData = {
 const ShoutingChart = () => {
   const option = {
     title: {
-      text: 'Bağırma Yoğunluğu (Zaman Serisi)',
+      text: 'Ses Anomalileri (Zaman Serisi)',
       left: 'center',
       textStyle: { color: '#1f2937' }
     },
     tooltip: {
       trigger: 'axis',
-      formatter: 'Zaman: {b}s<br/>Bağırma Sayısı: {c}'
+      formatter: 'Zaman: {b}s<br/>Anomali Sayısı: {c}'
     },
     grid: {
       left: '3%',
@@ -116,7 +116,7 @@ const ShoutingChart = () => {
     },
     series: [
       {
-        name: 'Bağırma Sayısı',
+        name: 'Anomali Sayısı',
         type: 'line',
         data: Object.values(shoutingData),
         smooth: true,
