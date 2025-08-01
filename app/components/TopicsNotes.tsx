@@ -8,7 +8,7 @@ const TopicsNotes = () => (
       {topics.map(({ title, notes }) => (
         <div key={title}>
           <h4 className="text-lg font-semibold mb-1">{title}</h4>
-          <ul className="list-disc list-inside text-sm text-gray-300">
+          <ul className="list-disc list-inside text-sm text-gray-700">
             {notes.map((n) => (
               <li key={n}>{n}</li>
             ))}

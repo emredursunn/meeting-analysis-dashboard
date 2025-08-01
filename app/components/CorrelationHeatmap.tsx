@@ -106,15 +106,15 @@ const CorrelationHeatmap: React.FC = () => {
         left: "center",
         top: 16,
         textStyle: {
-          color: "#f3f4f6", // zinc‑100
+          color: "#1f2937",
           fontWeight: 600,
           fontSize: 18,
         },
       },
       tooltip: {
-        borderColor: "#334155", // slate‑800
-        backgroundColor: "#1e293b", // slate‑900
-        textStyle: { color: "#f1f5f9" },
+        borderColor: "#d1d5db",
+        backgroundColor: "#ffffff",
+        textStyle: { color: "#1f2937" },
         formatter: (params: any) => {
           const [xIdx, yIdx, val] = params.data.value;
           const row = names[yIdx];
@@ -135,13 +135,13 @@ const CorrelationHeatmap: React.FC = () => {
         data: names,
         axisLabel: {
           formatter: (val: string) => val.replace(/\s+/, "\n"),
-          color: "#f3f4f6",
+          color: "#1f2937",
           fontWeight: "600",
           fontSize: 12,
           lineHeight: 14,
           margin: 10,
         },
-        axisLine: { lineStyle: { color: "#334155" } },
+        axisLine: { lineStyle: { color: "#d1d5db" } },
         axisTick: { show: false },
       },
       yAxis: {
@@ -150,13 +150,13 @@ const CorrelationHeatmap: React.FC = () => {
         inverse: true,
         axisLabel: {
           formatter: (val: string) => val.replace(/\s+/, "\n"),
-          color: "#f3f4f6",
+          color: "#1f2937",
           fontWeight: "600",
           fontSize: 12,
           lineHeight: 14,
           margin: 10,
         },
-        axisLine: { lineStyle: { color: "#334155" } },
+        axisLine: { lineStyle: { color: "#d1d5db" } },
         axisTick: { show: false },
       },
       visualMap: {
@@ -167,11 +167,11 @@ const CorrelationHeatmap: React.FC = () => {
         right: 16,
         top: "middle",
         inRange: {
-          color: ["#164e63", "#0e7490", "#0284c7", "#38bdf8", "#a855f7"],
+          color: ["#bfdbfe", "#93c5fd", "#60a5fa", "#3b82f6", "#1e40af"],
         },
-        textStyle: { color: "#f3f4f6" },
-        borderColor: "#334155",
-        backgroundColor: "#1e293b",
+        textStyle: { color: "#1f2937" },
+        borderColor: "#d1d5db",
+        backgroundColor: "#ffffff",
       },
       series: [
         {
@@ -180,7 +180,7 @@ const CorrelationHeatmap: React.FC = () => {
           label: {
             show: true,
             formatter: ({ value }: any) => (value[2] ? `${value[2]}%` : ""),
-            color: "#fff",
+            color: "#1f2937",
             fontSize: 11,
           },
           emphasis: {
@@ -190,7 +190,7 @@ const CorrelationHeatmap: React.FC = () => {
             },
           },
           itemStyle: {
-            borderColor: "#1e293b",
+            borderColor: "#e5e7eb",
             borderWidth: 1,
           },
         },

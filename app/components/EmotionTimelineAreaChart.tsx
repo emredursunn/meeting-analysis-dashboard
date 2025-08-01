@@ -152,7 +152,7 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
     title: {
       text: "Konuşma Sırasında Oluşan Duygular (Zaman Serisi)",
       left: "center",
-      textStyle: { color: "#E5E7EB", fontSize: 16, fontWeight: "bold" },
+      textStyle: { color: "#1f2937", fontSize: 16, fontWeight: "bold" },
     },
     legend: {
       data: emotions.map((e) => ({ 
@@ -164,7 +164,7 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
       itemWidth: 18,
       itemHeight: 12,
       itemGap: 16,
-      textStyle: { color: "#F3F4F6", fontSize: 12 },
+      textStyle: { color: "#374151", fontSize: 12 },
       selectedMode: true,
     },
     tooltip: {
@@ -177,10 +177,10 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
         }
       },
       formatter: tooltipFormatter,
-      backgroundColor: "rgba(0,0,0,0.8)",
-      borderColor: "#666",
+      backgroundColor: "rgba(255,255,255,0.8)",
+      borderColor: "#ccc",
       textStyle: {
-        color: "#fff"
+        color: "#1f2937"
       }
     },
     grid: { 
@@ -197,14 +197,14 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
       name: "Zaman (Saniye)",
       nameLocation: "middle",
       nameGap: 25,
-      nameTextStyle: { color: "#9CA3AF", fontSize: 11 },
-      axisLabel: { 
-        color: "#9CA3AF", 
+      nameTextStyle: { color: "#4b5563", fontSize: 11 },
+      axisLabel: {
+        color: "#4b5563",
         fontSize: 10,
         formatter: (value:any) => value.toFixed(1) + "s"
       },
-      axisLine: { lineStyle: { color: "#6B7280" } },
-      splitLine: { show: true, lineStyle: { color: "#374151", type: "dotted" } },
+      axisLine: { lineStyle: { color: "#d1d5db" } },
+      splitLine: { show: true, lineStyle: { color: "#e5e7eb", type: "dotted" } },
     },
     yAxis: {
       type: "value",
@@ -213,13 +213,13 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
       name: "Duygu Yoğunluğu",
       nameLocation: "middle",
       nameGap: 35,
-      nameTextStyle: { color: "#9CA3AF", fontSize: 11 },
-      axisLabel: { 
-        color: "#9CA3AF", 
+      nameTextStyle: { color: "#4b5563", fontSize: 11 },
+      axisLabel: {
+        color: "#4b5563",
         fontSize: 10,
         formatter: (value:any) => value.toFixed(1)
       },
-      splitLine: { lineStyle: { color: "#374151" } },
+      splitLine: { lineStyle: { color: "#e5e7eb" } },
     },
     series,
     dataZoom: [
@@ -235,10 +235,10 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
         height: 20,
         bottom: 25,
         handleSize: 14,
-        handleStyle: { color: "#9CA3AF" },
-        borderColor: "#4B5563",
+        handleStyle: { color: "#4b5563" },
+        borderColor: "#d1d5db",
         fillerColor: "rgba(156, 163, 175, 0.2)",
-        textStyle: { color: "#9CA3AF", fontSize: 10 },
+        textStyle: { color: "#4b5563", fontSize: 10 },
         brushSelect: false,
       },
     ],

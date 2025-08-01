@@ -77,7 +77,7 @@ const EmotionsRadarChart = () => {
     title: {
       text: 'Duygu Dağılımı Karşılaştırması (Radar)',
       left: 'center',
-      textStyle: { color: '#ededed' }
+      textStyle: { color: '#1f2937' }
     },
     tooltip: {
       trigger: 'item'
@@ -85,29 +85,29 @@ const EmotionsRadarChart = () => {
     legend: {
       data: participants.map(name => name === 'team_avg' ? 'Takım Ortalaması' : name),
       bottom: 0,
-      textStyle: { color: '#ededed' }
+      textStyle: { color: '#374151' }
     },
     radar: {
       indicator: emotions.map(emotion => ({ name: emotion, max: 50 })),
       axisName: {
-        color: '#ccc',
+        color: '#4b5563',
         fontSize: 12,
       },
       splitArea: {
           areaStyle: {
-              color: ['rgba(50, 50, 50, 0.2)', 'rgba(40, 40, 40, 0.2)'],
-              shadowColor: 'rgba(0, 0, 0, 0.2)',
+              color: ['rgba(200,200,200,0.2)', 'rgba(220,220,220,0.2)'],
+              shadowColor: 'rgba(0, 0, 0, 0.1)',
               shadowBlur: 10
           }
       },
       axisLine: {
           lineStyle: {
-              color: 'rgba(200, 200, 200, 0.3)'
+              color: 'rgba(100, 100, 100, 0.3)'
           }
       },
       splitLine: {
           lineStyle: {
-              color: 'rgba(200, 200, 200, 0.3)'
+              color: 'rgba(100, 100, 100, 0.3)'
           }
       }
     },
