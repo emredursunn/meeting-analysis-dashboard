@@ -47,11 +47,11 @@ const App = () => {
         </div>
 
         {/* 4. Satır: Radar Chart */}
-        <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-300">
+        <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-300">
           <EmotionsRadarChart />
         </div>
         {/* 5. Satır: Topic Bar */}
-        <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-300">
+        <div className="lg:col-span-2 bg-white p-6 rounded-xl shadow-lg border border-gray-300">
           <EmotionTopicBarChart />
         </div>
 

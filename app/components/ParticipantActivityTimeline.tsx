@@ -345,12 +345,12 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
       {/* Konferans seçici */}
       {conferenceIds.length > 1 && (
         <div className="mb-4 flex items-center gap-2">
-          <label htmlFor="conf-select" className="text-sm text-gray-300">
+          <label htmlFor="conf-select" className="text-sm text-black">
             Konferans:
           </label>
           <select
             id="conf-select"
-            className="bg-gray-800 text-gray-100 text-sm rounded px-2 py-1 border border-gray-600"
+            className="text-sm rounded px-2 py-1 border"
             value={selectedId}
             onChange={(e: ChangeEvent<HTMLSelectElement>) => setSelectedId(e.target.value)}
           >

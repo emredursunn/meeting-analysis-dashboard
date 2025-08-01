@@ -326,7 +326,7 @@ const EmotionTopicBarChart = () => {
           top: "50%",
           right: 0,
           transform: "translateY(-50%)",
-          background: "rgba(17, 24, 39, 0.7)",
+          background: "rgba(233, 235, 238, 0.7)",
           padding: "10px 14px",
           borderTopLeftRadius: 8,
           borderBottomLeftRadius: 8,
@@ -343,7 +343,7 @@ const EmotionTopicBarChart = () => {
                 marginRight: 8,
               }}
             />
-            <span style={{ color: "#F9FAFB", fontSize: 12 }}>{emo}</span>
+            <span style={{ color: "#000", fontSize: 12 }}>{emo}</span>
           </div>
         ))}
       </div>

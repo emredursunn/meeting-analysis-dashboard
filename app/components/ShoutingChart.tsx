@@ -105,11 +105,11 @@ const ShoutingChart = () => {
       type: 'category',
       boundaryGap: false,
       data: Object.keys(shoutingData),
-      axisLine: { lineStyle: { color: '#d1d5db' } },
+      axisLine: { lineStyle: { color: '#201f1fff' } },
     },
     yAxis: {
       type: 'value',
-      axisLine: { lineStyle: { color: '#d1d5db' } },
+      axisLine: { lineStyle: { color: '#201f1fff' } },
       splitLine: { lineStyle: { color: '#e5e7eb' } },
       minInterval: 1, // Y ekseninde sadece tam sayı göster
       
