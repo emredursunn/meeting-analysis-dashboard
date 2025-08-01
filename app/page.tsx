@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import ShoutingChart from "./components/ShoutingChart";
 import EmotionTopicBarChart from "./components/EmotionTopicBarChart";
 import EmotionsRadarChart from "./components/EmotionsRadarChart";
@@ -11,11 +12,19 @@ import Sidebar from "./components/Sidebar";
 
 // --- ANA DASHBOARD BILEŞENİ ---
 const App = () => {
+  const router = useRouter();
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      const auth = localStorage.getItem("isAuthenticated");
+      if (auth !== "true") {
+        router.push("/login");
+        return;
+      }
+    }
     setIsClient(true);
-  }, []);
+  }, [router]);
 
   if (!isClient) return null;
 
