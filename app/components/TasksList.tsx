@@ -3,7 +3,6 @@ import { tasks, mood, nextSteps } from "../data/meeting";
 
 const TasksList = () => (
   <div>
-    <h2 className="text-2xl font-semibold mb-4">Görevler</h2>
     <table className="w-full text-sm text-left text-gray-700 mb-6 table-fixed">
       <thead className="text-xs uppercase text-gray-500 border-b border-gray-200">
         <tr>
@@ -23,14 +22,14 @@ const TasksList = () => (
       </tbody>
     </table>
 
-    <h3 className="text-xl font-semibold mt-4 mb-2">Duygu Durumu</h3>
+    <h4 className="text-lg font-semibold mt-4 mb-2">Duygu Durumu</h4>
     <ul className="list-disc list-inside text-sm text-gray-700">
       <li><b>Pozitif:</b> {mood.positive}</li>
       <li><b>Negatif:</b> {mood.negative}</li>
       <li><b>Belirsiz:</b> {mood.uncertain}</li>
     </ul>
 
-    <h3 className="text-xl font-semibold mt-6 mb-2">Sonraki Adımlar</h3>
+    <h4 className="text-lg font-semibold mt-6 mb-2">Sonraki Adımlar</h4>
     <p className="text-sm text-gray-700 mb-2"><b>En önemli iş:</b> {nextSteps.important}</p>
     <ul className="list-disc list-inside text-sm text-gray-700">
       {nextSteps.followUp.map((f) => (
