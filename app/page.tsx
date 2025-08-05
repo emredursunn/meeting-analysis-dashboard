@@ -12,6 +12,7 @@ import EmotionTimelineAreaChart from "./components/EmotionTimelineAreaChart";
 import DashboardLayout from "./components/DashboardLayout";
 import { useContext } from "react";
 import { SidebarOpenContext } from "./context/SidebarContext";
+import SpeakerTimelineChartCard from "./components/SpeakerTimelineChartCard";
 
 // Profil menüsü bileşeni
 const ProfileMenu = () => {
@@ -161,25 +162,14 @@ const App = () => {
             <div className="text-2xl font-bold text-gray-800 mb-4">Davranış Korelasyon Haritası</div>
             <CorrelationHeatmap />
           </div>
+
+          {/* Konuşmacı Zaman Çizelgesi */}
+          <div className="mt-12">
+            <SpeakerTimelineChartCard />
+          </div>
         </main>
 
-        {/* Footer */}
-        <footer 
-          className="flex items-center justify-center px-8 py-4 mt-10 shadow-xl text-white"
-          style={{
-            background: `
-              linear-gradient(90deg,
-                rgba(80, 180, 255, 0.9) 0%,
-                rgba(170, 80, 255, 0.9) 40%,
-                rgba(255,95, 210, 0.9) 100%)
-            `
-          }}
-        >
-          <div className="company-logo">
-            <Image src="/favicon.ico" alt="Company Logo" width={32} height={32} />
-          </div>
-          <span className="ml-3 text-base font-semibold tracking-wide">Aurora Solution &copy; {new Date().getFullYear()}</span>
-        </footer>
+
       </div>
     </DashboardLayout>
   );

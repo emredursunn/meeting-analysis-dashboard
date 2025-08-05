@@ -27,9 +27,9 @@ const Sidebar = ({ open = true, onToggle }: SidebarProps) => {
 
   return (
     <div
-      className={`md:fixed md:top-0 md:left-0 md:h-screen shadow-xl flex flex-col transition-all duration-300 ease-in-out z-40
-        ${open ? 'w-full md:w-[30rem] p-6 mb-4 md:mb-0' : 'w-0 md:w-8 p-0 mb-0'}
-        md:border-r border-gray-200 rounded-tr-3xl rounded-br-3xl order-2 md:order-1`}
+      className={`lg:fixed lg:top-0 lg:left-0 lg:h-screen shadow-xl flex flex-col transition-all duration-300 ease-in-out z-40
+        ${open ? 'w-full p-6 mb-4 lg:mb-0 lg:w-[30rem]' : 'w-full p-2 mb-4 lg:mb-0 lg:w-8 lg:p-0'}
+        lg:border-r border-gray-200 rounded-3xl lg:rounded-tr-3xl lg:rounded-br-3xl lg:rounded-tl-none lg:rounded-bl-none`}
         style={{
           backdropFilter: 'blur(12px)',
           WebkitBackdropFilter: 'blur(12px)',
@@ -47,7 +47,7 @@ const Sidebar = ({ open = true, onToggle }: SidebarProps) => {
           type="button"
           aria-label={open ? 'Paneli Gizle' : 'Paneli Aç'}
           onClick={onToggle}
-          className={`hidden md:flex fixed items-center justify-center w-8 h-8 rounded-full border border-gray-300 bg-white/90 backdrop-blur-md shadow transition-transform duration-300
+          className={`hidden lg:flex fixed items-center justify-center w-8 h-8 rounded-full border border-gray-300 bg-white/90 backdrop-blur-md shadow transition-transform duration-300
             ${open ? '' : 'rotate-180'} top-1/2 -translate-y-1/2 z-[9999]`}
           style={{
             left: open ? 'calc(30rem - 12px)' : '0.5rem',
@@ -60,8 +60,8 @@ const Sidebar = ({ open = true, onToggle }: SidebarProps) => {
         </button>
       )}
 
-      {/* İçerik: sadece açıkken göster */}
-      <div className={`flex-1 overflow-y-auto transition-opacity duration-200 scrollbar-hide ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`} style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+      {/* İçerik: mobilde her zaman göster, desktop'ta açıkken göster */}
+      <div className={`flex-1 overflow-y-auto transition-opacity duration-200 scrollbar-hide ${open ? 'opacity-100 pointer-events-auto' : 'lg:opacity-0 lg:pointer-events-none opacity-100 pointer-events-auto'}`} style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
         <div>
           <h2 className="text-xl font-bold text-gray-800 mb-3">Toplantılar</h2>
           <input
