@@ -84,11 +84,13 @@ const EmotionsRadarChart = () => {
     },
     legend: {
       data: participants.map(name => name === 'team_avg' ? 'Takım Ortalaması' : name),
-      bottom: 0,
+      bottom: 15,
       textStyle: { color: '#374151' }
     },
     radar: {
       indicator: emotions.map(emotion => ({ name: emotion, max: 50 })),
+      center: ['50%', '45%'],
+      radius: '65%',
       axisName: {
         color: '#4b5563',
         fontSize: 12,
@@ -120,7 +122,7 @@ const EmotionsRadarChart = () => {
     ]
   };
 
-  return <ReactECharts option={option} style={{ height: '500px', width: '100%' }} />;
+  return <ReactECharts option={option} style={{height: '500px', width: '100%' }} />;
 };
 
 export default EmotionsRadarChart;
