@@ -142,9 +142,7 @@ const App = () => {
           </div>
 
           {/* 4. Emotions Radar & Topic Bar yan yana */}
-          <div className={`flex flex-col gap-8 w-full ${
-            sidebarOpen ? '2xl:flex-row' : 'xl:flex-row'
-          }`}>
+
             <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 flex-1 min-w-0">
               <div className="text-2xl font-bold text-gray-800 mb-4">Duygu Durumu Radar</div>
               <div className="w-full overflow-hidden">
@@ -157,7 +155,6 @@ const App = () => {
                 <EmotionTopicBarChart />
               </div>
             </div>
-          </div>
 
           {/* 5. Correlation Heatmap */}
           <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full">

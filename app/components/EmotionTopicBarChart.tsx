@@ -235,10 +235,12 @@ const EmotionTopicBarChart = () => {
         formatter: () => person.split(" ")[0],
         position: "top",
         color: "#374151",
-        fontSize: 10,
-        distance:6,
+        fontSize: 12,
+        distance: 10,
         textBorderColor: "#ffffff",
         textBorderWidth: 2,
+        rotate: 45, // Çapraz gösterim
+        overflow: 'break',
       },
     });
   });

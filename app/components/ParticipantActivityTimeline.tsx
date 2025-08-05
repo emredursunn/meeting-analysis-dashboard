@@ -303,11 +303,17 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
         const idx = params[0].dataIndex;
         const row = filteredData[idx] || {};
         const { actor, audio_statistics = 0, video_send_statistics = 0, presentation_send_statistics = 0 } = row;
+        const formatSec = (val: number) => {
+          const h = Math.floor(val / 3600);
+          const m = Math.floor((val % 3600) / 60);
+          const s = val % 60;
+          return [h, m, s].map((v) => v.toString().padStart(2, '0')).join(':');
+        };
         return `
           <div style='font-size:14px;font-weight:600;margin-bottom:6px;'>${actor}</div>
-          <div style='display:flex;align-items:center;margin-bottom:4px;'><span style='display:inline-block;width:10px;height:10px;background:${COLORS.audio};border-radius:2px;margin-right:6px;'></span>Audio: <b style='margin-left:4px;'>${audio_statistics}</b> sn</div>
-          <div style='display:flex;align-items:center;margin-bottom:4px;'><span style='display:inline-block;width:10px;height:10px;background:${COLORS.video};border-radius:2px;margin-right:6px;'></span>Video: <b style='margin-left:4px;'>${video_send_statistics}</b> sn</div>
-          <div style='display:flex;align-items:center;'><span style='display:inline-block;width:10px;height:10px;background:${COLORS.presentation};border-radius:2px;margin-right:6px;'></span>Presentation: <b style='margin-left:4px;'>${presentation_send_statistics}</b> sn</div>
+          <div style='display:flex;align-items:center;margin-bottom:4px;'><span style='display:inline-block;width:10px;height:10px;background:${COLORS.audio};border-radius:2px;margin-right:6px;'></span>Audio: <b style='margin-left:4px;'>${formatSec(audio_statistics)}</b></div>
+          <div style='display:flex;align-items:center;margin-bottom:4px;'><span style='display:inline-block;width:10px;height:10px;background:${COLORS.video};border-radius:2px;margin-right:6px;'></span>Video: <b style='margin-left:4px;'>${formatSec(video_send_statistics)}</b></div>
+          <div style='display:flex;align-items:center;'><span style='display:inline-block;width:10px;height:10px;background:${COLORS.presentation};border-radius:2px;margin-right:6px;'></span>Presentation: <b style='margin-left:4px;'>${formatSec(presentation_send_statistics)}</b></div>
         `;
       },
     },
@@ -324,9 +330,19 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
       type: "value",
       min: 0,
       max: meetingDuration,
-      name: "Saniye",
+      name: "Süre",
       axisLine: { lineStyle: { color: "#d1d5db" } },
-      axisLabel: { color: "#374151" },
+      axisLabel: {
+        color: "#374151",
+        formatter: (value: number) => {
+          const h = Math.floor(value / 3600);
+          const m = Math.floor((value % 3600) / 60);
+          const s = value % 60;
+          return [h, m, s]
+            .map((v) => v.toString().padStart(2, '0'))
+            .join(':');
+        },
+      },
       splitLine: { lineStyle: { color: "#e5e7eb" } },
     },
     yAxis: {
