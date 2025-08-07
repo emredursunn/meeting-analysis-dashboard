@@ -7,53 +7,53 @@ const topicEmotionData: any = {
       "start_sec": 3,
       "end_sec": 49,
       "persons": {
-        "Agent Walker": {
-          "Neutral": 69.52,
-          "Happiness": 23.36,
-          "Stress": 0.0,
-          "Sadness": 0.18,
+        "John": {
+          "Neutral": 25.0,
+          "Happiness": 65.0,
+          "Stress": 2.0,
+          "Sadness": 1.0,
           "Anger": 0.0,
-          "Surprise": 6.22
+          "Surprise": 7.0
         },
-        "John Casey": {
-          "Neutral": 67.16,
-          "Happiness": 25.76,
-          "Stress": 0.0,
-          "Sadness": 2.81,
-          "Anger": 0.0,
-          "Surprise": 4.27
+        "Orion": {
+          "Neutral": 15.0,
+          "Happiness": 8.0,
+          "Stress": 55.0,
+          "Sadness": 12.0,
+          "Anger": 7.0,
+          "Surprise": 3.0
         },
-        "Chuck Bartowski": {
-          "Neutral": 24.23,
-          "Happiness": 32.67,
-          "Stress": 21.0,
-          "Sadness": 18.61,
-          "Anger": 3.5,
-          "Surprise": 0.0
-        },
-        "Ellie": {
-          "Neutral": 81.7,
-          "Happiness": 12.24,
-          "Stress": 0.0,
-          "Sadness": 4.21,
-          "Anger": 0.0,
-          "Surprise": 1.51
+        "Chuck": {
+          "Neutral": 80.0,
+          "Happiness": 12.0,
+          "Stress": 3.0,
+          "Sadness": 2.0,
+          "Anger": 1.0,
+          "Surprise": 2.0
         },
         "Carina": {
-          "Neutral": 70.42,
-          "Happiness": 21.83,
-          "Stress": 0.0,
-          "Sadness": 5.08,
-          "Anger": 0.0,
-          "Surprise": 2.07
+          "Neutral": 35.0,
+          "Happiness": 45.0,
+          "Stress": 8.0,
+          "Sadness": 5.0,
+          "Anger": 2.0,
+          "Surprise": 5.0
         },
         "Jeffrey": {
-          "Neutral": 37.48,
-          "Happiness": 18.07,
-          "Stress": 24.5,
-          "Sadness": 7.0,
-          "Anger": 10.5,
-          "Surprise": 2.45
+          "Neutral": 20.0,
+          "Happiness": 15.0,
+          "Stress": 25.0,
+          "Sadness": 35.0,
+          "Anger": 3.0,
+          "Surprise": 2.0
+        },
+        "Agent": {
+          "Neutral": 45.0,
+          "Happiness": 30.0,
+          "Stress": 10.0,
+          "Sadness": 8.0,
+          "Anger": 2.0,
+          "Surprise": 5.0
         }
       }
     },
@@ -62,53 +62,53 @@ const topicEmotionData: any = {
       "start_sec": 49,
       "end_sec": 225,
       "persons": {
-        "Agent Walker": {
-          "Neutral": 69.52,
-          "Happiness": 23.36,
-          "Stress": 0.0,
-          "Sadness": 0.18,
-          "Anger": 0.0,
-          "Surprise": 6.22
+        "John": {
+          "Neutral": 40.0,
+          "Happiness": 35.0,
+          "Stress": 15.0,
+          "Sadness": 5.0,
+          "Anger": 2.0,
+          "Surprise": 3.0
         },
-        "John Casey": {
-          "Neutral": 67.16,
-          "Happiness": 25.76,
-          "Stress": 0.0,
-          "Sadness": 2.81,
-          "Anger": 0.0,
-          "Surprise": 4.27
+        "Orion": {
+          "Neutral": 10.0,
+          "Happiness": 5.0,
+          "Stress": 70.0,
+          "Sadness": 8.0,
+          "Anger": 5.0,
+          "Surprise": 2.0
         },
-        "Chuck Bartowski": {
-          "Neutral": 20.73,
-          "Happiness": 22.17,
-          "Stress": 28.0,
-          "Sadness": 25.61,
-          "Anger": 3.5,
-          "Surprise": 0.0
-        },
-        "Ellie": {
-          "Neutral": 81.7,
-          "Happiness": 12.24,
-          "Stress": 0.0,
-          "Sadness": 4.21,
-          "Anger": 0.0,
-          "Surprise": 1.51
+        "Chuck": {
+          "Neutral": 60.0,
+          "Happiness": 25.0,
+          "Stress": 8.0,
+          "Sadness": 3.0,
+          "Anger": 2.0,
+          "Surprise": 2.0
         },
         "Carina": {
-          "Neutral": 70.42,
-          "Happiness": 21.83,
-          "Stress": 0.0,
-          "Sadness": 5.08,
-          "Anger": 0.0,
-          "Surprise": 2.07
+          "Neutral": 25.0,
+          "Happiness": 20.0,
+          "Stress": 35.0,
+          "Sadness": 15.0,
+          "Anger": 3.0,
+          "Surprise": 2.0
         },
         "Jeffrey": {
-          "Neutral": 30.48,
-          "Happiness": 7.57,
-          "Stress": 42.0,
-          "Sadness": 10.5,
-          "Anger": 7.0,
-          "Surprise": 2.45
+          "Neutral": 15.0,
+          "Happiness": 8.0,
+          "Stress": 20.0,
+          "Sadness": 50.0,
+          "Anger": 5.0,
+          "Surprise": 2.0
+        },
+        "Agent": {
+          "Neutral": 30.0,
+          "Happiness": 55.0,
+          "Stress": 8.0,
+          "Sadness": 3.0,
+          "Anger": 1.0,
+          "Surprise": 3.0
         }
       }
     },
@@ -117,53 +117,53 @@ const topicEmotionData: any = {
       "start_sec": 225,
       "end_sec": 368,
       "persons": {
-        "Agent Walker": {
-          "Neutral": 69.52,
-          "Happiness": 23.36,
-          "Stress": 0.0,
-          "Sadness": 0.18,
-          "Anger": 0.0,
-          "Surprise": 6.22
+        "John": {
+          "Neutral": 20.0,
+          "Happiness": 5.0,
+          "Stress": 60.0,
+          "Sadness": 8.0,
+          "Anger": 5.0,
+          "Surprise": 2.0
         },
-        "John Casey": {
-          "Neutral": 67.16,
-          "Happiness": 25.76,
-          "Stress": 0.0,
-          "Sadness": 2.81,
-          "Anger": 0.0,
-          "Surprise": 4.27
+        "Orion": {
+          "Neutral": 8.0,
+          "Happiness": 2.0,
+          "Stress": 45.0,
+          "Sadness": 15.0,
+          "Anger": 25.0,
+          "Surprise": 5.0
         },
-        "Chuck Bartowski": {
-          "Neutral": 20.73,
-          "Happiness": 25.67,
-          "Stress": 21.0,
-          "Sadness": 29.11,
-          "Anger": 3.5,
-          "Surprise": 0.0
-        },
-        "Ellie": {
-          "Neutral": 81.7,
-          "Happiness": 12.24,
-          "Stress": 0.0,
-          "Sadness": 4.21,
-          "Anger": 0.0,
-          "Surprise": 1.51
+        "Chuck": {
+          "Neutral": 70.0,
+          "Happiness": 18.0,
+          "Stress": 5.0,
+          "Sadness": 3.0,
+          "Anger": 2.0,
+          "Surprise": 2.0
         },
         "Carina": {
-          "Neutral": 70.42,
-          "Happiness": 21.83,
-          "Stress": 0.0,
-          "Sadness": 5.08,
-          "Anger": 0.0,
-          "Surprise": 2.07
+          "Neutral": 20.0,
+          "Happiness": 10.0,
+          "Stress": 50.0,
+          "Sadness": 12.0,
+          "Anger": 6.0,
+          "Surprise": 2.0
         },
         "Jeffrey": {
-          "Neutral": 30.48,
-          "Happiness": 11.07,
-          "Stress": 31.5,
-          "Sadness": 10.5,
-          "Anger": 14.0,
-          "Surprise": 2.45
+          "Neutral": 12.0,
+          "Happiness": 3.0,
+          "Stress": 25.0,
+          "Sadness": 55.0,
+          "Anger": 3.0,
+          "Surprise": 2.0
+        },
+        "Agent": {
+          "Neutral": 35.0,
+          "Happiness": 40.0,
+          "Stress": 15.0,
+          "Sadness": 5.0,
+          "Anger": 2.0,
+          "Surprise": 3.0
         }
       }
     }

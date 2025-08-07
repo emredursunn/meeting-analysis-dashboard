@@ -1,10 +1,10 @@
 {
   "speakers": [
     {
-      "name": "Guney Ozturk",
-      "totalDuration": 789.0899999999999,
-      "totalDurationFormatted": "00:13:09.090",
-      "speakingPercentage": "46.22",
+      "name": "John",
+      "totalDuration": 714.9199999999987,
+      "totalDurationFormatted": "00:11:54.920",
+      "speakingPercentage": "55.20",
       "segments": [
         {
           "start": "00:00:04.721",
@@ -2245,262 +2245,14 @@
           "endSeconds": 1562.431,
           "duration": 3.3500000000001364,
           "durationFormatted": "00:00:03.350"
-        },
-        {
-          "start": "00:26:08.321",
-          "end": "00:26:11.696",
-          "startSeconds": 1568.321,
-          "endSeconds": 1571.696,
-          "duration": 3.375,
-          "durationFormatted": "00:00:03.375"
-        },
-        {
-          "start": "00:26:11.696",
-          "end": "00:26:15.206",
-          "startSeconds": 1571.696,
-          "endSeconds": 1575.206,
-          "duration": 3.509999999999991,
-          "durationFormatted": "00:00:03.510"
-        },
-        {
-          "start": "00:26:15.206",
-          "end": "00:26:19.121",
-          "startSeconds": 1575.206,
-          "endSeconds": 1579.121,
-          "duration": 3.915000000000191,
-          "durationFormatted": "00:00:03.915"
-        },
-        {
-          "start": "00:26:19.121",
-          "end": "00:26:22.361",
-          "startSeconds": 1579.121,
-          "endSeconds": 1582.361,
-          "duration": 3.240000000000009,
-          "durationFormatted": "00:00:03.240"
-        },
-        {
-          "start": "00:26:23.241",
-          "end": "00:26:28.307",
-          "startSeconds": 1583.241,
-          "endSeconds": 1588.307,
-          "duration": 5.066000000000031,
-          "durationFormatted": "00:00:05.066"
-        },
-        {
-          "start": "00:26:28.307",
-          "end": "00:26:31.767",
-          "startSeconds": 1588.307,
-          "endSeconds": 1591.767,
-          "duration": 3.4600000000000364,
-          "durationFormatted": "00:00:03.460"
-        },
-        {
-          "start": "00:26:31.767",
-          "end": "00:26:35.412",
-          "startSeconds": 1591.767,
-          "endSeconds": 1595.412,
-          "duration": 3.644999999999982,
-          "durationFormatted": "00:00:03.645"
-        },
-        {
-          "start": "00:26:35.412",
-          "end": "00:26:35.721",
-          "startSeconds": 1595.412,
-          "endSeconds": 1595.721,
-          "duration": 0.3089999999999691,
-          "durationFormatted": "00:00:00.309"
-        },
-        {
-          "start": "00:26:37.731",
-          "end": "00:26:41.921",
-          "startSeconds": 1597.731,
-          "endSeconds": 1601.921,
-          "duration": 4.190000000000055,
-          "durationFormatted": "00:00:04.190"
-        },
-        {
-          "start": "00:26:43.271",
-          "end": "00:26:45.711",
-          "startSeconds": 1603.271,
-          "endSeconds": 1605.711,
-          "duration": 2.4400000000000546,
-          "durationFormatted": "00:00:02.440"
-        },
-        {
-          "start": "00:26:46.801",
-          "end": "00:26:50.924",
-          "startSeconds": 1606.801,
-          "endSeconds": 1610.924,
-          "duration": 4.123000000000047,
-          "durationFormatted": "00:00:04.123"
-        },
-        {
-          "start": "00:26:50.924",
-          "end": "00:26:51.871",
-          "startSeconds": 1610.924,
-          "endSeconds": 1611.871,
-          "duration": 0.9470000000001164,
-          "durationFormatted": "00:00:00.947"
-        },
-        {
-          "start": "00:26:52.951",
-          "end": "00:26:56.151",
-          "startSeconds": 1612.951,
-          "endSeconds": 1616.151,
-          "duration": 3.2000000000000455,
-          "durationFormatted": "00:00:03.200"
-        },
-        {
-          "start": "00:26:57.931",
-          "end": "00:26:58.641",
-          "startSeconds": 1617.931,
-          "endSeconds": 1618.641,
-          "duration": 0.7100000000000364,
-          "durationFormatted": "00:00:00.710"
-        },
-        {
-          "start": "00:27:00.221",
-          "end": "00:27:01.041",
-          "startSeconds": 1620.221,
-          "endSeconds": 1621.041,
-          "duration": 0.8199999999999363,
-          "durationFormatted": "00:00:00.820"
-        },
-        {
-          "start": "00:27:09.011",
-          "end": "00:27:12.130",
-          "startSeconds": 1629.011,
-          "endSeconds": 1632.13,
-          "duration": 3.119000000000142,
-          "durationFormatted": "00:00:03.119"
-        },
-        {
-          "start": "00:27:12.130",
-          "end": "00:27:13.741",
-          "startSeconds": 1632.13,
-          "endSeconds": 1633.741,
-          "duration": 1.6109999999998763,
-          "durationFormatted": "00:00:01.611"
-        },
-        {
-          "start": "00:27:14.931",
-          "end": "00:27:15.811",
-          "startSeconds": 1634.931,
-          "endSeconds": 1635.811,
-          "duration": 0.8799999999998818,
-          "durationFormatted": "00:00:00.880"
-        },
-        {
-          "start": "00:27:18.921",
-          "end": "00:27:20.531",
-          "startSeconds": 1638.921,
-          "endSeconds": 1640.531,
-          "duration": 1.6099999999999,
-          "durationFormatted": "00:00:01.610"
-        },
-        {
-          "start": "00:27:21.501",
-          "end": "00:27:23.882",
-          "startSeconds": 1641.501,
-          "endSeconds": 1643.882,
-          "duration": 2.3810000000000855,
-          "durationFormatted": "00:00:02.381"
-        },
-        {
-          "start": "00:27:23.882",
-          "end": "00:27:25.301",
-          "startSeconds": 1643.882,
-          "endSeconds": 1645.301,
-          "duration": 1.418999999999869,
-          "durationFormatted": "00:00:01.419"
-        },
-        {
-          "start": "00:27:29.041",
-          "end": "00:27:31.151",
-          "startSeconds": 1649.041,
-          "endSeconds": 1651.151,
-          "duration": 2.1100000000001273,
-          "durationFormatted": "00:00:02.110"
-        },
-        {
-          "start": "00:27:32.531",
-          "end": "00:27:33.411",
-          "startSeconds": 1652.531,
-          "endSeconds": 1653.411,
-          "duration": 0.8800000000001091,
-          "durationFormatted": "00:00:00.880"
-        },
-        {
-          "start": "00:27:34.811",
-          "end": "00:27:38.891",
-          "startSeconds": 1654.811,
-          "endSeconds": 1658.891,
-          "duration": 4.080000000000155,
-          "durationFormatted": "00:00:04.080"
-        },
-        {
-          "start": "00:27:43.251",
-          "end": "00:27:44.841",
-          "startSeconds": 1663.251,
-          "endSeconds": 1664.841,
-          "duration": 1.5899999999999181,
-          "durationFormatted": "00:00:01.590"
-        },
-        {
-          "start": "00:27:51.061",
-          "end": "00:27:52.391",
-          "startSeconds": 1671.061,
-          "endSeconds": 1672.391,
-          "duration": 1.3300000000001546,
-          "durationFormatted": "00:00:01.330"
-        },
-        {
-          "start": "00:27:58.021",
-          "end": "00:28:01.110",
-          "startSeconds": 1678.021,
-          "endSeconds": 1681.11,
-          "duration": 3.088999999999942,
-          "durationFormatted": "00:00:03.089"
-        },
-        {
-          "start": "00:28:01.110",
-          "end": "00:28:02.601",
-          "startSeconds": 1681.11,
-          "endSeconds": 1682.601,
-          "duration": 1.4910000000002128,
-          "durationFormatted": "00:00:01.491"
-        },
-        {
-          "start": "00:28:11.021",
-          "end": "00:28:12.161",
-          "startSeconds": 1691.021,
-          "endSeconds": 1692.161,
-          "duration": 1.1400000000001,
-          "durationFormatted": "00:00:01.140"
-        },
-        {
-          "start": "00:28:14.711",
-          "end": "00:28:16.391",
-          "startSeconds": 1694.711,
-          "endSeconds": 1696.391,
-          "duration": 1.6800000000000637,
-          "durationFormatted": "00:00:01.680"
-        },
-        {
-          "start": "00:28:20.551",
-          "end": "00:28:23.361",
-          "startSeconds": 1700.551,
-          "endSeconds": 1703.361,
-          "duration": 2.810000000000173,
-          "durationFormatted": "00:00:02.810"
         }
       ]
     },
     {
-      "name": "MUHAMMED SEFA SÖZER",
-      "totalDuration": 283.9900000000006,
-      "totalDurationFormatted": "00:04:43.990",
-      "speakingPercentage": "16.63",
+      "name": "Orion",
+      "totalDuration": 272.08000000000027,
+      "totalDurationFormatted": "00:04:32.080",
+      "speakingPercentage": "21.01",
       "segments": [
         {
           "start": "00:00:28.391",
@@ -3421,78 +3173,14 @@
           "endSeconds": 1529.031,
           "duration": 0.6199999999998909,
           "durationFormatted": "00:00:00.620"
-        },
-        {
-          "start": "00:26:03.051",
-          "end": "00:26:07.191",
-          "startSeconds": 1563.051,
-          "endSeconds": 1567.191,
-          "duration": 4.1400000000001,
-          "durationFormatted": "00:00:04.140"
-        },
-        {
-          "start": "00:26:07.191",
-          "end": "00:26:09.261",
-          "startSeconds": 1567.191,
-          "endSeconds": 1569.261,
-          "duration": 2.0699999999999363,
-          "durationFormatted": "00:00:02.070"
-        },
-        {
-          "start": "00:26:20.031",
-          "end": "00:26:20.641",
-          "startSeconds": 1580.031,
-          "endSeconds": 1580.641,
-          "duration": 0.6100000000001273,
-          "durationFormatted": "00:00:00.610"
-        },
-        {
-          "start": "00:28:01.771",
-          "end": "00:28:02.521",
-          "startSeconds": 1681.771,
-          "endSeconds": 1682.521,
-          "duration": 0.75,
-          "durationFormatted": "00:00:00.750"
-        },
-        {
-          "start": "00:28:11.881",
-          "end": "00:28:14.361",
-          "startSeconds": 1691.881,
-          "endSeconds": 1694.361,
-          "duration": 2.480000000000018,
-          "durationFormatted": "00:00:02.480"
-        },
-        {
-          "start": "00:28:16.901",
-          "end": "00:28:17.541",
-          "startSeconds": 1696.901,
-          "endSeconds": 1697.541,
-          "duration": 0.6399999999998727,
-          "durationFormatted": "00:00:00.640"
-        },
-        {
-          "start": "00:28:21.831",
-          "end": "00:28:22.451",
-          "startSeconds": 1701.831,
-          "endSeconds": 1702.451,
-          "duration": 0.6200000000001182,
-          "durationFormatted": "00:00:00.620"
-        },
-        {
-          "start": "00:28:23.791",
-          "end": "00:28:24.391",
-          "startSeconds": 1703.791,
-          "endSeconds": 1704.391,
-          "duration": 0.6000000000001364,
-          "durationFormatted": "00:00:00.600"
         }
       ]
     },
     {
-      "name": "burhan ok",
-      "totalDuration": 134.2099999999997,
-      "totalDurationFormatted": "00:02:14.210",
-      "speakingPercentage": "7.86",
+      "name": "Chuck",
+      "totalDuration": 128.48999999999944,
+      "totalDurationFormatted": "00:02:08.490",
+      "speakingPercentage": "9.92",
       "segments": [
         {
           "start": "00:06:42.371",
@@ -4069,46 +3757,214 @@
           "endSeconds": 1401.091,
           "duration": 1.1099999999999,
           "durationFormatted": "00:00:01.110"
-        },
-        {
-          "start": "00:27:16.841",
-          "end": "00:27:18.231",
-          "startSeconds": 1636.841,
-          "endSeconds": 1638.231,
-          "duration": 1.3900000000001,
-          "durationFormatted": "00:00:01.390"
-        },
-        {
-          "start": "00:27:41.751",
-          "end": "00:27:44.631",
-          "startSeconds": 1661.751,
-          "endSeconds": 1664.631,
-          "duration": 2.880000000000109,
-          "durationFormatted": "00:00:02.880"
-        },
-        {
-          "start": "00:28:05.881",
-          "end": "00:28:06.421",
-          "startSeconds": 1685.881,
-          "endSeconds": 1686.421,
-          "duration": 0.5399999999999636,
-          "durationFormatted": "00:00:00.540"
-        },
-        {
-          "start": "00:28:21.761",
-          "end": "00:28:22.671",
-          "startSeconds": 1701.761,
-          "endSeconds": 1702.671,
-          "duration": 0.9100000000000819,
-          "durationFormatted": "00:00:00.910"
         }
       ]
     },
     {
-      "name": "Emre",
-      "totalDuration": 84.5800000000004,
-      "totalDurationFormatted": "00:01:24.580",
-      "speakingPercentage": "4.95",
+      "name": "Carina",
+      "totalDuration": 80.28000000000009,
+      "totalDurationFormatted": "00:01:20.280",
+      "speakingPercentage": "6.20",
+      "segments": [
+        {
+          "start": "00:05:06.741",
+          "end": "00:05:11.611",
+          "startSeconds": 306.741,
+          "endSeconds": 311.611,
+          "duration": 4.8700000000000045,
+          "durationFormatted": "00:00:04.870"
+        },
+        {
+          "start": "00:05:12.301",
+          "end": "00:05:19.475",
+          "startSeconds": 312.301,
+          "endSeconds": 319.475,
+          "duration": 7.174000000000035,
+          "durationFormatted": "00:00:07.174"
+        },
+        {
+          "start": "00:05:19.475",
+          "end": "00:05:23.241",
+          "startSeconds": 319.475,
+          "endSeconds": 323.241,
+          "duration": 3.7659999999999627,
+          "durationFormatted": "00:00:03.766"
+        },
+        {
+          "start": "00:05:23.911",
+          "end": "00:05:28.745",
+          "startSeconds": 323.911,
+          "endSeconds": 328.745,
+          "duration": 4.834000000000003,
+          "durationFormatted": "00:00:04.834"
+        },
+        {
+          "start": "00:05:28.745",
+          "end": "00:05:34.025",
+          "startSeconds": 328.745,
+          "endSeconds": 334.025,
+          "duration": 5.279999999999973,
+          "durationFormatted": "00:00:05.280"
+        },
+        {
+          "start": "00:05:34.025",
+          "end": "00:05:38.933",
+          "startSeconds": 334.025,
+          "endSeconds": 338.933,
+          "duration": 4.9080000000000155,
+          "durationFormatted": "00:00:04.908"
+        },
+        {
+          "start": "00:05:38.933",
+          "end": "00:05:43.321",
+          "startSeconds": 338.933,
+          "endSeconds": 343.321,
+          "duration": 4.388000000000034,
+          "durationFormatted": "00:00:04.388"
+        },
+        {
+          "start": "00:05:43.321",
+          "end": "00:05:47.411",
+          "startSeconds": 343.321,
+          "endSeconds": 347.411,
+          "duration": 4.089999999999975,
+          "durationFormatted": "00:00:04.090"
+        },
+        {
+          "start": "00:05:49.061",
+          "end": "00:05:49.941",
+          "startSeconds": 349.061,
+          "endSeconds": 349.94100000000003,
+          "duration": 0.8800000000000523,
+          "durationFormatted": "00:00:00.880"
+        },
+        {
+          "start": "00:05:51.401",
+          "end": "00:05:55.689",
+          "startSeconds": 351.401,
+          "endSeconds": 355.689,
+          "duration": 4.288000000000011,
+          "durationFormatted": "00:00:04.288"
+        },
+        {
+          "start": "00:05:55.689",
+          "end": "00:05:56.981",
+          "startSeconds": 355.689,
+          "endSeconds": 356.981,
+          "duration": 1.2919999999999732,
+          "durationFormatted": "00:00:01.292"
+        },
+        {
+          "start": "00:05:58.541",
+          "end": "00:06:01.351",
+          "startSeconds": 358.541,
+          "endSeconds": 361.351,
+          "duration": 2.8100000000000023,
+          "durationFormatted": "00:00:02.810"
+        },
+        {
+          "start": "00:06:03.141",
+          "end": "00:06:08.311",
+          "startSeconds": 363.141,
+          "endSeconds": 368.311,
+          "duration": 5.169999999999959,
+          "durationFormatted": "00:00:05.170"
+        },
+        {
+          "start": "00:06:08.311",
+          "end": "00:06:13.761",
+          "startSeconds": 368.311,
+          "endSeconds": 373.761,
+          "duration": 5.4500000000000455,
+          "durationFormatted": "00:00:05.450"
+        },
+        {
+          "start": "00:06:13.761",
+          "end": "00:06:19.071",
+          "startSeconds": 373.761,
+          "endSeconds": 379.071,
+          "duration": 5.310000000000002,
+          "durationFormatted": "00:00:05.310"
+        },
+        {
+          "start": "00:06:20.081",
+          "end": "00:06:23.221",
+          "startSeconds": 380.081,
+          "endSeconds": 383.221,
+          "duration": 3.1399999999999864,
+          "durationFormatted": "00:00:03.140"
+        },
+        {
+          "start": "00:06:28.621",
+          "end": "00:06:29.051",
+          "startSeconds": 388.621,
+          "endSeconds": 389.051,
+          "duration": 0.4300000000000068,
+          "durationFormatted": "00:00:00.430"
+        },
+        {
+          "start": "00:06:31.021",
+          "end": "00:06:34.784",
+          "startSeconds": 391.021,
+          "endSeconds": 394.784,
+          "duration": 3.762999999999977,
+          "durationFormatted": "00:00:03.763"
+        },
+        {
+          "start": "00:06:34.784",
+          "end": "00:06:36.341",
+          "startSeconds": 394.784,
+          "endSeconds": 396.341,
+          "duration": 1.5570000000000164,
+          "durationFormatted": "00:00:01.557"
+        },
+        {
+          "start": "00:06:37.011",
+          "end": "00:06:40.321",
+          "startSeconds": 397.011,
+          "endSeconds": 400.321,
+          "duration": 3.3100000000000023,
+          "durationFormatted": "00:00:03.310"
+        },
+        {
+          "start": "00:08:52.511",
+          "end": "00:08:53.481",
+          "startSeconds": 532.511,
+          "endSeconds": 533.481,
+          "duration": 0.9700000000000273,
+          "durationFormatted": "00:00:00.970"
+        },
+        {
+          "start": "00:15:04.941",
+          "end": "00:15:06.041",
+          "startSeconds": 904.941,
+          "endSeconds": 906.041,
+          "duration": 1.1000000000000227,
+          "durationFormatted": "00:00:01.100"
+        },
+        {
+          "start": "00:15:06.291",
+          "end": "00:15:07.291",
+          "startSeconds": 906.291,
+          "endSeconds": 907.291,
+          "duration": 1,
+          "durationFormatted": "00:00:01.000"
+        },
+        {
+          "start": "00:23:10.351",
+          "end": "00:23:10.851",
+          "startSeconds": 1390.351,
+          "endSeconds": 1390.851,
+          "duration": 0.5,
+          "durationFormatted": "00:00:00.500"
+        }
+      ]
+    },
+    {
+      "name": "Jeffrey",
+      "totalDuration": 63.43000000000076,
+      "totalDurationFormatted": "00:01:03.430",
+      "speakingPercentage": "4.90",
       "segments": [
         {
           "start": "00:00:17.411",
@@ -4357,294 +4213,14 @@
           "endSeconds": 1532.401,
           "duration": 0.7100000000000364,
           "durationFormatted": "00:00:00.710"
-        },
-        {
-          "start": "00:26:08.351",
-          "end": "00:26:08.371",
-          "startSeconds": 1568.351,
-          "endSeconds": 1568.371,
-          "duration": 0.01999999999998181,
-          "durationFormatted": "00:00:00.020"
-        },
-        {
-          "start": "00:26:37.861",
-          "end": "00:26:38.821",
-          "startSeconds": 1597.861,
-          "endSeconds": 1598.821,
-          "duration": 0.959999999999809,
-          "durationFormatted": "00:00:00.960"
-        },
-        {
-          "start": "00:26:42.371",
-          "end": "00:26:42.831",
-          "startSeconds": 1602.371,
-          "endSeconds": 1602.831,
-          "duration": 0.459999999999809,
-          "durationFormatted": "00:00:00.460"
-        },
-        {
-          "start": "00:26:57.271",
-          "end": "00:27:02.261",
-          "startSeconds": 1617.271,
-          "endSeconds": 1622.261,
-          "duration": 4.990000000000009,
-          "durationFormatted": "00:00:04.990"
-        },
-        {
-          "start": "00:27:03.121",
-          "end": "00:27:06.371",
-          "startSeconds": 1623.121,
-          "endSeconds": 1626.371,
-          "duration": 3.25,
-          "durationFormatted": "00:00:03.250"
-        },
-        {
-          "start": "00:27:07.441",
-          "end": "00:27:10.791",
-          "startSeconds": 1627.441,
-          "endSeconds": 1630.791,
-          "duration": 3.349999999999909,
-          "durationFormatted": "00:00:03.350"
-        },
-        {
-          "start": "00:27:14.611",
-          "end": "00:27:18.571",
-          "startSeconds": 1634.611,
-          "endSeconds": 1638.571,
-          "duration": 3.959999999999809,
-          "durationFormatted": "00:00:03.960"
-        },
-        {
-          "start": "00:27:26.031",
-          "end": "00:27:27.851",
-          "startSeconds": 1646.031,
-          "endSeconds": 1647.851,
-          "duration": 1.8200000000001637,
-          "durationFormatted": "00:00:01.820"
-        },
-        {
-          "start": "00:28:04.221",
-          "end": "00:28:05.131",
-          "startSeconds": 1684.221,
-          "endSeconds": 1685.131,
-          "duration": 0.9100000000000819,
-          "durationFormatted": "00:00:00.910"
-        },
-        {
-          "start": "00:28:21.551",
-          "end": "00:28:22.981",
-          "startSeconds": 1701.551,
-          "endSeconds": 1702.981,
-          "duration": 1.4300000000000637,
-          "durationFormatted": "00:00:01.430"
         }
       ]
     },
     {
-      "name": "Selin Üzeyiroğlu",
-      "totalDuration": 80.28000000000009,
-      "totalDurationFormatted": "00:01:20.280",
-      "speakingPercentage": "4.70",
-      "segments": [
-        {
-          "start": "00:05:06.741",
-          "end": "00:05:11.611",
-          "startSeconds": 306.741,
-          "endSeconds": 311.611,
-          "duration": 4.8700000000000045,
-          "durationFormatted": "00:00:04.870"
-        },
-        {
-          "start": "00:05:12.301",
-          "end": "00:05:19.475",
-          "startSeconds": 312.301,
-          "endSeconds": 319.475,
-          "duration": 7.174000000000035,
-          "durationFormatted": "00:00:07.174"
-        },
-        {
-          "start": "00:05:19.475",
-          "end": "00:05:23.241",
-          "startSeconds": 319.475,
-          "endSeconds": 323.241,
-          "duration": 3.7659999999999627,
-          "durationFormatted": "00:00:03.766"
-        },
-        {
-          "start": "00:05:23.911",
-          "end": "00:05:28.745",
-          "startSeconds": 323.911,
-          "endSeconds": 328.745,
-          "duration": 4.834000000000003,
-          "durationFormatted": "00:00:04.834"
-        },
-        {
-          "start": "00:05:28.745",
-          "end": "00:05:34.025",
-          "startSeconds": 328.745,
-          "endSeconds": 334.025,
-          "duration": 5.279999999999973,
-          "durationFormatted": "00:00:05.280"
-        },
-        {
-          "start": "00:05:34.025",
-          "end": "00:05:38.933",
-          "startSeconds": 334.025,
-          "endSeconds": 338.933,
-          "duration": 4.9080000000000155,
-          "durationFormatted": "00:00:04.908"
-        },
-        {
-          "start": "00:05:38.933",
-          "end": "00:05:43.321",
-          "startSeconds": 338.933,
-          "endSeconds": 343.321,
-          "duration": 4.388000000000034,
-          "durationFormatted": "00:00:04.388"
-        },
-        {
-          "start": "00:05:43.321",
-          "end": "00:05:47.411",
-          "startSeconds": 343.321,
-          "endSeconds": 347.411,
-          "duration": 4.089999999999975,
-          "durationFormatted": "00:00:04.090"
-        },
-        {
-          "start": "00:05:49.061",
-          "end": "00:05:49.941",
-          "startSeconds": 349.061,
-          "endSeconds": 349.94100000000003,
-          "duration": 0.8800000000000523,
-          "durationFormatted": "00:00:00.880"
-        },
-        {
-          "start": "00:05:51.401",
-          "end": "00:05:55.689",
-          "startSeconds": 351.401,
-          "endSeconds": 355.689,
-          "duration": 4.288000000000011,
-          "durationFormatted": "00:00:04.288"
-        },
-        {
-          "start": "00:05:55.689",
-          "end": "00:05:56.981",
-          "startSeconds": 355.689,
-          "endSeconds": 356.981,
-          "duration": 1.2919999999999732,
-          "durationFormatted": "00:00:01.292"
-        },
-        {
-          "start": "00:05:58.541",
-          "end": "00:06:01.351",
-          "startSeconds": 358.541,
-          "endSeconds": 361.351,
-          "duration": 2.8100000000000023,
-          "durationFormatted": "00:00:02.810"
-        },
-        {
-          "start": "00:06:03.141",
-          "end": "00:06:08.311",
-          "startSeconds": 363.141,
-          "endSeconds": 368.311,
-          "duration": 5.169999999999959,
-          "durationFormatted": "00:00:05.170"
-        },
-        {
-          "start": "00:06:08.311",
-          "end": "00:06:13.761",
-          "startSeconds": 368.311,
-          "endSeconds": 373.761,
-          "duration": 5.4500000000000455,
-          "durationFormatted": "00:00:05.450"
-        },
-        {
-          "start": "00:06:13.761",
-          "end": "00:06:19.071",
-          "startSeconds": 373.761,
-          "endSeconds": 379.071,
-          "duration": 5.310000000000002,
-          "durationFormatted": "00:00:05.310"
-        },
-        {
-          "start": "00:06:20.081",
-          "end": "00:06:23.221",
-          "startSeconds": 380.081,
-          "endSeconds": 383.221,
-          "duration": 3.1399999999999864,
-          "durationFormatted": "00:00:03.140"
-        },
-        {
-          "start": "00:06:28.621",
-          "end": "00:06:29.051",
-          "startSeconds": 388.621,
-          "endSeconds": 389.051,
-          "duration": 0.4300000000000068,
-          "durationFormatted": "00:00:00.430"
-        },
-        {
-          "start": "00:06:31.021",
-          "end": "00:06:34.784",
-          "startSeconds": 391.021,
-          "endSeconds": 394.784,
-          "duration": 3.762999999999977,
-          "durationFormatted": "00:00:03.763"
-        },
-        {
-          "start": "00:06:34.784",
-          "end": "00:06:36.341",
-          "startSeconds": 394.784,
-          "endSeconds": 396.341,
-          "duration": 1.5570000000000164,
-          "durationFormatted": "00:00:01.557"
-        },
-        {
-          "start": "00:06:37.011",
-          "end": "00:06:40.321",
-          "startSeconds": 397.011,
-          "endSeconds": 400.321,
-          "duration": 3.3100000000000023,
-          "durationFormatted": "00:00:03.310"
-        },
-        {
-          "start": "00:08:52.511",
-          "end": "00:08:53.481",
-          "startSeconds": 532.511,
-          "endSeconds": 533.481,
-          "duration": 0.9700000000000273,
-          "durationFormatted": "00:00:00.970"
-        },
-        {
-          "start": "00:15:04.941",
-          "end": "00:15:06.041",
-          "startSeconds": 904.941,
-          "endSeconds": 906.041,
-          "duration": 1.1000000000000227,
-          "durationFormatted": "00:00:01.100"
-        },
-        {
-          "start": "00:15:06.291",
-          "end": "00:15:07.291",
-          "startSeconds": 906.291,
-          "endSeconds": 907.291,
-          "duration": 1,
-          "durationFormatted": "00:00:01.000"
-        },
-        {
-          "start": "00:23:10.351",
-          "end": "00:23:10.851",
-          "startSeconds": 1390.351,
-          "endSeconds": 1390.851,
-          "duration": 0.5,
-          "durationFormatted": "00:00:00.500"
-        }
-      ]
-    },
-    {
-      "name": "Hilmi Tunahan AHLATÇI",
-      "totalDuration": 36.619999999999834,
-      "totalDurationFormatted": "00:00:36.620",
-      "speakingPercentage": "2.14",
+      "name": "Agent",
+      "totalDuration": 35.96999999999997,
+      "totalDurationFormatted": "00:00:35.970",
+      "speakingPercentage": "2.78",
       "segments": [
         {
           "start": "00:03:38.211",
@@ -4725,21 +4301,18 @@
           "endSeconds": 305.051,
           "duration": 0.8999999999999773,
           "durationFormatted": "00:00:00.900"
-        },
-        {
-          "start": "00:28:26.611",
-          "end": "00:28:27.261",
-          "startSeconds": 1706.611,
-          "endSeconds": 1707.261,
-          "duration": 0.6499999999998636,
-          "durationFormatted": "00:00:00.650"
         }
       ]
     }
   ],
   "meetingInfo": {
-    "totalDuration": 1707.261,
-    "totalDurationFormatted": "00:28:27.261",
-    "totalSpeakers": 6
+    "totalMeetingDuration": 1557.71,
+    "totalMeetingDurationFormatted": "00:25:57.710",
+    "totalSpeakingDuration": 1295.1699999999992,
+    "totalSpeakingDurationFormatted": "00:21:35.170",
+    "speakingToMeetingRatio": "83.15",
+    "totalSpeakers": 6,
+    "meetingStartTime": "00:00:04.721",
+    "meetingEndTime": "00:26:02.431"
   }
 }

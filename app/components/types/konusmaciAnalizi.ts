@@ -15,6 +15,18 @@ export interface Speaker {
   segments: SpeakerSegment[];
 }
 
+export interface MeetingInfo {
+  totalMeetingDuration: number;
+  totalMeetingDurationFormatted: string;
+  totalSpeakingDuration: number;
+  totalSpeakingDurationFormatted: string;
+  speakingToMeetingRatio: string;
+  totalSpeakers: number;
+  meetingStartTime: string;
+  meetingEndTime: string;
+}
+
 export interface KonusmaciAnaliziData {
   speakers: Speaker[];
+  meetingInfo: MeetingInfo;
 }

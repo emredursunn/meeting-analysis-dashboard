@@ -13,7 +13,7 @@ const radarData: any = {
     "Happiness": 14.57,
     "Sadness": 7.00,
     "Stress": 31.5,
-    "Anger": 10.5,
+    "Anger": 50.5,
     "Neutral": 33.98,
     "Surprise": 2.45
   },
@@ -27,7 +27,7 @@ const radarData: any = {
   },
   "John Casey": {
     "Happiness": 14.17,
-    "Sadness": 29.26,
+    "Sadness": 50.26,
     "Stress": 17.5,
     "Anger": 7.0,
     "Neutral": 31.51,
@@ -46,7 +46,7 @@ const radarData: any = {
     "Sadness": 5.07,
     "Stress": 0.6,
     "Anger": 0.0,
-    "Neutral": 70.43,
+    "Neutral": 30.43,
     "Surprise": 2.07
   },
   "Carina": {
@@ -54,7 +54,7 @@ const radarData: any = {
     "Sadness": 2.8,
     "Stress": 0.0,
     "Anger": 0.0,
-    "Neutral": 67.17,
+    "Neutral": 50.17,
     "Surprise": 4.27
   }
 };

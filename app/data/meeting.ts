@@ -1,5 +1,5 @@
 export const summary = {
-  general: "Toplantı, Burhan Ok'un Otokent ile ilgili sunumunun devamı üzerine odaklanmıştır. Ayrıca Axess dokunmatik ekranın yenilenmesi (refresh) ve Euro projeksiyonların tamamlanması gibi konular da ele alınmıştır. Selin Üzeyiroğlu, Çıkamıyorum promosyonu ve Emre Dursun'un düzenleyeceği grafiklere bakma görevleri belirtmiştir. Sosyal medya testleri, Sefalet testi ve dashfordlar üzerinde de çalışmalar yapılacaktır.",
+  general: "Toplantı, Norman'un Otokent ile ilgili sunumunun devamı üzerine odaklanmıştır. Ayrıca Axess dokunmatik ekranın yenilenmesi (refresh) ve Euro projeksiyonların tamamlanması gibi konular da ele alınmıştır. Agent Walker, Çıkamıyorum promosyonu ve John Casey'un düzenleyeceği grafiklere bakma görevleri belirtmiştir. Sosyal medya testleri, Sefalet testi ve dashfordlar üzerinde de çalışmalar yapılacaktır.",
   purpose: "Otokent sunumunun tamamlanması, Axess dokunmatik ekranın yenilenmesi, Euro projeksiyonların ilerletilmesi ve sosyal medya ile ilgili görevlerin dağıtılması.",
   mainTopics: [
     "Otokent Sunumu",
@@ -16,8 +16,8 @@ export const topics = [
   {
     title: "Otokent Sunumu",
     notes: [
-      "Burhan Ok, Otokent ile ilgili sunumunu tamamlamaya çalışıyor. Video kısmını bitirdikten sonra diğer bölümlere geçecek.",
-      "Sosyal medya tarafında destek gerekirse Burhan Ok bakacak.",
+      "Norman, Otokent ile ilgili sunumunu tamamlamaya çalışıyor. Video kısmını bitirdikten sonra diğer bölümlere geçecek.",
+      "Sosyal medya tarafında destek gerekirse Norman bakacak.",
     ],
   },
   {
@@ -30,27 +30,27 @@ export const topics = [
   {
     title: "Euro Projeksiyonlar",
     notes: [
-      "Selin Üzeyiroğlu, bugün bir Euro projeksiyonu daha bitirmeyi planlıyor.",
-      "Daha sonra Çıkamıyorum promosyonu ve Emre Dursun'un düzenleyeceği grafiklere bakacak.",
+      "Agent Walker, bugün bir Euro projeksiyonu daha bitirmeyi planlıyor.",
+      "Daha sonra Çıkamıyorum promosyonu ve John Casey'un düzenleyeceği grafiklere bakacak.",
     ],
   },
   {
     title: "Sosyal Medya Testleri",
     notes: [
-      "Siz, Burhan Ok'tan sosyal medya ile ilgili isteklerde bulunacak ve testlerini yapacaktır.",
-      "Hilmi Tunahan Ahlatçı da sabah Sefalet testi yapıp öğleden sonra sosyal medya uygulamasına bakacak.",
+      "Orion, Norman'dan sosyal medya ile ilgili isteklerde bulunacak ve testlerini yapacaktır.",
+      "Agent da sabah Sefalet testi yapıp öğleden sonra sosyal medya uygulamasına bakacak.",
     ],
   },
-  { title: "Sefalet Testi", notes: ["Hilmi Tunahan Ahlatçı, sabah saatlerinde Sefalet testini yapacak."] },
-  { title: "Dashfordlar", notes: ["Emre Dursun, dashfordları sahiplenecek ve üzerinde çalışacaktır."] },
+  { title: "Sefalet Testi", notes: ["Agent, sabah saatlerinde Sefalet testini yapacak."] },
+  { title: "Dashfordlar", notes: ["John Casey, dashfordları sahiplenecek ve üzerinde çalışacaktır."] },
 ];
 
 export const tasks = [
-  { person: "Burhan Ok", task: "Otokent sunumunu tamamlamak", due: "Bugün" },
-  { person: "Selin Üzeyiroğlu", task: "Euro projeksiyonu bitirmek, Çıkamıyorum promosyonuna bakmak, Emre'nin düzenleyeceği grafiklere göz atmak", due: "Bugün" },
-  { person: "Siz", task: "Sosyal medya testlerini yapmak", due: "Bugün" },
-  { person: "Hilmi Tunahan Ahlatçı", task: "Sefalet testi yapmak, sosyal medya uygulamasına bakmak", due: "Bugün" },
-  { person: "Emre Dursun", task: "Axess dokunmatik ekran yenileme (refresh), dashfordlar üzerinde çalışmak", due: "Belirlenen süre içinde" },
+  { person: "Norman", task: "Otokent sunumunu tamamlamak", due: "Bugün" },
+  { person: "Agent Walker", task: "Euro projeksiyonu bitirmek, Çıkamıyorum promosyonuna bakmak, John Casey'nin düzenleyeceği grafiklere göz atmak", due: "Bugün" },
+  { person: "Orion", task: "Sosyal medya testlerini yapmak", due: "Bugün" },
+  { person: "Agent", task: "Sefalet testi yapmak, sosyal medya uygulamasına bakmak", due: "Bugün" },
+  { person: "John Casey", task: "Axess dokunmatik ekran yenileme (refresh), dashfordlar üzerinde çalışmak", due: "Belirlenen süre içinde" },
 ];
 
 export const mood = {

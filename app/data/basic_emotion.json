@@ -1,0 +1,704 @@
+[
+  {
+    "start": 0,
+    "end": 20,
+    "strong_emotions": {
+      "Calmness": 0.2439,
+      "Distress": 0.1183,
+      "Fear": 0.1136
+    }
+  },
+  {
+    "start": 20,
+    "end": 40,
+    "strong_emotions": {
+      "Calmness": 0.6672,
+      "Determination": 0.575,
+      "Interest": 0.1888
+    }
+  },
+  {
+    "start": 40,
+    "end": 60,
+    "strong_emotions": {
+      "Amusement": 0.6333,
+      "Joy": 0.5521,
+      "Anger": 0.5333
+    }
+  },
+  {
+    "start": 60,
+    "end": 80,
+    "strong_emotions": {
+      "Anger": 0.3548,
+      "Interest": 0.3482,
+      "Excitement": 0.3204
+    }
+  },
+  {
+    "start": 80,
+    "end": 100,
+    "strong_emotions": {
+      "Calmness": 1.1841,
+      "Determination": 0.5956,
+      "Anger": 0.2764
+    }
+  },
+  {
+    "start": 100,
+    "end": 120,
+    "strong_emotions": {
+      "Calmness": 0.8654,
+      "Determination": 0.5795,
+      "Concentration": 0.2476
+    }
+  },
+  {
+    "start": 120,
+    "end": 140,
+    "strong_emotions": {
+      "Calmness": 0.5101,
+      "Determination": 0.2565,
+      "Interest": 0.2076
+    }
+  },
+  {
+    "start": 140,
+    "end": 160,
+    "strong_emotions": {
+      "Calmness": 0.5096,
+      "Determination": 0.3699,
+      "Interest": 0.2854
+    }
+  },
+  {
+    "start": 160,
+    "end": 180,
+    "strong_emotions": {
+      "Calmness": 0.8964,
+      "Determination": 0.4573,
+      "Confusion": 0.365
+    }
+  },
+  {
+    "start": 180,
+    "end": 200,
+    "strong_emotions": {
+      "Calmness": 1.071,
+      "Determination": 0.722,
+      "Interest": 0.6145
+    }
+  },
+  {
+    "start": 200,
+    "end": 220,
+    "strong_emotions": {
+      "Calmness": 0.9548,
+      "Determination": 0.8104,
+      "Interest": 0.6445
+    }
+  },
+  {
+    "start": 220,
+    "end": 240,
+    "strong_emotions": {
+      "Calmness": 0.5377,
+      "Confusion": 0.5106,
+      "Sadness": 0.4038
+    }
+  },
+  {
+    "start": 240,
+    "end": 260,
+    "strong_emotions": {
+      "Calmness": 1.2139,
+      "Interest": 0.2899,
+      "Determination": 0.2311
+    }
+  },
+  {
+    "start": 260,
+    "end": 280,
+    "strong_emotions": {
+      "Calmness": 0.634,
+      "Disappointment": 0.1953,
+      "Boredom": 0.1272
+    }
+  },
+  {
+    "start": 280,
+    "end": 300,
+    "strong_emotions": {
+      "Calmness": 0.6105,
+      "Anger": 0.4289,
+      "Sadness": 0.4124
+    }
+  },
+  {
+    "start": 300,
+    "end": 320,
+    "strong_emotions": {
+      "Confusion": 0.5902,
+      "Calmness": 0.5031,
+      "Joy": 0.4471
+    }
+  },
+  {
+    "start": 320,
+    "end": 340,
+    "strong_emotions": {
+      "Confusion": 0.6605,
+      "Determination": 0.4827,
+      "Interest": 0.4365
+    }
+  },
+  {
+    "start": 340,
+    "end": 360,
+    "strong_emotions": {
+      "Confusion": 0.6905,
+      "Anger": 0.5901,
+      "Calmness": 0.3122
+    }
+  },
+  {
+    "start": 360,
+    "end": 380,
+    "strong_emotions": {
+      "Anger": 0.7265,
+      "Sadness": 0.5508,
+      "Determination": 0.5444
+    }
+  },
+  {
+    "start": 380,
+    "end": 400,
+    "strong_emotions": {
+      "Confusion": 0.5833,
+      "Calmness": 0.3944,
+      "Nostalgia": 0.29
+    }
+  },
+  {
+    "start": 400,
+    "end": 420,
+    "strong_emotions": {
+      "Confusion": 0.547,
+      "Joy": 0.5051,
+      "Anger": 0.4307
+    }
+  },
+  {
+    "start": 420,
+    "end": 440,
+    "strong_emotions": {
+      "Determination": 0.7562,
+      "Calmness": 0.5202,
+      "Confusion": 0.4954
+    }
+  },
+  {
+    "start": 440,
+    "end": 460,
+    "strong_emotions": {
+      "Determination": 0.6869,
+      "Confusion": 0.5171,
+      "Anger": 0.4722
+    }
+  },
+  {
+    "start": 460,
+    "end": 480,
+    "strong_emotions": {
+      "Determination": 0.5822,
+      "Distress": 0.5089,
+      "Confusion": 0.4814
+    }
+  },
+  {
+    "start": 480,
+    "end": 500,
+    "strong_emotions": {
+      "Excitement": 0.657,
+      "Interest": 0.6103,
+      "Calmness": 0.5804
+    }
+  },
+  {
+    "start": 500,
+    "end": 520,
+    "strong_emotions": {
+      "Determination": 0.45,
+      "Calmness": 0.4303,
+      "Anger": 0.2985
+    }
+  },
+  {
+    "start": 520,
+    "end": 540,
+    "strong_emotions": {
+      "Amusement": 0.3096,
+      "Calmness": 0.2991,
+      "Excitement": 0.1965
+    }
+  },
+  {
+    "start": 540,
+    "end": 560,
+    "strong_emotions": {
+      "Sadness": 0.2107,
+      "Amusement": 0.1805,
+      "Joy": 0.1695
+    }
+  },
+  {
+    "start": 560,
+    "end": 580,
+    "strong_emotions": {
+      "Amusement": 0.3745,
+      "Joy": 0.2417,
+      "Calmness": 0.1993
+    }
+  },
+  {
+    "start": 580,
+    "end": 600,
+    "strong_emotions": {
+      "Sadness": 0.194,
+      "Calmness": 0.1874,
+      "Disappointment": 0.1566
+    }
+  },
+  {
+    "start": 600,
+    "end": 620,
+    "strong_emotions": {
+      "Calmness": 0.2781,
+      "Fear": 0.1022,
+      "Determination": 0.0935
+    }
+  },
+  {
+    "start": 620,
+    "end": 640,
+    "strong_emotions": {
+      "Determination": 0.2473,
+      "Calmness": 0.1381,
+      "Amusement": 0.1155
+    }
+  },
+  {
+    "start": 640,
+    "end": 660,
+    "strong_emotions": {
+      "Calmness": 0.2899,
+      "Sadness": 0.1,
+      "Fear": 0.0851
+    }
+  },
+  {
+    "start": 660,
+    "end": 680,
+    "strong_emotions": {
+      "Amusement": 0.4164,
+      "Confusion": 0.4064,
+      "Awkwardness": 0.1518
+    }
+  },
+  {
+    "start": 680,
+    "end": 700,
+    "strong_emotions": {
+      "Calmness": 1.1678,
+      "Concentration": 0.276,
+      "Contemplation": 0.2597
+    }
+  },
+  {
+    "start": 700,
+    "end": 720,
+    "strong_emotions": {
+      "Calmness": 1.8258,
+      "Determination": 0.483,
+      "Sadness": 0.4807
+    }
+  },
+  {
+    "start": 720,
+    "end": 740,
+    "strong_emotions": {
+      "Calmness": 0.6116,
+      "Sadness": 0.3705,
+      "Determination": 0.3181
+    }
+  },
+  {
+    "start": 740,
+    "end": 760,
+    "strong_emotions": {
+      "Calmness": 1.2287,
+      "Sadness": 0.6054,
+      "Joy": 0.2451
+    }
+  },
+  {
+    "start": 760,
+    "end": 780,
+    "strong_emotions": {
+      "Doubt": 0.8322,
+      "Confusion": 0.8065,
+      "Calmness": 0.6342
+    }
+  },
+  {
+    "start": 780,
+    "end": 800,
+    "strong_emotions": {
+      "Calmness": 0.4188,
+      "Sadness": 0.3431,
+      "Boredom": 0.154
+    }
+  },
+  {
+    "start": 800,
+    "end": 820,
+    "strong_emotions": {
+      "Calmness": 0.78,
+      "Sadness": 0.2497,
+      "Determination": 0.2159
+    }
+  },
+  {
+    "start": 820,
+    "end": 840,
+    "strong_emotions": {
+      "Calmness": 0.411,
+      "Sadness": 0.3477,
+      "Nostalgia": 0.1854
+    }
+  },
+  {
+    "start": 840,
+    "end": 860,
+    "strong_emotions": {
+      "Calmness": 0.5455,
+      "Amusement": 0.3796,
+      "Joy": 0.3125
+    }
+  },
+  {
+    "start": 860,
+    "end": 880,
+    "strong_emotions": {
+      "Amusement": 0.4414,
+      "Excitement": 0.391,
+      "Joy": 0.3826
+    }
+  },
+  {
+    "start": 880,
+    "end": 900,
+    "strong_emotions": {
+      "Calmness": 0.2366,
+      "Confusion": 0.1655,
+      "Interest": 0.1197
+    }
+  },
+  {
+    "start": 900,
+    "end": 920,
+    "strong_emotions": {
+      "Calmness": 0.4989,
+      "Interest": 0.2537,
+      "Joy": 0.2352
+    }
+  },
+  {
+    "start": 920,
+    "end": 940,
+    "strong_emotions": {
+      "Fear": 0.2678,
+      "Sadness": 0.2357,
+      "Calmness": 0.2268
+    }
+  },
+  {
+    "start": 940,
+    "end": 960,
+    "strong_emotions": {
+      "Calmness": 0.3821,
+      "Interest": 0.2517,
+      "Amusement": 0.2488
+    }
+  },
+  {
+    "start": 960,
+    "end": 980,
+    "strong_emotions": {
+      "Calmness": 0.4678,
+      "Determination": 0.3641,
+      "Concentration": 0.2277
+    }
+  },
+  {
+    "start": 980,
+    "end": 1000,
+    "strong_emotions": {
+      "Calmness": 0.5995,
+      "Interest": 0.3844,
+      "Concentration": 0.3843
+    }
+  },
+  {
+    "start": 1000,
+    "end": 1020,
+    "strong_emotions": {
+      "Calmness": 0.4007,
+      "Determination": 0.3107,
+      "Amusement": 0.2204
+    }
+  },
+  {
+    "start": 1020,
+    "end": 1040,
+    "strong_emotions": {
+      "Interest": 0.3744,
+      "Determination": 0.2783,
+      "Sadness": 0.2591
+    }
+  },
+  {
+    "start": 1040,
+    "end": 1060,
+    "strong_emotions": {
+      "Excitement": 0.2156,
+      "Joy": 0.194,
+      "Determination": 0.1717
+    }
+  },
+  {
+    "start": 1060,
+    "end": 1080,
+    "strong_emotions": {
+      "Joy": 0.5452,
+      "Calmness": 0.4015,
+      "Confusion": 0.2485
+    }
+  },
+  {
+    "start": 1080,
+    "end": 1100,
+    "strong_emotions": {
+      "Amusement": 0.5585,
+      "Joy": 0.3914,
+      "Excitement": 0.3401
+    }
+  },
+  {
+    "start": 1100,
+    "end": 1120,
+    "strong_emotions": {
+      "Calmness": 0.2846,
+      "Joy": 0.2211,
+      "Excitement": 0.1728
+    }
+  },
+  {
+    "start": 1120,
+    "end": 1140,
+    "strong_emotions": {
+      "Distress": 0.3186,
+      "Sadness": 0.2773,
+      "Calmness": 0.2288
+    }
+  },
+  {
+    "start": 1140,
+    "end": 1160,
+    "strong_emotions": {
+      "Amusement": 0.3016,
+      "Determination": 0.1643,
+      "Joy": 0.1442
+    }
+  },
+  {
+    "start": 1160,
+    "end": 1180,
+    "strong_emotions": {
+      "Calmness": 0.124,
+      "Distress": 0.1096,
+      "Disappointment": 0.1054
+    }
+  },
+  {
+    "start": 1180,
+    "end": 1200,
+    "strong_emotions": {
+      "Calmness": 0.3887,
+      "Confusion": 0.1526,
+      "Doubt": 0.1469
+    }
+  },
+  {
+    "start": 1200,
+    "end": 1220,
+    "strong_emotions": {
+      "Anger": 0.3959,
+      "Distress": 0.2541,
+      "Confusion": 0.1445
+    }
+  },
+  {
+    "start": 1220,
+    "end": 1240,
+    "strong_emotions": {
+      "Determination": 0.3428,
+      "Calmness": 0.3263,
+      "Confusion": 0.2083
+    }
+  },
+  {
+    "start": 1240,
+    "end": 1260,
+    "strong_emotions": {
+      "Confusion": 0.3043,
+      "Amusement": 0.2073,
+      "Fear": 0.1517
+    }
+  },
+  {
+    "start": 1260,
+    "end": 1280,
+    "strong_emotions": {
+      "Confusion": 0.441,
+      "Calmness": 0.4144,
+      "Joy": 0.3028
+    }
+  },
+  {
+    "start": 1280,
+    "end": 1300,
+    "strong_emotions": {
+      "Calmness": 0.7401,
+      "Joy": 0.7091,
+      "Confusion": 0.6481
+    }
+  },
+  {
+    "start": 1300,
+    "end": 1320,
+    "strong_emotions": {
+      "Calmness": 0.7483,
+      "Confusion": 0.7311,
+      "Distress": 0.4594
+    }
+  },
+  {
+    "start": 1320,
+    "end": 1340,
+    "strong_emotions": {
+      "Amusement": 0.8186,
+      "Calmness": 0.4981,
+      "Confusion": 0.3913
+    }
+  },
+  {
+    "start": 1340,
+    "end": 1360,
+    "strong_emotions": {
+      "Calmness": 0.3656,
+      "Amusement": 0.2562,
+      "Joy": 0.2236
+    }
+  },
+  {
+    "start": 1360,
+    "end": 1380,
+    "strong_emotions": {
+      "Calmness": 0.3093,
+      "Determination": 0.1115,
+      "Doubt": 0.0878
+    }
+  },
+  {
+    "start": 1380,
+    "end": 1400,
+    "strong_emotions": {
+      "Calmness": 0.4308,
+      "Determination": 0.2253,
+      "Excitement": 0.1071
+    }
+  },
+  {
+    "start": 1400,
+    "end": 1420,
+    "strong_emotions": {
+      "Calmness": 0.2445,
+      "Sadness": 0.1395,
+      "Anger": 0.0799
+    }
+  },
+  {
+    "start": 1420,
+    "end": 1440,
+    "strong_emotions": {
+      "Calmness": 0.5223,
+      "Determination": 0.302,
+      "Joy": 0.0873
+    }
+  },
+  {
+    "start": 1440,
+    "end": 1460,
+    "strong_emotions": {
+      "Amusement": 0.2052,
+      "Calmness": 0.1549,
+      "Doubt": 0.1164
+    }
+  },
+  {
+    "start": 1460,
+    "end": 1480,
+    "strong_emotions": {
+      "Amusement": 0.3119,
+      "Joy": 0.1769,
+      "Calmness": 0.1129
+    }
+  },
+  {
+    "start": 1480,
+    "end": 1500,
+    "strong_emotions": {
+      "Calmness": 0.2848,
+      "Amusement": 0.1419,
+      "Joy": 0.1343
+    }
+  },
+  {
+    "start": 1500,
+    "end": 1520,
+    "strong_emotions": {
+      "Calmness": 0.0439,
+      "Sadness": 0.0201,
+      "Boredom": 0.0196
+    }
+  },
+  {
+    "start": 1520,
+    "end": 1540,
+    "strong_emotions": {
+      "Excitement": 0.3077,
+      "Calmness": 0.2783,
+      "Joy": 0.239
+    }
+  },
+  {
+    "start": 1540,
+    "end": 1560,
+    "strong_emotions": {
+      "Excitement": 0.154,
+      "Joy": 0.1001,
+      "Interest": 0.0894
+    }
+  }
+]
