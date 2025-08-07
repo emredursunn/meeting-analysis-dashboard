@@ -12,11 +12,11 @@ import ReactECharts from "echarts-for-react";
  * • Sol kenar genişletildi (grid.left) ki çok satırlı Y‑etiketleri rahat sığsın.
  */
 
-interface PairwiseTalk { [name: string]: number; }
-interface ParticipantData {
-  pairwise_talk: PairwiseTalk;
-  monologue_rate: number;
-}
+
+// interface ParticipantData {
+//   pairwise_talk: PairwiseTalk;
+//   monologue_rate: number;
+// }
 
 // Yeni veri (örnek olarak hardcoded, gerçek kullanımda dışarıdan alınabilir)
 interface ParticipantDialogue {
@@ -266,7 +266,7 @@ const CorrelationHeatmap: React.FC = () => {
         },
       ],
     }),
-    [names, matrix]
+    [names, matrix, maxVal]
   );
 
   return (
