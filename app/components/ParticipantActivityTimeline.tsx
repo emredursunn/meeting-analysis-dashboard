@@ -131,10 +131,10 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
   const meetingDuration = Math.max(...filteredData.map((d: any) => d.duration || 0), 0);
 
   // -------------------- SERIES -------------------- //
+  // Grouped bar: each participant has three bars (audio, video, presentation)
   const audioSeries = {
     name: "Audio",
     type: "bar",
-    stack: "total",
     itemStyle: { color: COLORS.audio },
     emphasis: { focus: "series" },
     data: filteredData.map((d: any) => d.audio_statistics || 0),
@@ -143,7 +143,6 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
   const videoSeries = {
     name: "Video",
     type: "bar",
-    stack: "total",
     itemStyle: { color: COLORS.video },
     emphasis: { focus: "series" },
     data: filteredData.map((d: any) => d.video_send_statistics || 0),
@@ -152,7 +151,6 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
   const presentationSeries = {
     name: "Presentation",
     type: "bar",
-    stack: "total",
     itemStyle: { color: COLORS.presentation },
     emphasis: { focus: "series" },
     data: filteredData.map((d: any) => d.presentation_send_statistics || 0),
