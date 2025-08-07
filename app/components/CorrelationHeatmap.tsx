@@ -18,70 +18,135 @@ interface ParticipantData {
   monologue_rate: number;
 }
 
-const rawData: Record<string, ParticipantData> = {
-  "Norman": {
-    pairwise_talk: {
-      "Agent Walker": 70,
-      "Chuck Bartowski": 15,
-      "John Casey": 15,
+// Yeni veri (örnek olarak hardcoded, gerçek kullanımda dışarıdan alınabilir)
+interface ParticipantDialogue {
+  [name: string]: string; // participant name -> duration string
+}
+interface ParticipantRawDatum {
+  name: string;
+  dialogue_durations: ParticipantDialogue;
+  monologue_duration: string;
+}
+
+const participantRawData: ParticipantRawDatum[] = [
+  {
+    name: "Guney Ozturk",
+    dialogue_durations: {
+      "Muhammed Sefa Sözer": "00:01:35",
+      "Emre": "00:03:20",
+      "Hilmi Tunahan AHLATÇI": "00:01:15",
+      "Selin Üzeyiroğlu": "00:01:30",
+      "Burhan Ok": "00:04:30",
+      "Guney Ozturk": "00:00:00"
     },
-    monologue_rate: 30,
+    monologue_duration: "00:14:30"
   },
-  "Agent Walker": {
-    pairwise_talk: {
-      "Norman": 70,
-      "Chuck Bartowski": 15,
-      "John Casey": 15,
+  {
+    name: "Muhammed Sefa Sözer",
+    dialogue_durations: {
+      "Guney Ozturk": "00:01:35",
+      "Burhan Ok": "00:01:30",
+      "Emre": "00:00:00",
+      "Hilmi Tunahan AHLATÇI": "00:00:00",
+      "Selin Üzeyiroğlu": "00:00:00",
+      "Muhammed Sefa Sözer": "00:00:00"
+
     },
-    monologue_rate: 20,
+    monologue_duration: "00:05:30"
   },
-  "Chuck Bartowski": {
-    pairwise_talk: {
-      "Norman": 15,
-      "Agent Walker": 15,
-      "John Casey": 50,
+  {
+    name: "Emre",
+    dialogue_durations: {
+      "Guney Ozturk": "00:03:20",
+      "Muhammed Sefa Sözer": "00:00:00",
+      "Hilmi Tunahan AHLATÇI": "00:00:00",
+      "Selin Üzeyiroğlu": "00:00:00",
+      "Burhan Ok": "00:00:00",
+      "Emre": "00:00:00"
     },
-    monologue_rate: 30,
+    monologue_duration: "00:02:30"
   },
-  "John Casey": {
-    pairwise_talk: {
-      "Norman": 15,
-      "Agent Walker": 15,
-      "Chuck Bartowski": 50,
+  {
+    name: "Hilmi Tunahan AHLATÇI",
+    dialogue_durations: {
+      "Guney Ozturk": "00:01:15",
+      "Muhammed Sefa Sözer": "00:00:00",
+      "Emre": "00:00:00",
+      "Selin Üzeyiroğlu": "00:00:00",
+      "Burhan Ok": "00:00:00",
+      "Hilmi Tunahan AHLATÇI": "00:00:00"
     },
-    monologue_rate: 30,
+    monologue_duration: "00:01:40"
   },
-  "Orion": {
-    pairwise_talk: {
-      "Norman": 10,
-      "Agent Walker": 5,
+  {
+    name: "Selin Üzeyiroğlu",
+    dialogue_durations: {
+      "Guney Ozturk": "00:01:30",
+      "Muhammed Sefa Sözer": "00:00:00",
+      "Emre": "00:00:00",
+      "Hilmi Tunahan AHLATÇI": "00:00:00",
+      "Burhan Ok": "00:00:00",
+      "Selin Üzeyiroğlu": "00:00:00"
     },
-    monologue_rate: 85,
+    monologue_duration: "00:02:30"
   },
-};
+  {
+    name: "Burhan Ok",
+    dialogue_durations: {
+      "Guney Ozturk": "00:04:30",
+      "Muhammed Sefa Sözer": "00:01:30",
+      "Emre": "00:00:00",
+      "Hilmi Tunahan AHLATÇI": "00:00:00",
+      "Selin Üzeyiroğlu": "00:00:00",
+      "Burhan Ok": "00:00:00"
+    },
+    monologue_duration: "00:02:00"
+  }
+];
+
 
 /**
- * Build data for ECharts heat‑map (lower‑triangle + diagonal).
- * Off‑diagonal value is the average of both directions when present.
+ * Build heatmap data from participantRawData (durations in seconds).
  */
-function buildHeatmapData(data: Record<string, ParticipantData>) {
-  const names = Object.keys(data);
+function parseDuration(str: string): number {
+  // "HH:MM:SS" or "MM:SS"
+  const parts = str.split(":").map(Number);
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+  if (parts.length === 2) return parts[0] * 60 + parts[1];
+  return 0;
+}
+function formatDuration(sec: number): string {
+  const h = Math.floor(sec / 3600);
+  const m = Math.floor((sec % 3600) / 60);
+  const s = sec % 60;
+  if (h > 0) return `${h.toString().padStart(2, "0")}:${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+  return `${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`;
+}
+function buildHeatmapData(participants: ParticipantRawDatum[]) {
+  const names = participants.map((p) => p.name);
   const matrix: { value: [number, number, number]; itemStyle?: any }[] = [];
-
+  let maxVal = 0;
   names.forEach((rowName, rowIdx) => {
     names.forEach((colName, colIdx) => {
+      const rowP = participants.find((p) => p.name === rowName);
+      const colP = participants.find((p) => p.name === colName);
       if (rowIdx === colIdx) {
         // Diagonal – monologue
+        const monoSec = rowP ? parseDuration(rowP.monologue_duration) : 0;
+        if (monoSec > maxVal) maxVal = monoSec;
         matrix.push({
-          value: [colIdx, rowIdx, data[rowName].monologue_rate],
-          itemStyle: { color: "#4b5563" }, // slate-600
+          value: [colIdx, rowIdx, monoSec],
+          itemStyle: { color: "#4b5563" },
         });
       } else if (rowIdx > colIdx) {
-        // Lower triangle – pairwise (average both directions if available)
-        const v1 = data[rowName].pairwise_talk[colName];
-        const v2 = data[colName].pairwise_talk[rowName];
-        const avg = Math.round(((v1 ?? 0) + (v2 ?? 0)) / ((v1 != null && v2 != null) ? 2 : 1));
-        matrix.push({ value: [colIdx, rowIdx, avg] });
+        // Lower triangle – pairwise (sum both directions if available)
+        const v1 = rowP?.dialogue_durations?.[colName];
+        const v2 = colP?.dialogue_durations?.[rowName];
+        const sec1 = v1 ? parseDuration(v1) : 0;
+        const sec2 = v2 ? parseDuration(v2) : 0;
+        const total = sec1 + sec2;
+        if (total > maxVal) maxVal = total;
+        matrix.push({ value: [colIdx, rowIdx, total] });
       } else {
         // Upper triangle – invisible cell (keeps grid alignment)
         matrix.push({
@@ -91,12 +156,11 @@ function buildHeatmapData(data: Record<string, ParticipantData>) {
       }
     });
   });
-
-  return { names, matrix };
+  return { names, matrix, maxVal };
 }
 
 const CorrelationHeatmap: React.FC = () => {
-  const { names, matrix } = React.useMemo(() => buildHeatmapData(rawData), []);
+  const { names, matrix, maxVal } = React.useMemo(() => buildHeatmapData(participantRawData), []);
 
   const option = React.useMemo(
     () => ({
@@ -119,8 +183,8 @@ const CorrelationHeatmap: React.FC = () => {
           const [xIdx, yIdx, val] = params.data.value;
           const row = names[yIdx];
           const col = names[xIdx];
-          if (xIdx === yIdx) return `${row} → Monolog: %${val}`;
-          if (yIdx > xIdx) return `${row} ↔ ${col}: %${val} iletişim`;
+          if (xIdx === yIdx) return `${row} → Monolog: ${formatDuration(val)}`;
+          if (yIdx > xIdx) return `${row} ↔ ${col}: ${formatDuration(val)}`;
           return ""; // hidden upper‑triangle cells
         },
       },
@@ -135,13 +199,13 @@ const CorrelationHeatmap: React.FC = () => {
         data: names,
         axisLabel: {
           formatter: (val: string) => val.replace(/\s+/, "\n"),
-          color: "#1f2937",
+          color: "#ffffff",
           fontWeight: "600",
           fontSize: 12,
           lineHeight: 14,
           margin: 10,
         },
-        axisLine: { lineStyle: { color: "#d1d5db" } },
+        axisLine: { lineStyle: { color: "#ffffff" } },
         axisTick: { show: false },
       },
       yAxis: {
@@ -156,12 +220,12 @@ const CorrelationHeatmap: React.FC = () => {
           lineHeight: 14,
           margin: 10,
         },
-        axisLine: { lineStyle: { color: "#d1d5db" } },
+        axisLine: { lineStyle: { color: "#ffffff" } },
         axisTick: { show: false },
       },
       visualMap: {
         min: 0,
-        max: 100,
+        max: maxVal,
         calculable: true,
         orient: "vertical",
         right: 16,
@@ -169,9 +233,11 @@ const CorrelationHeatmap: React.FC = () => {
         inRange: {
           color: ["#bfdbfe", "#93c5fd", "#60a5fa", "#3b82f6", "#1e40af"],
         },
-        textStyle: { color: "#1f2937" },
-        borderColor: "#d1d5db",
+        text: ["Uzun", "Kısa"],
+        textStyle: { color: "#1f2937" , fontWeight: "900" },
+        borderColor: "#ffffff",
         backgroundColor: "#ffffff",
+        formatter: (val: number) => formatDuration(val),
       },
       series: [
         {
@@ -179,7 +245,11 @@ const CorrelationHeatmap: React.FC = () => {
           data: matrix,
           label: {
             show: true,
-            formatter: ({ value }: any) => (value[2] ? `${value[2]}%` : ""),
+            formatter: function({ value }: any) {
+  const [xIdx, yIdx] = value;
+  if (yIdx >= xIdx) return formatDuration(value[2]);
+  return "";
+},
             color: "#1f2937",
             fontSize: 11,
           },
@@ -190,7 +260,7 @@ const CorrelationHeatmap: React.FC = () => {
             },
           },
           itemStyle: {
-            borderColor: "#e5e7eb",
+            borderColor: "#ffffff",
             borderWidth: 1,
           },
         },
