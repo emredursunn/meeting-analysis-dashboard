@@ -76,7 +76,6 @@ const SpeakerTimelineChartCard: React.FC = () => {
           const sorted = [...data.speakers].sort((a, b) => b.totalDuration - a.totalDuration);
           const most = sorted[0];
           const least = sorted[sorted.length-1];
-          const totalDuration = data.speakers.reduce((acc, s) => acc + s.totalDuration, 0);
           return (
             <>
               {/* İlk satır - 3 kart */}

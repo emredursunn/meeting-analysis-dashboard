@@ -8,7 +8,7 @@ const defaultTimeline = basicEmotion as any[];
 
 const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
   // English emotion-color mapping
-  const EMOTION_COLORS = {
+  const EMOTION_COLORS: { [key: string]: string } = {
     Calmness: "#10B981",
     Determination: "#F59E0B",
     Confusion: "#6366F1",
@@ -43,7 +43,7 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
   });
 
   // Series için veri hazırlığı
-  const seriesData = {};
+  const seriesData: { [key: string]: number[][] } = {};
   emotions.forEach((emo) => (seriesData[emo] = []));
 
   segmentEmotions.forEach(({ start, end, strong_emotions }) => {
@@ -134,7 +134,7 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
       nameLocation: "middle",
       nameGap: 25,
       nameTextStyle: { color: "#4b5563", fontSize: 11 },
-      axisLabel: { color: "#4b5563", fontSize: 10, formatter: (v) => v.toFixed(1) + "s" },
+      axisLabel: { color: "#4b5563", fontSize: 10, formatter: (v: number) => v.toFixed(1) + "s" },
       axisLine: { lineStyle: { color: "#d1d5db" } },
       splitLine: { show: true, lineStyle: { color: "#e5e7eb", type: "dotted" } }
     },
@@ -146,7 +146,7 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
       nameLocation: "middle",
       nameGap: 35,
       nameTextStyle: { color: "#4b5563", fontSize: 11 },
-      axisLabel: { color: "#4b5563", fontSize: 10, formatter: (v) => v.toFixed(1) },
+      axisLabel: { color: "#4b5563", fontSize: 10, formatter: (v: number) => v.toFixed(1) },
       splitLine: { lineStyle: { color: "#e5e7eb" } }
     },
     series,
