@@ -13,6 +13,7 @@ import DashboardLayout from "./components/DashboardLayout";
 import { useContext } from "react";
 import { SidebarOpenContext } from "./context/SidebarContext";
 import SpeakerTimelineChartCard from "./components/SpeakerTimelineChartCard";
+import MeetingRadarChart from "./components/MeetingRadarChart";
 
 // Profil menüsü bileşeni
 const ProfileMenu = () => {
@@ -122,7 +123,12 @@ const App = () => {
 
         {/* Main Grid */}
         <main className="flex flex-col gap-8 px-4 md:px-12">
-          {/* 1. Shouting Chart */}
+          {/* 1. Meeting Radar Chart */}
+          <div className="w-full">
+            <MeetingRadarChart />
+          </div>
+
+          {/* 2. Shouting Chart */}
           <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full">
             <div className="text-2xl font-bold text-gray-800 mb-4">Ses Seviyesi Analizi</div>
             <ShoutingChart />

@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import React from 'react';
+import MeetingRadarChart from '../components/MeetingRadarChart';
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
@@ -42,6 +43,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Main Content */}
       <main className="flex-1 p-4 sm:p-8 overflow-y-auto">
+        <MeetingRadarChart />
         {children}
       </main>
     </div>

@@ -1,0 +1,1874 @@
+[
+  {
+    "section": 1,
+    "startTime": "00:00:04.721",
+    "endTime": "00:04:44.681",
+    "duration": "00:04:39.960",
+    "topics": [
+      {
+        "topic": "Toplantı Açılışı",
+        "startTime": "00:00:04.721",
+        "endTime": "00:00:13.141",
+        "duration": "00:00:08.420",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:02.770",
+            "total_speaking_duration": "00:00:02.770"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Emre'nin Durumu",
+        "startTime": "00:00:17.411",
+        "endTime": "00:00:24.396",
+        "duration": "00:00:06.985",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:05.650",
+            "total_speaking_duration": "00:00:05.650"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:02.770",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:02.770"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Muhammed Sefa'nın Çalışmaları",
+        "startTime": "00:00:28.391",
+        "endTime": "00:01:11.750",
+        "duration": "00:00:43.359",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.910",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.910"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:02.344",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:36.446",
+            "total_speaking_duration": "00:00:38.790"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Sosyal Medya Stratejisi",
+        "startTime": "00:01:14.561",
+        "endTime": "00:02:26.086",
+        "duration": "00:01:11.525",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:11.251",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:06.039",
+            "total_speaking_duration": "00:00:17.290"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:25.027",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:25.933",
+            "total_speaking_duration": "00:00:50.960"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Hilmi'nin Çalışmaları",
+        "startTime": "00:02:30.211",
+        "endTime": "00:03:15.421",
+        "duration": "00:00:45.210",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:03.993",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:25.567",
+            "total_speaking_duration": "00:00:29.560"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:05.140",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:15.749",
+            "total_speaking_duration": "00:00:20.889"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Model Sorunları",
+        "startTime": "00:03:18.671",
+        "endTime": "00:04:44.681",
+        "duration": "00:01:26.010",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:06.075",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.440",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:19.060",
+            "total_speaking_duration": "00:00:25.575"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:04.240",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:03.381",
+            "total_speaking_duration": "00:00:07.621"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.570",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:34.500",
+            "total_speaking_duration": "00:00:35.070"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": 2,
+    "startTime": "00:04:42.451",
+    "endTime": "00:10:14.301",
+    "duration": "00:05:31.850",
+    "topics": [
+      {
+        "topic": "Transkript ve İsim Düzeltmeleri",
+        "startTime": "00:04:42.451",
+        "endTime": "00:05:03.091",
+        "duration": "00:00:20.640",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:11.586",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:09.444",
+            "total_speaking_duration": "00:00:21.030"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:01.960",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:01.960"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Selin'in Çalışmaları",
+        "startTime": "00:05:12.301",
+        "endTime": "00:06:56.981",
+        "duration": "00:01:44.680",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:02.780",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.900",
+              "burhan ok": "00:00:03.340"
+            },
+            "monologue_duration": "00:00:00.420",
+            "total_speaking_duration": "00:00:07.440"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:01.360",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:01.360"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:10.213",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:01:01.627",
+            "total_speaking_duration": "00:01:11.840"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:02.600",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:05.500",
+            "total_speaking_duration": "00:00:08.100"
+          }
+        ]
+      },
+      {
+        "topic": "Data Lake ve Veri Entegrasyonu",
+        "startTime": "00:06:58.541",
+        "endTime": "00:07:58.756",
+        "duration": "00:01:00.215",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:56.279",
+            "total_speaking_duration": "00:00:56.279"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Translate Sorunları",
+        "startTime": "00:07:58.756",
+        "endTime": "00:08:49.869",
+        "duration": "00:00:51.113",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:51.644",
+            "total_speaking_duration": "00:00:51.644"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Transkript Özeti ve Katılımcı Listesi",
+        "startTime": "00:08:44.171",
+        "endTime": "00:09:59.861",
+        "duration": "00:01:15.690",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:03.787",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:01.820",
+              "burhan ok": "00:00:05.260"
+            },
+            "monologue_duration": "00:00:20.043",
+            "total_speaking_duration": "00:00:30.910"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:01.670",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:03.960"
+            },
+            "monologue_duration": "00:00:00.620",
+            "total_speaking_duration": "00:00:06.250"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.970",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.970"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:17.880",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:04.110",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:02.690",
+            "total_speaking_duration": "00:00:24.680"
+          }
+        ]
+      },
+      {
+        "topic": "Cem'in Kullandığı Araçlar",
+        "startTime": "00:09:58.891",
+        "endTime": "00:10:14.301",
+        "duration": "00:00:15.410",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:04.841"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:04.841"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:08.030",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.490",
+            "total_speaking_duration": "00:00:08.520"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": 3,
+    "startTime": "00:10:15.532",
+    "endTime": "00:16:42.661",
+    "duration": "00:06:27.129",
+    "topics": [
+      {
+        "topic": "10'a Çıkart ve Model Performansı",
+        "startTime": "00:10:15.532",
+        "endTime": "00:11:39.151",
+        "duration": "00:01:23.619",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:05.556",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:04.444"
+            },
+            "monologue_duration": "00:00:17.500",
+            "total_speaking_duration": "00:00:27.500"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:06.689",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:04.962"
+            },
+            "monologue_duration": "00:00:26.809",
+            "total_speaking_duration": "00:00:38.460"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:01.410",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:03.790",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:05.200"
+          }
+        ]
+      },
+      {
+        "topic": "Google Stüdyo ve Transkript",
+        "startTime": "00:11:42.278",
+        "endTime": "00:12:33.931",
+        "duration": "00:00:51.653",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:07.720"
+            },
+            "monologue_duration": "00:00:21.230",
+            "total_speaking_duration": "00:00:28.950"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:13.540",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:02.180",
+            "total_speaking_duration": "00:00:15.720"
+          }
+        ]
+      },
+      {
+        "topic": "Veri ve Database",
+        "startTime": "00:12:35.031",
+        "endTime": "00:13:33.041",
+        "duration": "00:00:58.010",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:08.470",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:04.000",
+            "total_speaking_duration": "00:00:12.470"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:06.280",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:07.812"
+            },
+            "monologue_duration": "00:00:24.568",
+            "total_speaking_duration": "00:00:38.660"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:05.200",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:01.700",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:01.710",
+            "total_speaking_duration": "00:00:08.610"
+          }
+        ]
+      },
+      {
+        "topic": "10'a Çıkart ve Sunucu Denemesi",
+        "startTime": "00:13:35.891",
+        "endTime": "00:14:39.481",
+        "duration": "00:01:03.590",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:07.317",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:02.241"
+            },
+            "monologue_duration": "00:00:20.139",
+            "total_speaking_duration": "00:00:29.697"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:05.491",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:03.310"
+            },
+            "monologue_duration": "00:00:17.359",
+            "total_speaking_duration": "00:00:26.160"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:05.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:04.210",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:09.210"
+          }
+        ]
+      },
+      {
+        "topic": "Görsel Düzenleme ve Reklam",
+        "startTime": "00:14:41.731",
+        "endTime": "00:15:39.081",
+        "duration": "00:00:57.350",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:09.600",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:01.250",
+              "burhan ok": "00:00:06.870"
+            },
+            "monologue_duration": "00:00:15.460",
+            "total_speaking_duration": "00:00:33.180"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:03.480",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.640",
+            "total_speaking_duration": "00:00:04.120"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:01.100",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:01.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:02.100"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:06.654",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:03.326",
+            "total_speaking_duration": "00:00:09.980"
+          }
+        ]
+      },
+      {
+        "topic": "Avrupa Birliği Projesi ve Tanışma",
+        "startTime": "00:15:41.561",
+        "endTime": "00:16:42.661",
+        "duration": "00:01:01.100",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:06.249"
+            },
+            "monologue_duration": "00:00:43.121",
+            "total_speaking_duration": "00:00:49.370"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:07.099",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:03.371",
+            "total_speaking_duration": "00:00:10.470"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "section": 4,
+    "startTime": "00:16:44.631",
+    "endTime": "00:28:24.391",
+    "duration": "00:11:39.760",
+    "topics": [
+      {
+        "topic": "Yeni İşbirliği ve Görev Dağılımı",
+        "startTime": "00:16:44.631",
+        "endTime": "00:17:37.261",
+        "duration": "00:00:52.630",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:13.260"
+            },
+            "monologue_duration": "00:00:05.480",
+            "total_speaking_duration": "00:00:18.740"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:13.713",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:09.087",
+            "total_speaking_duration": "00:00:22.800"
+          }
+        ]
+      },
+      {
+        "topic": "Demo ve Görsel Paylaşımı",
+        "startTime": "00:17:41.731",
+        "endTime": "00:18:49.141",
+        "duration": "00:01:07.410",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:03.660",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:20.517",
+            "total_speaking_duration": "00:00:24.177"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:16.125",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:14.065",
+            "total_speaking_duration": "00:00:30.190"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Sunum ve Geri Bildirim",
+        "startTime": "00:18:51.491",
+        "endTime": "00:19:49.571",
+        "duration": "00:00:58.080",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:02.779",
+              "MUHAMMED SEFA SÖZER": "00:00:03.141",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:06.643"
+            },
+            "monologue_duration": "00:00:45.547",
+            "total_speaking_duration": "00:00:58.110"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.350",
+            "total_speaking_duration": "00:00:00.350"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.420",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.420"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:03.340",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:03.340"
+          }
+        ]
+      },
+      {
+        "topic": "Yeni İş Fırsatı",
+        "startTime": "00:19:51.811",
+        "endTime": "00:20:47.961",
+        "duration": "00:00:56.150",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:07.550",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:19.454",
+            "total_speaking_duration": "00:00:27.004"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:13.669",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:07.271",
+            "total_speaking_duration": "00:00:20.940"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          }
+        ]
+      },
+      {
+        "topic": "Sonuç ve Kapanış",
+        "startTime": "00:20:49.441",
+        "endTime": "00:28:24.391",
+        "duration": "00:07:34.950",
+        "analysis": [
+          {
+            "name": "Guney Ozturk",
+            "dialogue_durations": {
+              "Emre": "00:00:30.635",
+              "MUHAMMED SEFA SÖZER": "00:00:22.391",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:03.791",
+              "burhan ok": "00:00:11.511"
+            },
+            "monologue_duration": "00:03:39.582",
+            "total_speaking_duration": "00:04:47.910"
+          },
+          {
+            "name": "Emre",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:23.370",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:02.340"
+            },
+            "monologue_duration": "00:00:04.620",
+            "total_speaking_duration": "00:00:30.330"
+          },
+          {
+            "name": "MUHAMMED SEFA SÖZER",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:12.380",
+              "Emre": "00:00:00.750",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:05.360",
+            "total_speaking_duration": "00:00:18.490"
+          },
+          {
+            "name": "Hilmi Tunahan AHLATÇI",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.000",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.000"
+          },
+          {
+            "name": "Selin Üzeyiroğlu",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:00.500",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.000",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "burhan ok": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.000",
+            "total_speaking_duration": "00:00:00.500"
+          },
+          {
+            "name": "burhan ok",
+            "dialogue_durations": {
+              "Guney Ozturk": "00:00:07.510",
+              "Emre": "00:00:00.000",
+              "MUHAMMED SEFA SÖZER": "00:00:00.910",
+              "Hilmi Tunahan AHLATÇI": "00:00:00.000",
+              "Selin Üzeyiroğlu": "00:00:00.000"
+            },
+            "monologue_duration": "00:00:00.950",
+            "total_speaking_duration": "00:00:09.370"
+          }
+        ]
+      }
+    ]
+  }
+]
