@@ -7,7 +7,7 @@ import ShoutingChart from "./components/ShoutingChart";
 import EmotionTopicBarChart from "./components/EmotionTopicBarChart";
 import EmotionsRadarChart from "./components/EmotionsRadarChart";
 import CorrelationHeatmap from "./components/CorrelationHeatmap";
-import ParticipantActivityTimeline from "./components/ParticipantActivityTimeline";
+// import ParticipantActivityTimeline from "./components/ParticipantActivityTimeline";
 import EmotionTimelineAreaChart from "./components/EmotionTimelineAreaChart";
 import DashboardLayout from "./components/DashboardLayout";
 import { useContext } from "react";
@@ -135,10 +135,10 @@ const App = () => {
           </div>
 
           {/* 2. Participant Activity Timeline */}
-          <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full">
+          {/* <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full">
             <div className="text-2xl font-bold text-gray-800 mb-4">Katılımcı Aktivite Zaman Çizelgesi</div>
             <ParticipantActivityTimeline />
-          </div>
+          </div> */}
 
           {/* 3. Emotion Timeline Area Chart */}
           <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full min-w-0 overflow-x-auto">
