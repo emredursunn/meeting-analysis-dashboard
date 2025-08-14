@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import SpeakerTimelineChart from "./SpeakerTimelineChart";
-import konusmaciAnalizi from "../data/konusmaci_analizi.json";
+import konusmaciAnalizi from "../data/konusmaci_analizi_new.json";
 import type { KonusmaciAnaliziData } from "./types/konusmaciAnalizi";
 
 const COLORS = [
@@ -57,6 +57,16 @@ const SpeakerTimelineChartCard: React.FC = () => {
               }}
             >
               {s.name}
+              {s.video_send_statistics === 1 && (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17 10.5V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3.5l5 3.5v-10l-5 3.5Z"/>
+                </svg>
+              )}
+              {s.presentation_send_statistics === 1 && (
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M3 4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-6l2.5 3h-7L10 16H4a1 1 0 0 1-1-1V4zm2 2v7h14V6H5z"/>
+                </svg>
+              )}
             </span>
             {hovered === s.name && (
               <div className="absolute left-1/2 -translate-x-1/2 mt-2 z-50 bg-white text-gray-800 rounded-xl shadow-lg border px-4 py-3 text-xs min-w-[180px]" style={{top: '100%'}}>

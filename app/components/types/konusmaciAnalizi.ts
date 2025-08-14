@@ -13,6 +13,10 @@ export interface Speaker {
   totalDurationFormatted: string;
   speakingPercentage: string;
   segments: SpeakerSegment[];
+  enter_time?: string;
+  exit_time?: string;
+  video_send_statistics?: number;
+  presentation_send_statistics?: number;
 }
 
 export interface MeetingInfo {

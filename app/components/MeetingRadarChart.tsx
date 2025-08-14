@@ -4,7 +4,7 @@ import { useMemo, useState, useEffect, useRef } from "react"
 import ReactECharts from "echarts-for-react"
 
 // JSON verisini import ediyoruz
-import meetingData from "../data/bolum_bazli_diyalog_analizi (2).json"
+import meetingData from "../data/meeting_radar_graph_new.json"
 
 function parseDurationToMs(durationStr: string): number {
   if (!durationStr || durationStr === "00:00:00.000") return 0
@@ -22,54 +22,47 @@ function formatDuration(ms: number): string {
   return [h > 0 ? `${h}sa` : "", m > 0 ? `${m}dk` : "", s > 0 ? `${s}sn` : ""].filter(Boolean).join(" ")
 }
 
+interface ParticipantDatum {
+  name: string
+  ms: number
+  dialogueDurations: Record<string, string>
+  monologueDuration: number
+}
+
 export default function MeetingRadar() {
-  const [selectedSection, setSelectedSection] = useState(1)
   const [selectedTopic, setSelectedTopic] = useState(0)
   const chartRef = useRef<any>(null)
 
-  // Seçili bölümü al
-  const currentSection = meetingData.find(section => section.section === selectedSection)
-  
+  // Konuları tek listede topla (bölümler kaldırıldı). Veri hâlâ bölümlü gelirse düzleştir.
+  const allTopics = useMemo(() => {
+    if (Array.isArray(meetingData) && meetingData.length > 0) {
+      const first = meetingData[0] as any
+      if (first && typeof first === "object" && "topics" in first) {
+        return (meetingData as any[]).flatMap((section: any) => section.topics || [])
+      }
+      return meetingData as any[]
+    }
+    return [] as any[]
+  }, [])
+
   // Seçili konuyu al
-  const currentTopic = currentSection?.topics[selectedTopic]
-
-  // Bölüm seçenekleri
-  const sectionOptions = meetingData.map(section => ({
-    value: section.section,
-    label: `Bölüm ${section.section} (${section.duration})`
-  }))
-
-  // Konu seçenekleri
-  const topicOptions = currentSection?.topics.map((topic, index) => ({
-    value: index,
-    label: `${topic.topic} (${topic.duration})`
-  })) || []
+  const currentTopic = allTopics[selectedTopic]
 
   const totalDurationMs = currentTopic ? parseDurationToMs(currentTopic.duration) : 0
 
-  const participants = useMemo(() => 
-    currentTopic?.analysis.map(p => ({
+  const participants = useMemo<ParticipantDatum[]>(() => 
+    currentTopic?.analysis.map((p: any) => ({
       name: p.name,
       ms: parseDurationToMs(p.total_speaking_duration),
-      dialogueDurations: p.dialogue_durations,
+      dialogueDurations: p.dialogue_durations as Record<string, string>,
       monologueDuration: parseDurationToMs(p.monologue_duration)
     })) || [], [currentTopic]
   )
 
   // En aktif katılımcıları bul
-  const topParticipants = useMemo(() => [...participants]
-    .sort((a, b) => b.ms - a.ms)
+  const topParticipants = useMemo<ParticipantDatum[]>(() => [...participants]
+    .sort((a: ParticipantDatum, b: ParticipantDatum) => b.ms - a.ms)
     .slice(0, 3), [participants])
-
-  // En çok diyalog kuran ikiliyi bul
-  const topDialogue = useMemo(() => participants.reduce((max, p) => {
-    const maxDialogue = Object.entries(p.dialogueDurations).reduce((maxEntry, [participantName, duration]) => {
-      const durationMs = parseDurationToMs(duration)
-      return durationMs > maxEntry.duration ? { name: participantName, duration: durationMs } : maxEntry
-    }, { name: '', duration: 0 })
-    
-    return maxDialogue.duration > max.duration ? maxDialogue : max
-  }, { name: '', duration: 0 }), [participants])
 
   // Pencere boyutu değişikliklerini dinle
   useEffect(() => {
@@ -89,12 +82,12 @@ export default function MeetingRadar() {
       tooltip: {
         trigger: 'item',
         formatter: (params: any) => {
-          const idx = participants.findIndex(p => p.name === params.seriesName)
+          const idx = participants.findIndex((p: ParticipantDatum) => p.name === params.seriesName)
           const p = participants[idx]
           
           // İkili görüşme detayları
           const dialogueDetails = Object.entries(p.dialogueDurations)
-            .filter(([, duration]) => parseDurationToMs(duration) > 0)
+            .filter(([, duration]) => parseDurationToMs(duration as string) > 0)
             .map(([participantName, duration]) => `• ${participantName}: ${duration}`)
             .join('<br/>')
 
@@ -109,7 +102,7 @@ export default function MeetingRadar() {
           `
         }
       },
-      series: participants.map((p, idx) => ({
+      series: participants.map((p: ParticipantDatum, idx: number) => ({
         name: p.name,
         type: 'radar',
         data: [Array(participants.length).fill(0).map((_, i) => (i === idx ? totalDurationMs - p.ms : 100000000000000000000000))],
@@ -126,7 +119,7 @@ export default function MeetingRadar() {
         }
       })),
       radar: {
-        indicator: participants.map(p => ({ name: p.name, max: totalDurationMs })),
+        indicator: participants.map((p: ParticipantDatum) => ({ name: p.name, max: totalDurationMs })),
         center: ['50%', '55%'],
         radius: '60%',
         splitNumber: 5,
@@ -163,40 +156,31 @@ export default function MeetingRadar() {
 
   return (
     <div className="p-6 bg-white rounded-xl shadow-lg">
-      <div className="flex flex-col lg:flex-row gap-6">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-6">
         {/* Sol taraf - Grafik */}
         <div className="flex-1 min-w-0">
-          <div className="flex flex-col sm:flex-row gap-4 mb-6">
-            <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700 mb-2">Bölüm Seçin</label>
-              <select 
-                value={selectedSection} 
-                onChange={(e) => {
-                  setSelectedSection(Number(e.target.value))
-                  setSelectedTopic(0)
-                }}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                {sectionOptions.map(option => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="flex-1">
-              <label className="block text-sm font-medium text-gray-700 mb-2">Konu Seçin</label>
-              <select 
-                value={selectedTopic} 
-                onChange={(e) => setSelectedTopic(Number(e.target.value))}
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-              >
-                {topicOptions.map(option => (
-                  <option key={option.value} value={option.value}>
-                    {option.label}
-                  </option>
-                ))}
-              </select>
+          <div className="flex flex-col gap-4 mb-6">
+            <div className="w-full">
+              <div className="flex flex-wrap gap-2 justify-center items-center">
+                {allTopics.map((topic: any, index: number) => {
+                  const isActive = index === selectedTopic
+                  return (
+                    <button
+                      key={`${topic.topic}-${index}`}
+                      type="button"
+                      onClick={() => setSelectedTopic(index)}
+                      className={
+                        `px-3 py-1.5 rounded-full text-sm font-medium transition-colors shadow-sm ` +
+                        (isActive
+                          ? 'bg-indigo-600 text-white'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200')
+                      }
+                    >
+                      {topic.topic} ({topic.duration})
+                    </button>
+                  )
+                })}
+              </div>
             </div>
           </div>
           
@@ -212,7 +196,7 @@ export default function MeetingRadar() {
         </div>
 
         {/* Sağ taraf - Analiz Bilgileri */}
-        <div className="w-full lg:w-80 flex-shrink-0 space-y-6">
+        <div className="w-full lg:w-80 flex-shrink-0 space-y-6 lg:self-center">
           <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-4 rounded-lg">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">📊 Genel İstatistikler</h3>
             <div className="space-y-2 text-sm">
@@ -234,7 +218,7 @@ export default function MeetingRadar() {
           <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-4 rounded-lg">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">🏆 En Aktif Katılımcılar</h3>
             <div className="space-y-2">
-              {topParticipants.map((p, idx) => (
+              {topParticipants.map((p: ParticipantDatum, idx: number) => (
                 <div key={p.name} className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
                     <span className="text-lg">{idx === 0 ? '🥇' : idx === 1 ? '🥈' : '🥉'}</span>
@@ -247,33 +231,6 @@ export default function MeetingRadar() {
               ))}
             </div>
           </div>
-
-          <div className="bg-gradient-to-br from-purple-50 to-pink-100 p-4 rounded-lg">
-            <h3 className="text-lg font-semibold text-gray-800 mb-3">💬 İkili Görüşme Analizi</h3>
-            <div className="space-y-2 text-sm">
-              {topDialogue.duration > 0 && (
-                <div className="bg-white p-3 rounded border">
-                  <p className="font-medium text-purple-600">En Uzun İkili Görüşme:</p>
-                  <p className="text-xs text-gray-600">{topDialogue.name}</p>
-                  <p className="font-semibold">{formatDuration(topDialogue.duration)}</p>
-                </div>
-              )}
-              
-              <div className="space-y-1">
-                {participants.map(p => {
-                  const totalDialogue = Object.values(p.dialogueDurations)
-                    .reduce((sum, duration) => sum + parseDurationToMs(duration), 0)
-                  return (
-                    <div key={p.name} className="flex justify-between text-xs">
-                      <span>{p.name}:</span>
-                      <span className="font-medium">{formatDuration(totalDialogue)}</span>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
-          </div>
-
 
         </div>
       </div>
