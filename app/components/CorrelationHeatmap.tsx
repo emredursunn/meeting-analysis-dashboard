@@ -198,12 +198,15 @@ const CorrelationHeatmap: React.FC = () => {
         type: "category",
         data: names,
         axisLabel: {
-          formatter: (val: string) => val.replace(/\s+/, "\n"),
-          color: "#ffffff",
+          // İsimleri eğik ve tek satırda, sığması için döndürülmüş
+          formatter: (val: string) => val,
+          color: "#1f2937",
           fontWeight: "600",
           fontSize: 12,
-          lineHeight: 14,
           margin: 10,
+          rotate: 40, // isimleri eğik yap
+          fontStyle: "italic", // italik yazı
+          overflow: "truncate", // sığmazsa kes
         },
         axisLine: { lineStyle: { color: "#ffffff" } },
         axisTick: { show: false },
@@ -218,6 +221,7 @@ const CorrelationHeatmap: React.FC = () => {
           fontWeight: "600",
           fontSize: 12,
           lineHeight: 14,
+          fontStyle: "italic", // italik yazı
           margin: 10,
         },
         axisLine: { lineStyle: { color: "#ffffff" } },

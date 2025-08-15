@@ -104,9 +104,9 @@ const App = () => {
           style={{
             background: `
               linear-gradient(90deg,
-                rgba(80, 180, 255, 0.9) 0%,
+                rgba(255,95, 210, 0.9) 0%,
                 rgba(170, 80, 255, 0.9) 40%,
-                rgba(255,95, 210, 0.9) 100%)
+                rgba(80, 180, 255, 0.9) 100%)
             `
           }}
         >
@@ -122,25 +122,31 @@ const App = () => {
         </header>
 
         {/* Main Grid */}
-        <main className="flex flex-col gap-8 px-4 md:px-12">
-          {/* 1. Meeting Radar Chart */}
+        <main className="flex flex-col gap-6 px-4 md:px-12">
+          {/* 1. Meeting Radar Chart - Full width, primary focus */}
           <div className="w-full">
             <MeetingRadarChart />
           </div>
 
-          {/* 2. Shouting Chart */}
-          <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full">
-            <div className="text-2xl font-bold text-gray-800 mb-4">Ses Seviyesi Analizi</div>
-            <ShoutingChart />
+          {/* 2. First Row: Shouting Chart + Emotions Radar - Sidebar aware layout */}
+          <div className={`grid gap-6 ${
+            sidebarOpen 
+              ? 'grid-cols-1 xl:grid-cols-2' 
+              : 'grid-cols-1 lg:grid-cols-2'
+          }`}>
+            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
+              <div className="text-2xl font-bold text-gray-800 mb-4">Ses Seviyesi Analizi</div>
+              <ShoutingChart />
+            </div>
+            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
+              <div className="text-2xl font-bold text-gray-800 mb-4">Duygu Durumu Radar</div>
+              <div className="w-full overflow-hidden">
+                <EmotionsRadarChart />
+              </div>
+            </div>
           </div>
 
-          {/* 2. Participant Activity Timeline */}
-          {/* <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full">
-            <div className="text-2xl font-bold text-gray-800 mb-4">Katılımcı Aktivite Zaman Çizelgesi</div>
-            <ParticipantActivityTimeline />
-          </div> */}
-
-          {/* 3. Emotion Timeline Area Chart */}
+          {/* 3. Emotion Timeline - Full width for time series */}
           <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full min-w-0 overflow-x-auto">
             <div className="text-2xl font-bold text-gray-800 mb-4">Duygu Zaman Çizelgesi</div>
             <div className="min-w-0">
@@ -148,29 +154,26 @@ const App = () => {
             </div>
           </div>
 
-          {/* 4. Emotions Radar & Topic Bar yan yana */}
-
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 flex-1 min-w-0">
-              <div className="text-2xl font-bold text-gray-800 mb-4">Duygu Durumu Radar</div>
-              <div className="w-full overflow-hidden">
-                <EmotionsRadarChart />
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 flex-1 min-w-0">
+          {/* 4. Second Row: Topic Emotions + Correlation Heatmap - Sidebar aware layout */}
+          <div className={`grid gap-6 ${
+            sidebarOpen 
+              ? 'grid-cols-1 2xl:grid-cols-2' 
+              : 'grid-cols-1 xl:grid-cols-2'
+          }`}>
+            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
               <div className="text-2xl font-bold text-gray-800 mb-4">Konu Bazlı Duygular</div>
               <div className="w-full overflow-hidden">
                 <EmotionTopicBarChart />
               </div>
             </div>
-
-          {/* 5. Correlation Heatmap */}
-          <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full">
-            <div className="text-2xl font-bold text-gray-800 mb-4">Davranış Korelasyon Haritası</div>
-            <CorrelationHeatmap />
+            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
+              <div className="text-2xl font-bold text-gray-800 mb-4">Davranış Korelasyon Haritası</div>
+              <CorrelationHeatmap />
+            </div>
           </div>
 
-          {/* Konuşmacı Zaman Çizelgesi */}
-          <div className="mt-12">
+          {/* 5. Speaker Timeline - Full width for timeline */}
+          <div className="mt-6">
             <SpeakerTimelineChartCard />
           </div>
         </main>

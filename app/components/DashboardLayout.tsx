@@ -25,9 +25,9 @@ export default function DashboardLayout({
           style={{
             background: `
               linear-gradient(90deg,
-                rgba(80, 180, 255, 0.9) 0%,
-                rgba(170, 80, 255, 0.9) 40%,
-                rgba(255,95, 210, 0.9) 100%)
+                rgba(255,95, 210, 0.9) 0%,
+                rgba(170, 80, 255, 0.9) 60%,
+                rgba(80, 180, 255, 0.9) 100%)
             `
           }}
         >

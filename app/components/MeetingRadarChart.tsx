@@ -156,10 +156,10 @@ export default function MeetingRadar() {
 
   return (
     <div className="p-6 bg-white rounded-xl shadow-lg">
-      <div className="flex flex-col lg:flex-row lg:items-center gap-6">
+      <div className="flex flex-col lg:flex-row lg:items-center gap-2">
         {/* Sol taraf - Grafik */}
         <div className="flex-1 min-w-0">
-          <div className="flex flex-col gap-4 mb-6">
+          <div className="flex flex-col gap-4">
             <div className="w-full">
               <div className="flex flex-wrap gap-2 justify-center items-center">
                 {allTopics.map((topic: any, index: number) => {
@@ -176,7 +176,7 @@ export default function MeetingRadar() {
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200')
                       }
                     >
-                      {topic.topic} ({topic.duration})
+                      {topic.topic} ({topic.startTime} - {topic.endTime})
                     </button>
                   )
                 })}
@@ -185,7 +185,7 @@ export default function MeetingRadar() {
           </div>
           
           
-          <div className="relative w-full" style={{ height: '650px' }}>
+          <div className="relative w-full" style={{ height: '400px' }}>
             <ReactECharts 
               ref={chartRef}
               option={option} 
@@ -201,8 +201,8 @@ export default function MeetingRadar() {
             <h3 className="text-lg font-semibold text-gray-800 mb-3">📊 Genel İstatistikler</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
-                <span>Toplam Süre:</span>
-                <span className="font-semibold">{currentTopic.duration}</span>
+                <span>Konu Süresi:</span>
+                <span className="font-semibold">{currentTopic.startTime} - {currentTopic.endTime}</span>
               </div>
               <div className="flex justify-between">
                 <span>Katılımcı Sayısı:</span>

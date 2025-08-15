@@ -195,9 +195,9 @@ const EmotionTopicBarChart = () => {
   const allEmotions: any = Object.keys(emotionColors);
 
   const personColors: any = {
-    "Agent Walker": "#0c6904ff",
-    "Chuck Bartowski": "#0c6904ff",
-    "John Casey": "#0c6904ff",
+    "Agent": "#0c6904ff",
+    "Chuck": "#0c6904ff",
+    "John": "#0c6904ff",
     "Orion": "#0c6904ff",
     "Ellie": "#0c6904ff",
     "Carina": "#0c6904ff",
