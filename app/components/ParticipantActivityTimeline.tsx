@@ -160,7 +160,8 @@ const ParticipantActivityTimeline: FC<ParticipantActivityTimelineProps> = ({ dat
   const option: any = {
     backgroundColor: "transparent",
     title: {
-      text: "Toplantı Katılımcı Aktivite Çizelgesi",
+      // text: "Toplantı Katılımcı Aktivite Çizelgesi",
+      text: "",
       left: "center",
       textStyle: { color: "#1f2937", fontSize: 16 },
       subtext: selectedId ? `Konferans: ${selectedId}` : undefined,

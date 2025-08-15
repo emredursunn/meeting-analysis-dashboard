@@ -104,7 +104,8 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
   const option = {
     backgroundColor: "transparent",
     title: {
-      text: "Konuşma Duygu Zaman Serisi",
+      // text: "Konuşma Duygu Zaman Serisi",
+      text: "",
       left: "center",
       textStyle: { color: "#1f2937", fontSize: 16, fontWeight: "bold" }
     },

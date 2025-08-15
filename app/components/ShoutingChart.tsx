@@ -88,7 +88,8 @@ const shoutingData = {
 const ShoutingChart = () => {
   const option = {
     title: {
-      text: 'Ses Anomalileri (Zaman Serisi)',
+      // text: 'Ses Anomalileri (Zaman Serisi)',
+      text: "",
       left: 'center',
       textStyle: { color: '#1f2937' }
     },

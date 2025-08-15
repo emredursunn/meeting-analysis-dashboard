@@ -249,7 +249,8 @@ const EmotionTopicBarChart = () => {
   const option: any = {
     backgroundColor: "transparent",
     title: {
-      text: "Konuya Göre Kişi • Duygu Dağılımı",
+      // text: "Konuya Göre Kişi • Duygu Dağılımı",
+      text: "",
       left: "center",
       textStyle: { color: "#1f2937" },
     },

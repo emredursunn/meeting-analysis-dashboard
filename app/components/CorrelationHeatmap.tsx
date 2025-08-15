@@ -166,7 +166,8 @@ const CorrelationHeatmap: React.FC = () => {
     () => ({
       backgroundColor: "transparent",
       title: {
-        text: "Kişiler Arası Konuşma Yoğunluğu & Monolog Oranı",
+        // text: "Kişiler Arası Konuşma Yoğunluğu & Monolog Oranı",
+        text:"",
         left: "center",
         top: 16,
         textStyle: {

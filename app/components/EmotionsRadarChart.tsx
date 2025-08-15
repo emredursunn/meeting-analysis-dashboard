@@ -75,7 +75,8 @@ const EmotionsRadarChart = () => {
 
   const option = {
     title: {
-      text: 'Duygu Dağılımı Karşılaştırması (Radar)',
+      // text: 'Duygu Dağılımı Karşılaştırması (Radar)',
+      text: "",
       left: 'center',
       textStyle: { color: '#1f2937' }
     },
