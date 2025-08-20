@@ -14,7 +14,6 @@ const ChartCard: React.FC<ChartCardProps> = ({
   title, 
   children, 
   preview, 
-  chartId, 
   className = "" 
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
