@@ -29,7 +29,13 @@ interface ParticipantDatum {
   monologueDuration: number
 }
 
-export default function MeetingRadar() {
+interface MeetingRadarProps {
+  isPreview?: boolean;
+  height?: number;
+}
+
+export default function MeetingRadar({ isPreview = false, height }: MeetingRadarProps = {}) {
+  const chartHeight = height || (isPreview ? 320 : 400);
   const [selectedTopic, setSelectedTopic] = useState(0)
   const chartRef = useRef<any>(null)
 
@@ -120,7 +126,7 @@ export default function MeetingRadar() {
       })),
       radar: {
         indicator: participants.map((p: ParticipantDatum) => ({ name: p.name, max: totalDurationMs })),
-        center: ['50%', '55%'],
+        center: ['50%', '40%'],
         radius: '60%',
         splitNumber: 5,
         shape: 'circle',
@@ -159,33 +165,34 @@ export default function MeetingRadar() {
       <div className="flex flex-col lg:flex-row lg:items-center gap-2">
         {/* Sol taraf - Grafik */}
         <div className="flex-1 min-w-0">
-          <div className="flex flex-col gap-4">
-            <div className="w-full">
-              <div className="flex flex-wrap gap-2 justify-center items-center">
-                {allTopics.map((topic: any, index: number) => {
-                  const isActive = index === selectedTopic
-                  return (
-                    <button
-                      key={`${topic.topic}-${index}`}
-                      type="button"
-                      onClick={() => setSelectedTopic(index)}
-                      className={
-                        `px-3 py-1.5 rounded-full text-sm font-medium transition-colors shadow-sm ` +
-                        (isActive
-                          ? 'bg-indigo-600 text-white'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200')
-                      }
-                    >
-                      {topic.topic} ({topic.startTime} - {topic.endTime})
-                    </button>
-                  )
-                })}
+          {!isPreview && (
+            <div className="flex flex-col gap-4">
+              <div className="w-full">
+                <div className="flex flex-wrap gap-2 justify-center items-center">
+                  {allTopics.map((topic: any, index: number) => {
+                    const isActive = index === selectedTopic
+                    return (
+                      <button
+                        key={`${topic.topic}-${index}`}
+                        type="button"
+                        onClick={() => setSelectedTopic(index)}
+                        className={
+                          `px-3 py-1.5 rounded-full text-sm font-medium transition-colors shadow-sm ` +
+                          (isActive
+                            ? 'bg-indigo-600 text-white'
+                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200')
+                        }
+                      >
+                        {topic.topic} ({topic.startTime} - {topic.endTime})
+                      </button>
+                    )
+                  })}
+                </div>
               </div>
             </div>
-          </div>
+          )}
           
-          
-          <div className="relative w-full" style={{ height: '400px' }}>
+          <div className="relative w-full" style={{ height: `${chartHeight}px` }}>
             <ReactECharts 
               ref={chartRef}
               option={option} 
@@ -196,6 +203,7 @@ export default function MeetingRadar() {
         </div>
 
         {/* Sağ taraf - Analiz Bilgileri */}
+        {!isPreview && (
         <div className="w-full lg:w-80 flex-shrink-0 space-y-6 lg:self-center">
           <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-4 rounded-lg">
             <h3 className="text-lg font-semibold text-gray-800 mb-3">📊 Genel İstatistikler</h3>
@@ -233,6 +241,7 @@ export default function MeetingRadar() {
           </div>
 
         </div>
+        )}
       </div>
     </div>
   )

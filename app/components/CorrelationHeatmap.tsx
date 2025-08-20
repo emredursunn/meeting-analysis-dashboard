@@ -159,7 +159,15 @@ function buildHeatmapData(participants: ParticipantRawDatum[]) {
   return { names, matrix, maxVal };
 }
 
-const CorrelationHeatmap: React.FC = () => {
+interface CorrelationHeatmapProps {
+  isPreview?: boolean;
+  height?: number;
+}
+
+const CorrelationHeatmap: React.FC<CorrelationHeatmapProps> = ({ 
+  isPreview = false, 
+  height = 600 
+}) => {
   const { names, matrix, maxVal } = React.useMemo(() => buildHeatmapData(participantRawData), []);
 
   const option = React.useMemo(
@@ -192,18 +200,18 @@ const CorrelationHeatmap: React.FC = () => {
       grid: {
         left: 160,   // widened for multi‑line Y labels
         right: 120,
-        top: 80,
-        bottom: 100, // room for multi‑line X labels
+        top: isPreview ? 10 : 80,
+        bottom: isPreview ? 50 : 100, // room for multi‑line X labels
       },
       xAxis: {
         type: "category",
         data: names,
         axisLabel: {
           // İsimleri eğik ve tek satırda, sığması için döndürülmüş
-          formatter: (val: string) => val,
+          formatter: (val: string) => isPreview ? val.split(' ')[0] : val,
           color: "#1f2937",
           fontWeight: "600",
-          fontSize: 12,
+          fontSize: isPreview ? 10 : 12,
           margin: 10,
           rotate: 40, // isimleri eğik yap
           fontStyle: "italic", // italik yazı
@@ -217,10 +225,10 @@ const CorrelationHeatmap: React.FC = () => {
         data: names,
         inverse: true,
         axisLabel: {
-          formatter: (val: string) => val.replace(/\s+/, "\n"),
+          formatter: (val: string) => isPreview ? val.split(' ')[0] : val.replace(/\s+/, "\n"),
           color: "#1f2937",
           fontWeight: "600",
-          fontSize: 12,
+          fontSize: isPreview ? 10 : 12,
           lineHeight: 14,
           fontStyle: "italic", // italik yazı
           margin: 10,
@@ -228,7 +236,7 @@ const CorrelationHeatmap: React.FC = () => {
         axisLine: { lineStyle: { color: "#ffffff" } },
         axisTick: { show: false },
       },
-      visualMap: {
+              visualMap: {
         min: 0,
         max: maxVal,
         calculable: true,
@@ -243,6 +251,7 @@ const CorrelationHeatmap: React.FC = () => {
         borderColor: "#ffffff",
         backgroundColor: "#ffffff",
         formatter: (val: number) => formatDuration(val),
+        show: !isPreview, // Preview modunda visualMap gizle
       },
       series: [
         {
@@ -277,7 +286,7 @@ const CorrelationHeatmap: React.FC = () => {
   return (
     <ReactECharts
       option={option}
-      style={{ height: 600, width: "100%" }}
+      style={{ height, width: "100%" }}
       notMerge={true}
       lazyUpdate={true}
     />

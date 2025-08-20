@@ -171,12 +171,20 @@ const topicEmotionData: any = {
 };
 
 
+interface EmotionTopicBarChartProps {
+  isPreview?: boolean;
+  height?: number;
+}
+
 /**
  * EmotionTopicBarChart
  *  - Kişi legend'i artık kişiyi pasifleştirince tüm barlarını gizler.
  *  - Sağdaki sabit duygu renk haritası geri getirildi (ECharts dışı).
  */
-const EmotionTopicBarChart = () => {
+const EmotionTopicBarChart: React.FC<EmotionTopicBarChartProps> = ({ 
+  isPreview = false, 
+  height = 600 
+}) => {
   // -------------------- COLOR PALETTE -------------------- //
   const emotionColors: any = {
     Neutral: "#A0AEC0", // gray
@@ -283,13 +291,14 @@ const EmotionTopicBarChart = () => {
     legend: {
       orient: "horizontal",
       type: "scroll",
-      bottom: 10,
+      bottom: isPreview ? 5 : 10,
       left: "center",
-      itemWidth: 15,
-      itemHeight: 15,
-      textStyle: { color: "#374151", fontSize: 12 },
+      itemWidth: isPreview ? 10 : 15,
+      itemHeight: isPreview ? 10 : 15,
+      textStyle: { color: "#374151", fontSize: isPreview ? 10 : 12 },
       pageIconColor: "#374151",
       data: persons.map((p: any) => ({ name: p, icon: "circle", itemStyle: { color: personColors[p] || "#999" } })),
+      show: true
     },
     grid: {
       left: "4%",
@@ -319,37 +328,39 @@ const EmotionTopicBarChart = () => {
 
   // -------------------- RENDER -------------------- //
   return (
-    <div style={{ position: "relative", width: "100%", height: 600 }}>
+    <div style={{ position: "relative", width: "100%", height }}>
       <ReactECharts style={{ width: "100%", height: "100%" }} option={option} />
 
-      {/* Sağda sabit duygu renk haritası */}
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          right: 0,
-          transform: "translateY(-50%)",
-          background: "rgba(233, 235, 238, 0.7)",
-          padding: "10px 14px",
-          borderTopLeftRadius: 8,
-          borderBottomLeftRadius: 8,
-        }}
-      >
-        {allEmotions.map((emo : any) => (
-          <div key={emo} style={{ display: "flex", alignItems: "center", marginBottom: 5 }}>
-            <span
-              style={{
-                width: 14,
-                height: 14,
-                backgroundColor: emotionColors[emo],
-                borderRadius: 3,
-                marginRight: 8,
-              }}
-            />
-            <span style={{ color: "#000", fontSize: 12 }}>{emo}</span>
-          </div>
-        ))}
-      </div>
+      {/* Sağda sabit duygu renk haritası - preview modunda gizle */}
+      {!isPreview && (
+        <div
+          style={{
+            position: "absolute",
+            top: "50%",
+            right: 0,
+            transform: "translateY(-50%)",
+            background: "rgba(233, 235, 238, 0.7)",
+            padding: "10px 14px",
+            borderTopLeftRadius: 8,
+            borderBottomLeftRadius: 8,
+          }}
+        >
+          {allEmotions.map((emo : any) => (
+            <div key={emo} style={{ display: "flex", alignItems: "center", marginBottom: 5 }}>
+              <span
+                style={{
+                  width: 14,
+                  height: 14,
+                  backgroundColor: emotionColors[emo],
+                  borderRadius: 3,
+                  marginRight: 8,
+                }}
+              />
+              <span style={{ color: "#000", fontSize: 12 }}>{emo}</span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

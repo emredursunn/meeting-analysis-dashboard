@@ -14,6 +14,7 @@ import { useContext } from "react";
 import { SidebarOpenContext } from "./context/SidebarContext";
 import SpeakerTimelineChartCard from "./components/SpeakerTimelineChartCard";
 import MeetingRadarChart from "./components/MeetingRadarChart";
+import ChartCard from "./components/ChartCard";
 
 // Profil menüsü bileşeni
 const ProfileMenu = () => {
@@ -100,7 +101,7 @@ const App = () => {
       <div className="bg-white text-[#171717] min-h-screen p-0 sm:p-0 font-sans">
         {/* Header */}
         <header 
-          className="flex items-center px-2 md:px-4 py-6 mb-10 shadow-xl relative rounded-b-3xl mx-2 md:mx-4 text-white z-50"
+          className="flex items-center px-2 md:px-4 py-2 mb-6 shadow-xl relative rounded-b-3xl mx-2 md:mx-4 text-white z-50"
           style={{
             background: `
               linear-gradient(90deg,
@@ -114,67 +115,65 @@ const App = () => {
             <Image src="/favicon.ico" alt="Company Logo" width={44} height={44} />
           </div>
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1">Aurora Meeting Analysis</h1>
-            <p className="text-base md:text-lg opacity-80">AI-Driven Meeting Metrics Dashboard</p>
+            <h1 className="text-3xl md:text-2xl font-bold tracking-tight mb-1">Aurora Meeting Analysis</h1>
+            <p className="text-base md:text-md opacity-80">AI-Driven Meeting Metrics Dashboard</p>
           </div>
           {/* Profil bilgisi sağ üstte */}
           <ProfileMenu />
         </header>
 
         {/* Main Grid */}
-        <main className="flex flex-col gap-6 px-4 md:px-12">
-          {/* 1. Meeting Radar Chart - Full width, primary focus */}
-          <div className="w-full">
-            <MeetingRadarChart />
-          </div>
-
-          {/* 2. First Row: Shouting Chart + Emotions Radar - Sidebar aware layout */}
-          <div className={`grid gap-6 ${
+        <main className="flex flex-col py-4 gap-4 px-4 md:px-12">
+          {/* 1. İlk satır: 2 chart */}
+          <div className={`grid gap-4 ${
             sidebarOpen 
-              ? 'grid-cols-1 xl:grid-cols-2' 
-              : 'grid-cols-1 lg:grid-cols-2'
+              ? 'grid-cols-1 lg:grid-cols-2' 
+              : 'grid-cols-1 md:grid-cols-2'
           }`}>
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
-              <div className="text-2xl font-bold text-gray-800 mb-4">Ses Seviyesi Analizi</div>
-              <ShoutingChart />
-            </div>
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
-              <div className="text-2xl font-bold text-gray-800 mb-4">Duygu Durumu Radar</div>
-              <div className="w-full overflow-hidden">
-                <EmotionsRadarChart />
-              </div>
-            </div>
+            <ChartCard 
+              title="Toplantı Radar Analizi" 
+              chartId="meeting-radar"
+            >
+              <MeetingRadarChart isPreview height={320} />
+            </ChartCard>
+            
+            <ChartCard title="Konu Bazlı Duygular" chartId="emotion-topic">
+              <EmotionTopicBarChart isPreview height={320} />
+            </ChartCard>
           </div>
 
-          {/* 3. Emotion Timeline - Full width for time series */}
-          <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100 w-full min-w-0 overflow-x-auto">
-            <div className="text-2xl font-bold text-gray-800 mb-4">Duygu Zaman Çizelgesi</div>
-            <div className="min-w-0">
-              <EmotionTimelineAreaChart key={sidebarOpen ? 'open' : 'closed'} />
-            </div>
-          </div>
-
-          {/* 4. Second Row: Topic Emotions + Correlation Heatmap - Sidebar aware layout */}
-          <div className={`grid gap-6 ${
+          {/* 2. İkinci satır: 3 chart */}
+          <div className={`grid gap-4 ${
             sidebarOpen 
-              ? 'grid-cols-1 2xl:grid-cols-2' 
-              : 'grid-cols-1 xl:grid-cols-2'
+              ? 'grid-cols-1 lg:grid-cols-2 xl:grid-cols-3' 
+              : 'grid-cols-1 md:grid-cols-2 xl:grid-cols-3'
           }`}>
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
-              <div className="text-2xl font-bold text-gray-800 mb-4">Konu Bazlı Duygular</div>
-              <div className="w-full overflow-hidden">
-                <EmotionTopicBarChart />
-              </div>
-            </div>
-            <div className="bg-white p-6 rounded-3xl shadow-xl border border-gray-100">
-              <div className="text-2xl font-bold text-gray-800 mb-4">Davranış Korelasyon Haritası</div>
-              <CorrelationHeatmap />
-            </div>
+            <ChartCard title="Ses Seviyesi Analizi" chartId="shouting">
+              <ShoutingChart isPreview height={320} />
+            </ChartCard>
+            
+            <ChartCard title="Duygu Durumu Radar" chartId="emotions-radar">
+              <EmotionsRadarChart isPreview height={320} />
+            </ChartCard>
+            
+            <ChartCard title="Duygu Zaman Çizelgesi" chartId="emotion-timeline">
+              <EmotionTimelineAreaChart height={320} isPreview />
+            </ChartCard>
           </div>
 
-          {/* 5. Speaker Timeline - Full width for timeline */}
-          <div className="mt-6">
-            <SpeakerTimelineChartCard />
+          {/* 3. Üçüncü satır: 2 chart */}
+          <div className={`grid gap-4 ${
+            sidebarOpen 
+              ? 'grid-cols-1 lg:grid-cols-2' 
+              : 'grid-cols-1 md:grid-cols-2'
+          }`}>
+            <ChartCard title="Davranış Korelasyon Haritası" chartId="correlation">
+              <CorrelationHeatmap isPreview height={320} />
+            </ChartCard>
+            
+            <ChartCard title="Konuşmacı Zaman Çizelgesi" chartId="speaker-timeline">
+              <SpeakerTimelineChartCard isPreview />
+            </ChartCard>
           </div>
         </main>
 

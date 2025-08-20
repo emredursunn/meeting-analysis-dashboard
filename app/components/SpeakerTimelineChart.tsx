@@ -61,14 +61,16 @@ const SpeakerTimelineChart: React.FC<SpeakerTimelineChartProps> = ({ speakers, c
       left: '3%',
       right: '3%',
       top: 40,
-      bottom: 40,
+      bottom: 50,
       containLabel: true,
     },
     xAxis: {
       type: 'value',
       min: 0,
       max: maxEnd,
-      name: 'Süre (sn)',
+      name: 'Zaman(s)',
+      nameLocation: 'middle',
+      nameGap: 20,
       axisLabel: {
         formatter: (value: number) => {
           const m = Math.floor(value / 60);

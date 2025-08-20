@@ -59,10 +59,18 @@ const radarData: any = {
   }
 };
 
+interface EmotionsRadarChartProps {
+  isPreview?: boolean;
+  height?: number;
+}
+
 /**
  * Kişi Bazlı Duygu Karşılaştırma Radar Grafiği
  */
-const EmotionsRadarChart = () => {
+const EmotionsRadarChart: React.FC<EmotionsRadarChartProps> = ({ 
+  isPreview = false, 
+  height = 500 
+}) => {
   const emotions = Object.keys(radarData.team_avg);
   const participants = Object.keys(radarData);
 
@@ -85,8 +93,11 @@ const EmotionsRadarChart = () => {
     },
     legend: {
       data: participants.map(name => name === 'team_avg' ? 'Takım Ortalaması' : name),
-      bottom: 15,
-      textStyle: { color: '#374151' }
+      bottom: isPreview ? 5 : 15,
+      textStyle: { color: '#374151', fontSize: isPreview ? 10 : 12 },
+      itemWidth: isPreview ? 12 : 18,
+      itemHeight: isPreview ? 8 : 12,
+      show: true
     },
     radar: {
       indicator: emotions.map(emotion => ({ name: emotion, max: 50 })),
@@ -123,7 +134,7 @@ const EmotionsRadarChart = () => {
     ]
   };
 
-  return <ReactECharts option={option} style={{height: '500px', width: '100%' }} />;
+  return <ReactECharts option={option} style={{height: `${height}px`, width: '100%' }} />;
 };
 
 export default EmotionsRadarChart;

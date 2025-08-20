@@ -82,10 +82,18 @@ const shoutingData = {
 }
 
 
+interface ShoutingChartProps {
+  isPreview?: boolean;
+  height?: number;
+}
+
 /**
  * Bağırma Yoğunluğu Zaman Serisi Grafiği
  */
-const ShoutingChart = () => {
+const ShoutingChart: React.FC<ShoutingChartProps> = ({ 
+  isPreview = false, 
+  height = 400 
+}) => {
   const option = {
     title: {
       // text: 'Ses Anomalileri (Zaman Serisi)',
@@ -95,7 +103,9 @@ const ShoutingChart = () => {
     },
     tooltip: {
       trigger: 'axis',
-      formatter: 'Zaman Aralığı: {b}<br/>Anomali Sayısı: {c}'
+      formatter: isPreview 
+        ? 'Anomali: {c}' 
+        : 'Zaman Aralığı: {b}<br/>Anomali Sayısı: {c}'
     },
     grid: {
       left: '3%',
@@ -110,6 +120,13 @@ const ShoutingChart = () => {
       axisLine: { lineStyle: { color: '#201f1fff' } },
       axisLabel: {
         formatter: function(value: string) {
+          if (isPreview) {
+            // Preview modunda daha basit gösterim
+            const timeRange = value.split('-');
+            const startTime = timeRange[0].split(':');
+            return `${startTime[1]}:${startTime[2]}`;
+          }
+          
           // "00:00:00-00:00:20" formatından "00:00" kısmını al
           const timeRange = value.split('-');
           const startTime = timeRange[0]; // "00:00:00"
@@ -132,8 +149,9 @@ const ShoutingChart = () => {
         },
         rotate: 45,
         interval: function(index: number) {
-          // Her 4. label'ı göster (toplam ~75 veri noktası / 4 = ~19 label)
-          return index % 4 === 0;
+          // Preview modunda daha az label göster
+          const interval = isPreview ? 8 : 4;
+          return index % interval === 0;
         }
       }
     },
@@ -165,7 +183,7 @@ const ShoutingChart = () => {
     ]
   };
 
-  return <ReactECharts option={option} style={{ height: '400px', width: '100%' }} />;
+  return <ReactECharts option={option} style={{ height: `${height}px`, width: '100%' }} />;
 };
 
 export default ShoutingChart;

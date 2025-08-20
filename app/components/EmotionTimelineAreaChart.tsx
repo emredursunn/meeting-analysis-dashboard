@@ -6,7 +6,17 @@ import basicEmotion from '../data/basic_emotion.json';
 
 const defaultTimeline = basicEmotion as any[];
 
-const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
+interface EmotionTimelineAreaChartProps {
+  data?: any[];
+  height?: number;
+  isPreview?: boolean;
+}
+
+const EmotionTimelineAreaChart: React.FC<EmotionTimelineAreaChartProps> = ({ 
+  data = defaultTimeline, 
+  height = 500,
+  isPreview = false 
+}) => {
   // English emotion-color mapping
   const EMOTION_COLORS: { [key: string]: string } = {
     Calmness: "#10B981",
@@ -111,12 +121,13 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
     },
     legend: {
       data: emotions,
-      top: 35,
-      itemWidth: 18,
-      itemHeight: 12,
-      itemGap: 16,
-      textStyle: { color: "#374151", fontSize: 12 },
-      selectedMode: true
+      top: isPreview ? 10 : 35,
+      itemWidth: isPreview ? 12 : 18,
+      itemHeight: isPreview ? 8 : 12,
+      itemGap: isPreview ? 8 : 16,
+      textStyle: { color: "#374151", fontSize: isPreview ? 10 : 12 },
+      selectedMode: true,
+      show: true
     },
     tooltip: {
       trigger: "axis",
@@ -126,7 +137,7 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
       borderColor: "#ccc",
       textStyle: { color: "#1f2937" }
     },
-    grid: { left: "8%", right: "8%", top: 80, bottom: 80, containLabel: true },
+    grid: { left: "8%", right: "8%", top: 80, bottom: isPreview ? 20 : 80, containLabel: true },
     xAxis: {
       type: "value",
       min: timeline[0].start - 0.5,
@@ -151,7 +162,9 @@ const EmotionTimelineAreaChart = ({ data = defaultTimeline, height = 500 }) => {
       splitLine: { lineStyle: { color: "#e5e7eb" } }
     },
     series,
-    dataZoom: [
+    dataZoom: isPreview ? [
+      { type: "inside", xAxisIndex: 0, filterMode: "none", throttle: 50 }
+    ] : [
       { type: "inside", xAxisIndex: 0, filterMode: "none", throttle: 50 },
       { type: "slider", xAxisIndex: 0, height: 20, bottom: 25, handleSize: 14, handleStyle: { color: "#4b5563" }, borderColor: "#d1d5db", fillerColor: "rgba(156, 163, 175, 0.2)", textStyle: { color: "#4b5563", fontSize: 10 } }
     ]
